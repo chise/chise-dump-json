@@ -32,14 +32,14 @@
       "total-strokes": 2
     }
   }, 
-  "sound": {
+  "phonetic-value": {
     "chise:domain/guangyun": [
       {
         "title": "Web-yunzi: Guangyun-\u20087", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u20087"
       }
     ], 
-    "'chise:domain/ja/on": [
+    "chise:domain/ja/on": [
       {
         "ja-romaji": "sa", 
         "ja-kana": "\u3055", 
@@ -112,6 +112,46 @@
     }
   ], 
   "relations": {
+    "<-vulgar": {
+      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/from.vulgar", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/from.vulgar/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x4DB9/abstract-character/common", 
+            "title": "\u4db9", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u4db9.svg"
+          }
+        }
+      ]
+    }, 
+    "->formed@component/surround-from-upper-left": {
+      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component...surround-from-upper-left", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component...surround-from-upper-left/1", 
+          "target": {
+            "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B5F"
+          }
+        }
+      ]
+    }, 
+    "->formed@component": {
+      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component/1", 
+          "target": {
+            "@id": "chise:ccs/big5-cdp-var-002/0x88B6/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/cdp-88b6-var-002.svg"
+          }
+        }
+      ]
+    }, 
     "->Small-Seal@shuowen": {
       "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.Small-Seal@shuowen", 
       "reldesc": [
@@ -253,48 +293,62 @@
           }
         }
       ]
-    }, 
-    "<-vulgar": {
-      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/from.vulgar", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/from.vulgar/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x4DB9/abstract-character/common", 
-            "title": "\u4db9", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u4db9.svg"
-          }
-        }
-      ]
-    }, 
-    "->formed@component/surround-from-upper-left": {
-      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component...surround-from-upper-left", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component...surround-from-upper-left/1", 
-          "target": {
-            "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B5F"
-          }
-        }
-      ]
-    }, 
-    "->formed@component": {
-      "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x20087/abstract-character/common/to.formed@component/1", 
-          "target": {
-            "@id": "chise:ccs/big5-cdp-var-002/0x88B6/abstract-glyph/common", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/cdp-88b6-var-002.svg"
-          }
-        }
-      ]
     }
   }, 
+  "denotation": [
+    {
+      "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B5F", 
+      "radical-and-strokes": {
+        "chise:domain/common": {
+          "kangxi-radical": "\u2f03", 
+          "kangxi-radical-number": 4, 
+          "kangxi-strokes": 1, 
+          "total-strokes": 2
+        }
+      }, 
+      "unify": {
+        "=big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 35679
+        }, 
+        "=gt-k": {
+          "@id": "chise:ccs/gt-k/00105/abstract-glyph/common", 
+          "CCS": "ccs:gt-k", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 105
+        }, 
+        "=gt-pj-k1": {
+          "@id": "chise:ccs/gt-pj-k1/0x3152/abstract-glyph/common", 
+          "CCS": "ccs:gt-pj-k1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 12626
+        }
+      }, 
+      "relations": {
+        "<-formed@component/surround-from-upper-left": {
+          "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common/from.formed@component...surround-from-upper-left", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common/from.formed@component...surround-from-upper-left/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x20087/abstract-character/common", 
+                "title": "\u20087", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u20087.svg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ], 
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0x20087/abstract-glyph-form/iso", 
@@ -371,60 +425,6 @@
           "image": "https://glyphwiki.org/glyph/u20087.svg"
         }
       ]
-    }
-  ], 
-  "denotation": [
-    {
-      "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
-      "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B5F", 
-      "radical-and-strokes": {
-        "chise:domain/common": {
-          "kangxi-radical": "\u2f03", 
-          "kangxi-radical-number": 4, 
-          "kangxi-strokes": 1, 
-          "total-strokes": 2
-        }
-      }, 
-      "unify": {
-        "=big5-cdp": {
-          "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common", 
-          "CCS": "ccs:big5-cdp", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "domain": "chise:domain/common", 
-          "code-point": 35679
-        }, 
-        "=gt-k": {
-          "@id": "chise:ccs/gt-k/00105/abstract-glyph/common", 
-          "CCS": "ccs:gt-k", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "domain": "chise:domain/common", 
-          "code-point": 105
-        }, 
-        "=gt-pj-k1": {
-          "@id": "chise:ccs/gt-pj-k1/0x3152/abstract-glyph/common", 
-          "CCS": "ccs:gt-pj-k1", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "domain": "chise:domain/common", 
-          "code-point": 12626
-        }
-      }, 
-      "relations": {
-        "<-formed@component/surround-from-upper-left": {
-          "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common/from.formed@component...surround-from-upper-left", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/big5-cdp/0x8B5F/abstract-glyph/common/from.formed@component...surround-from-upper-left/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x20087/abstract-character/common", 
-                "title": "\u20087", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u20087.svg"
-              }
-            }
-          ]
-        }
-      }
     }
   ]
 }

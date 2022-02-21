@@ -63,7 +63,7 @@
           "kangxi-radical-number": 24
         }
       }, 
-      "sound": {
+      "phonetic-value": {
         "chise:domain/guangyun": [
           {
             "title": "Web-yunzi: Guangyun-\u5351", 
@@ -88,6 +88,19 @@
         }
       }, 
       "relations": {
+        "->formed@component": {
+          "@id": "chise:ccs/ucs/0x5351/abstract-character/common/to.formed@component", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x5351/abstract-character/common/to.formed@component/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x22344/abstract-character/component", 
+                "title": "\u3008?/\u22344\u3009", 
+                "granularity": "chise:glyph-granularity/abstract-character"
+              }
+            }
+          ]
+        }, 
         "->Small-Seal@shuowen": {
           "@id": "chise:ccs/ucs/0x5351/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
@@ -165,19 +178,6 @@
                 "@id": "chise:ccs/chise-hdic-syp/0x121D/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://viewer.hdic.jp/img/syp/a065a032"
-              }
-            }
-          ]
-        }, 
-        "->formed@component": {
-          "@id": "chise:ccs/ucs/0x5351/abstract-character/common/to.formed@component", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x5351/abstract-character/common/to.formed@component/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x22344/abstract-character/component", 
-                "title": "\u3008?/\u22344\u3009", 
-                "granularity": "chise:glyph-granularity/abstract-character"
               }
             }
           ]
@@ -290,6 +290,9 @@
               "code-point": 17859
             }
           }, 
+          "=>ucs*": {
+            "body": 21329
+          }, 
           "hanyu-dazidian": {
             "body": [
               1, 
@@ -303,9 +306,6 @@
               "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[171]}"
             }
           ], 
-          "=>ucs*": {
-            "body": 21329
-          }, 
           "relations": {
             "->interchangeable": {
               "@id": "chise:ccs/ucs/0xFA35/abstract-character/common/to.interchangeable", 
@@ -602,6 +602,9 @@
               "code-point": 829
             }
           }, 
+          "=>ucs*": {
+            "body": 21329
+          }, 
           "script": {
             "body": [
               {
@@ -615,24 +618,7 @@
               }
             ]
           }, 
-          "=>ucs*": {
-            "body": 21329
-          }, 
           "relations": {
-            "<-simplified@JP/Jouyou": {
-              "@id": "chise:ccs/ucs/0x2F82D/abstract-character/common/from.simplified@JP...Jouyou", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x2F82D/abstract-character/common/from.simplified@JP...Jouyou/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0xFA35/abstract-character/common", 
-                    "title": "\ufa35", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/ufa35.svg"
-                  }
-                }
-              ]
-            }, 
             "<-vulgar": {
               "@id": "chise:ccs/ucs/0x2F82D/abstract-character/common/from.vulgar", 
               "reldesc": [
@@ -648,6 +634,20 @@
               ], 
               "sources": [
                 "shinjigen@1ed"
+              ]
+            }, 
+            "<-simplified@JP/Jouyou": {
+              "@id": "chise:ccs/ucs/0x2F82D/abstract-character/common/from.simplified@JP...Jouyou", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x2F82D/abstract-character/common/from.simplified@JP...Jouyou/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0xFA35/abstract-character/common", 
+                    "title": "\ufa35", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://glyphwiki.org/glyph/ufa35.svg"
+                  }
+                }
               ]
             }
           }, 
@@ -770,7 +770,7 @@
           "kangxi-radical-number": 24
         }
       }, 
-      "sound": {
+      "phonetic-value": {
         "chise:domain/guangyun": [
           {
             "title": "Web-yunzi: Guangyun-\u24c1e", 
@@ -853,8 +853,8 @@
                   "total-strokes": 8
                 }
               }, 
-              "sound": {
-                "'chise:domain/ja/on": [
+              "phonetic-value": {
+                "chise:domain/ja/on": [
                   {
                     "ja-romaji": "hi", 
                     "ja-kana": "\u3072", 
@@ -1570,8 +1570,8 @@
                   "total-strokes": 8
                 }
               }, 
-              "sound": {
-                "'chise:domain/ja/on": [
+              "phonetic-value": {
+                "chise:domain/ja/on": [
                   {
                     "ja-romaji": "hi", 
                     "ja-kana": "\u3072", 
