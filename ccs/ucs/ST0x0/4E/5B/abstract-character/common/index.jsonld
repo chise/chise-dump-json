@@ -1,0 +1,114 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x4E5B/abstract-character/common", 
+  "title": "\u4e5b", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/u4e5b.svg", 
+  "radical-and-strokes": {
+    "chise:domain/common": {
+      "kangxi-radical": "\u2f04", 
+      "kangxi-radical-number": 5, 
+      "kangxi-strokes": 0, 
+      "total-strokes": 1
+    }
+  }, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0x4E5B/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 20059
+    }, 
+    "=gb12345": {
+      "@id": "chise:ccs/gb12345/0x7D70/abstract-glyph/common", 
+      "CCS": "ccs:gb12345", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 32112
+    }, 
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x8D54/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 36180
+    }
+  }, 
+  "relations": {
+    "->unknown": {
+      "@id": "chise:ccs/ucs/0x4E5B/abstract-character/common/to.unknown", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x4E5B/abstract-character/common/to.unknown/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x2E82/abstract-character/common", 
+            "title": "\u3008\u2e82\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u2e82.svg"
+          }
+        }
+      ]
+    }
+  }, 
+  "subsume": [
+    {
+      "@id": "chise:ccs/ucs/0x4E5B/abstract-glyph-form/unicode", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8D54", 
+      "unify": {
+        "==ucs@unicode": {
+          "@id": "chise:ccs/ucs/0x4E5B/abstract-glyph-form/unicode", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/unicode", 
+          "code-point": 20059
+        }, 
+        "==gb12345": {
+          "@id": "chise:ccs/gb12345/0x7D70/abstract-glyph-form/common", 
+          "CCS": "ccs:gb12345", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 32112
+        }, 
+        "==big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x8D54/abstract-glyph-form/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 36180
+        }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/big5-cdp/0x8D54/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8D54", 
+          "unify": {
+            "===big5-cdp": {
+              "@id": "chise:ccs/big5-cdp/0x8D54/glyph-image/common", 
+              "CCS": "ccs:big5-cdp", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 36180
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x4E5B/glyph-image/unicode", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.unicode.org/cgi-bin/refglyph?24-4E5B", 
+          "unify": {
+            "===ucs@unicode": {
+              "@id": "chise:ccs/ucs/0x4E5B/glyph-image/unicode", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/unicode", 
+              "code-point": 20059
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

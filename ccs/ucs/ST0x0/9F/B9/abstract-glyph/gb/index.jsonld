@@ -1,0 +1,59 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x9FB9/abstract-glyph/gb", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8BFA", 
+  "<-subsumptive@nil": [
+    {
+      "@id": "chise:ccs/ucs/0x9FB9/abstract-character/common", 
+      "title": "\u3008\u9fb9\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u9fb9.svg"
+    }
+  ], 
+  "unify": {
+    "=ucs@gb": {
+      "@id": "chise:ccs/ucs/0x9FB9/abstract-glyph/gb", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/gb", 
+      "code-point": 40889
+    }, 
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x8BFA/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 35834
+    }
+  }, 
+  "subsume": [
+    {
+      "@id": "chise:ccs/big5-cdp/0x8BFA/abstract-glyph-form/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8BFA", 
+      "unify": {
+        "==big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x8BFA/abstract-glyph-form/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 35834
+        }
+      }
+    }, 
+    {
+      "@id": "chise:ccs/ucs/0x9FB9/abstract-glyph-form/gb", 
+      "granularity": "chise:glyph-granularity/nil", 
+      "unify": {
+        "==ucs@gb": {
+          "@id": "chise:ccs/ucs/0x9FB9/abstract-glyph-form/gb", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/gb", 
+          "code-point": 40889
+        }
+      }
+    }
+  ]
+}

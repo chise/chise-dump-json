@@ -1,0 +1,123 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph/common", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8DD8", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2008A/abstract-character/common", 
+      "title": "\u3008\u2008a\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2008a.svg"
+    }
+  ], 
+  "component-category": [
+    {
+      "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-character/common", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8DD8"
+    }
+  ], 
+  "radical-and-strokes": {
+    "chise:domain/common": {
+      "kangxi-radical": "\u2f11", 
+      "kangxi-radical-number": 18, 
+      "kangxi-strokes": 0, 
+      "total-strokes": 2
+    }
+  }, 
+  "unify": {
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 36312
+    }
+  }, 
+  "relations": {
+    "->formed@component/connect-below": {
+      "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph/common/to.formed@component...connect-below", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph/common/to.formed@component...connect-below/1", 
+          "target": {
+            "@id": "chise:ccs/gt-k/00091/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-K00091"
+          }
+        }
+      ]
+    }
+  }, 
+  "subsume": [
+    {
+      "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph-form/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8DD8", 
+      "unify": {
+        "==big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph-form/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 36312
+        }
+      }
+    }, 
+    {
+      "@id": "chise:ccs/gt-k/00091/abstract-glyph/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-K00091", 
+      "unify": {
+        "=gt-k": {
+          "@id": "chise:ccs/gt-k/00091/abstract-glyph/common", 
+          "CCS": "ccs:gt-k", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 91
+        }, 
+        "=gt-pj-k1": {
+          "@id": "chise:ccs/gt-pj-k1/0x3234/abstract-glyph/common", 
+          "CCS": "ccs:gt-pj-k1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 12852
+        }
+      }, 
+      "relations": {
+        "<-formed@component/connect-below": {
+          "@id": "chise:ccs/gt-k/00091/abstract-glyph/common/from.formed@component...connect-below", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/gt-k/00091/abstract-glyph/common/from.formed@component...connect-below/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x5200/abstract-character/common", 
+                "title": "\u5200", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u5200.svg"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/gt-k/00091/abstract-glyph/common/from.formed@component...connect-below/2", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x2E88/abstract-character/common", 
+                "title": "\u2e88", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u2e88.svg"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/gt-k/00091/abstract-glyph/common/from.formed@component...connect-below/3", 
+              "target": {
+                "@id": "chise:ccs/big5-cdp/0x8DD8/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8DD8"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

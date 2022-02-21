@@ -1,0 +1,116 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x2F816/abstract-character/common", 
+  "title": "\u2f816", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/u2f816.svg", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2054B/abstract-character/common", 
+      "title": "\u3008\u2054b\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2054b.svg"
+    }
+  ], 
+  "radical-and-strokes": {
+    "chise:domain/common": {
+      "kangxi-radical": "\u2f0c", 
+      "kangxi-radical-number": 13, 
+      "kangxi-strokes": 4, 
+      "total-strokes": 6
+    }
+  }, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0x2F816/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 194582
+    }, 
+    "=cns11643-6": {
+      "@id": "chise:ccs/cns11643-6/0x2359/abstract-glyph/common", 
+      "CCS": "ccs:cns11643-6", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9049
+    }, 
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x88AA/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 34986
+    }
+  }, 
+  "=>ucs*": {
+    "body": 132427
+  }, 
+  "subsume": [
+    {
+      "@id": "chise:ccs/ucs/0x2F816/abstract-glyph-form/iso", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/glyphs/CNS6/2359.gif", 
+      "unify": {
+        "==ucs@iso": {
+          "@id": "chise:ccs/ucs/0x2F816/abstract-glyph-form/iso", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/iso", 
+          "code-point": 194582
+        }, 
+        "==cns11643-6": {
+          "@id": "chise:ccs/cns11643-6/0x2359/abstract-glyph-form/common", 
+          "CCS": "ccs:cns11643-6", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 9049
+        }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/cns11643-6/0x2359/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/glyphs/CNS6/2359.gif", 
+          "unify": {
+            "===cns11643-6": {
+              "@id": "chise:ccs/cns11643-6/0x2359/glyph-image/common", 
+              "CCS": "ccs:cns11643-6", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 9049
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x2F816/glyph-image/iso", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://glyphwiki.org/glyph/u2f816.svg", 
+          "unify": {
+            "===ucs@iso": {
+              "@id": "chise:ccs/ucs/0x2F816/glyph-image/iso", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/iso", 
+              "code-point": 194582
+            }
+          }
+        }
+      ]
+    }, 
+    {
+      "@id": "chise:ccs/big5-cdp/0x88AA/abstract-glyph-form/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-88AA", 
+      "unify": {
+        "==big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x88AA/abstract-glyph-form/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 34986
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00035", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x4E11/abstract-character/common", 
+      "title": "\u3008\u4e11\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u4e11.svg"
+    }
+  ], 
+  "radical-and-strokes": {
+    "chise:domain/common": {
+      "kangxi-radical": "\u2f00", 
+      "kangxi-radical-number": 1, 
+      "kangxi-strokes": 3, 
+      "total-strokes": 4
+    }
+  }, 
+  "unify": {
+    "=ucs@unicode": {
+      "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/unicode", 
+      "code-point": 19985
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x3373/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 13171
+    }, 
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x89D2/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 35282
+    }, 
+    "=gt": {
+      "@id": "chise:ccs/gt/00035/abstract-glyph/common", 
+      "CCS": "ccs:gt", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 35
+    }, 
+    "=gt-pj-9": {
+      "@id": "chise:ccs/gt-pj-9/0x4B23/abstract-glyph/common", 
+      "CCS": "ccs:gt-pj-9", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 19235
+    }, 
+    "=shinjigen": {
+      "@id": "chise:ccs/shinjigen/0017/abstract-glyph/common", 
+      "CCS": "ccs:shinjigen", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 17
+    }
+  }, 
+  "relations": {
+    "<-simplified@CN": {
+      "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode/from.simplified@CN", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode/from.simplified@CN/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x919C/abstract-glyph/unicode", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/glyphs/GB1/19-83.gif"
+          }
+        }
+      ]
+    }, 
+    "<-vulgar": {
+      "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode/from.vulgar", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/unicode/from.vulgar/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x4E11/abstract-glyph/cns", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00033"
+          }
+        }
+      ], 
+      "sources": [
+        "shinjigen"
+      ]
+    }
+  }
+}

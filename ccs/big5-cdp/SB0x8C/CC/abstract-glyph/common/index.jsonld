@@ -1,0 +1,63 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph/common", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8CCC", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2EB6/abstract-character/common", 
+      "title": "\u3008\u2eb6\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2eb6.svg"
+    }
+  ], 
+  "radical-and-strokes": {
+    "chise:domain/common": {
+      "kangxi-radical": "\u2f7a", 
+      "kangxi-radical-number": 123, 
+      "kangxi-strokes": 0, 
+      "total-strokes": 7
+    }
+  }, 
+  "unify": {
+    "=big5-cdp": {
+      "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph/common", 
+      "CCS": "ccs:big5-cdp", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 36044
+    }
+  }, 
+  "relations": {
+    "<-formed@component": {
+      "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph/common/from.formed@component", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph/common/from.formed@component/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x7F8A/abstract-character/common", 
+            "title": "\u7f8a", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u7f8a.svg"
+          }
+        }
+      ]
+    }
+  }, 
+  "subsume": [
+    {
+      "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph-form/common", 
+      "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8CCC", 
+      "unify": {
+        "==big5-cdp": {
+          "@id": "chise:ccs/big5-cdp/0x8CCC/abstract-glyph-form/common", 
+          "CCS": "ccs:big5-cdp", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 36044
+        }
+      }
+    }
+  ]
+}
