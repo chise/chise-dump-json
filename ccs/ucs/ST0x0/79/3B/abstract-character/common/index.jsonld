@@ -4,18 +4,18 @@
   "title": "\u793b", 
   "granularity": "chise:glyph-granularity/abstract-glyph", 
   "image": "https://glyphwiki.org/glyph/u793b.svg", 
-  "connotation": [
-    {
-      "@id": "chise:ccs/ucs/0x793A/abstract-character/iwds-1", 
-      "title": "\u3008\u793b/\u793a\u3009", 
-      "granularity": "chise:glyph-granularity/abstract-character"
-    }
-  ], 
   "jishu": [
     {
       "@id": "chise:ccs/daijiten/08097/super-abstract-character/common", 
       "granularity": "chise:glyph-granularity/super-abstract-character", 
       "image": "https://image.hng-data.org/glyphs/daijiten/08097.png"
+    }
+  ], 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x793A/abstract-character/iwds-1", 
+      "title": "\u3008\u793b/\u793a\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character"
     }
   ], 
   "radical-and-strokes": {
@@ -113,6 +113,37 @@
     }
   }, 
   "relations": {
+    "<-formed@component/connect-right": {
+      "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.formed@component...connect-right", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.formed@component...connect-right/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x793A/abstract-character/common", 
+            "title": "\u793a", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u793a.svg"
+          }
+        }
+      ]
+    }, 
+    "<-vulgar@component/connect-right": {
+      "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.vulgar@component...connect-right", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.vulgar@component...connect-right/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x793A/abstract-character/common", 
+            "title": "\u793a", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u793a.svg"
+          }
+        }
+      ], 
+      "sources": [
+        "daikanwa"
+      ]
+    }, 
     "->Small-Seal@shuowen": {
       "@id": "chise:ccs/ucs/0x793B/abstract-character/common/to.Small-Seal@shuowen", 
       "reldesc": [
@@ -153,39 +184,74 @@
           }
         }
       ]
-    }, 
-    "<-formed@component/connect-right": {
-      "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.formed@component...connect-right", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.formed@component...connect-right/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x793A/abstract-character/common", 
-            "title": "\u793a", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u793a.svg"
-          }
-        }
-      ]
-    }, 
-    "<-vulgar@component/connect-right": {
-      "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.vulgar@component...connect-right", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x793B/abstract-character/common/from.vulgar@component...connect-right/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x793A/abstract-character/common", 
-            "title": "\u793a", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u793a.svg"
-          }
-        }
-      ], 
-      "sources": [
-        "daikanwa"
-      ]
     }
   }, 
+  "denotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common", 
+      "title": "\u3008\u2ead\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2ead.svg", 
+      "unify": {
+        "=ucs": {
+          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "domain": "chise:domain/common", 
+          "code-point": 11949
+        }
+      }, 
+      "name": {
+        "body": "CJK RADICAL SPIRIT TWO"
+      }, 
+      "mirrored": {
+        "body": null
+      }, 
+      "bidi-category": {
+        "body": "ON"
+      }, 
+      "general-category": {
+        "body": [
+          {
+            "body": "symbol"
+          }, 
+          {
+            "body": "other"
+          }
+        ]
+      }, 
+      "relations": {
+        "<-identical@component": {
+          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x793B/abstract-character/common", 
+                "title": "\u793b", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u793b.svg"
+              }
+            }
+          ]
+        }, 
+        "<-identical@component/connect-right": {
+          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component...connect-right", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component...connect-right/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x793B/abstract-character/common", 
+                "title": "\u793b", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u793b.svg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ], 
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0x793B/abstract-glyph-form/unicode", 
@@ -300,72 +366,6 @@
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
           "domain": "chise:domain/common", 
           "code-point": 35696
-        }
-      }
-    }
-  ], 
-  "denotation": [
-    {
-      "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common", 
-      "title": "\u3008\u2ead\u3009", 
-      "granularity": "chise:glyph-granularity/abstract-character", 
-      "image": "https://glyphwiki.org/glyph/u2ead.svg", 
-      "unify": {
-        "=ucs": {
-          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common", 
-          "CCS": "ccs:ucs", 
-          "granularity": "chise:glyph-granularity/abstract-character", 
-          "domain": "chise:domain/common", 
-          "code-point": 11949
-        }
-      }, 
-      "bidi-category": {
-        "body": "ON"
-      }, 
-      "general-category": {
-        "body": [
-          {
-            "body": "symbol"
-          }, 
-          {
-            "body": "other"
-          }
-        ]
-      }, 
-      "name": {
-        "body": "CJK RADICAL SPIRIT TWO"
-      }, 
-      "mirrored": {
-        "body": null
-      }, 
-      "relations": {
-        "<-identical@component": {
-          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x793B/abstract-character/common", 
-                "title": "\u793b", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u793b.svg"
-              }
-            }
-          ]
-        }, 
-        "<-identical@component/connect-right": {
-          "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component...connect-right", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2EAD/abstract-character/common/from.identical@component...connect-right/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x793B/abstract-character/common", 
-                "title": "\u793b", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u793b.svg"
-              }
-            }
-          ]
         }
       }
     }

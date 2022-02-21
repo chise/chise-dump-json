@@ -21,19 +21,6 @@
     }
   }, 
   "relations": {
-    "->HDIC-SYP": {
-      "@id": "chise:ccs/ucs/0x7077/abstract-character/common/to.HDIC-SYP", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x7077/abstract-character/common/to.HDIC-SYP/1", 
-          "target": {
-            "@id": "chise:ccs/chise-hdic-syp/0x4010/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/syp/c008b055"
-          }
-        }
-      ]
-    }, 
     "->formed@component": {
       "@id": "chise:ccs/ucs/0x7077/abstract-character/common/to.formed@component", 
       "reldesc": [
@@ -43,6 +30,19 @@
             "@id": "chise:ccs/ucs-itaiji-002/0x7077/abstract-glyph/common", 
             "granularity": "chise:glyph-granularity/abstract-glyph", 
             "image": "https://glyphwiki.org/glyph/u7077-itaiji-002.svg"
+          }
+        }
+      ]
+    }, 
+    "->HDIC-SYP": {
+      "@id": "chise:ccs/ucs/0x7077/abstract-character/common/to.HDIC-SYP", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x7077/abstract-character/common/to.HDIC-SYP/1", 
+          "target": {
+            "@id": "chise:ccs/chise-hdic-syp/0x4010/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/syp/c008b055"
           }
         }
       ]
@@ -61,7 +61,7 @@
           "total-strokes": 7
         }
       }, 
-      "sound": {
+      "phonetic-value": {
         "chise:domain/ja/on": [
           {
             "ja-kan-on": {
@@ -108,6 +108,23 @@
         }
       }, 
       "relations": {
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x7077/abstract-glyph/unicode/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x7077/abstract-glyph/unicode/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x3DB3/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/06834.png"
+              }
+            }
+          ], 
+          "sources": [
+            "zhengzitong", 
+            "daikanwa"
+          ]
+        }, 
         "->original": {
           "@id": "chise:ccs/ucs/0x7077/abstract-glyph/unicode/to.original", 
           "reldesc": [
@@ -157,23 +174,6 @@
           ], 
           "sources": [
             "shuowen-tongxun-dingsheng", 
-            "daikanwa"
-          ]
-        }, 
-        "<-same": {
-          "@id": "chise:ccs/ucs/0x7077/abstract-glyph/unicode/from.same", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x7077/abstract-glyph/unicode/from.same/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x3DB3/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/06834.png"
-              }
-            }
-          ], 
-          "sources": [
-            "zhengzitong", 
             "daikanwa"
           ]
         }
@@ -280,8 +280,8 @@
           "total-strokes": 8
         }
       }, 
-      "sound": {
-        "'chise:domain/ja/on": [
+      "phonetic-value": {
+        "chise:domain/ja/on": [
           {
             "ja-romaji": "seN", 
             "ja-kana": "\u305b\u3093", 

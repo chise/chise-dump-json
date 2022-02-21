@@ -78,7 +78,7 @@
           "total-strokes": 5
         }
       }, 
-      "sound": {
+      "phonetic-value": {
         "chise:domain/ja/on": [
           {
             "ja-kan-on": {
@@ -105,7 +105,7 @@
             }
           }
         ], 
-        "'chise:domain/ja/on/conventional": [
+        "chise:domain/ja/on/conventional": [
           {
             "ja-romaji": "dyutu", 
             "ja-kana": "dyutu", 
@@ -213,6 +213,54 @@
         }
       ], 
       "relations": {
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same/1", 
+              "sources": [
+                "shuowen", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x79EB/abstract-glyph/jis", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/08208.png"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same/2", 
+              "sources": [
+                "jiyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x26B38/abstract-glyph/cns", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/09796.png"
+              }
+            }
+          ], 
+          "sources": [
+            "daikanwa"
+          ]
+        }, 
+        "<-simplified@misc": {
+          "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.simplified@misc", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.simplified@misc/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x79EB/abstract-glyph/jis", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/08208.png"
+              }
+            }
+          ], 
+          "sources": [
+            "shuowen"
+          ]
+        }, 
         "->Small-Seal@shuowen": {
           "@id": "chise:ccs/ucs/0x672E/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
@@ -271,54 +319,6 @@
                 "image": "https://viewer.hdic.jp/img/syp/b018b053"
               }
             }
-          ]
-        }, 
-        "<-same": {
-          "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same/1", 
-              "sources": [
-                "shuowen", 
-                "daikanwa"
-              ], 
-              "target": {
-                "@id": "chise:ccs/ucs/0x79EB/abstract-glyph/jis", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/08208.png"
-              }
-            }, 
-            {
-              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.same/2", 
-              "sources": [
-                "jiyun", 
-                "daikanwa"
-              ], 
-              "target": {
-                "@id": "chise:ccs/ucs/0x26B38/abstract-glyph/cns", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/09796.png"
-              }
-            }
-          ], 
-          "sources": [
-            "daikanwa"
-          ]
-        }, 
-        "<-simplified@misc": {
-          "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.simplified@misc", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x672E/abstract-character/common/from.simplified@misc/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x79EB/abstract-glyph/jis", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/08208.png"
-              }
-            }
-          ], 
-          "sources": [
-            "shuowen"
           ]
         }
       }, 
@@ -506,7 +506,7 @@
           "total-strokes": 5
         }
       }, 
-      "sound": {
+      "phonetic-value": {
         "chise:domain/guangyun": [
           {
             "title": "Web-yunzi: Guangyun-\u672f", 

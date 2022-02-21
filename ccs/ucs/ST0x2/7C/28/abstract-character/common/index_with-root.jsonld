@@ -49,7 +49,10 @@
           "total-strokes": 6
         }
       }, 
-      "sound": {
+      "phonetic-value": {
+        "chise:domain/ja/on/go/p=yin2": [
+          "goN"
+        ], 
         "chise:domain/ja/on/kan/p=yin2": [
           "giN"
         ], 
@@ -68,9 +71,6 @@
             "title": "Web-yunzi: Guangyun-\u4e51", 
             "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u4e51"
           }
-        ], 
-        "chise:domain/ja/on/go/p=yin2": [
-          "goN"
         ]
       }, 
       "unify": {
@@ -83,6 +83,19 @@
         }
       }, 
       "relations": {
+        "->original@p=yin2": {
+          "@id": "chise:ccs/ucs/0x4E51/abstract-character/common/to.original@p=yin2", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x4E51/abstract-character/common/to.original@p=yin2/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x343A/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/00221.png"
+              }
+            }
+          ]
+        }, 
         "->Small-Seal@shuowen": {
           "@id": "chise:ccs/ucs/0x4E51/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
@@ -139,19 +152,6 @@
                 "@id": "chise:ccs/chise-hdic-syp/0x5673/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://viewer.hdic.jp/img/syp/c067b051"
-              }
-            }
-          ]
-        }, 
-        "->original@p=yin2": {
-          "@id": "chise:ccs/ucs/0x4E51/abstract-character/common/to.original@p=yin2", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x4E51/abstract-character/common/to.original@p=yin2/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x343A/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/00221.png"
               }
             }
           ]
@@ -270,6 +270,23 @@
             }
           ], 
           "relations": {
+            "<-same@p=yin2": {
+              "@id": "chise:ccs/ucs/0x4E51/abstract-glyph/unicode/from.same@p=yin2", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x4E51/abstract-glyph/unicode/from.same@p=yin2/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x343A/abstract-glyph/unicode", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://image.hng-data.org/glyphs/daijiten/00221.png"
+                  }
+                }
+              ], 
+              "sources": [
+                "zhengzitong", 
+                "daikanwa"
+              ]
+            }, 
             "->same@p=yin2": {
               "@id": "chise:ccs/ucs/0x4E51/abstract-glyph/unicode/to.same@p=yin2", 
               "reldesc": [
@@ -310,23 +327,6 @@
                     "@id": "chise:ccs/ucs/0x773E/abstract-glyph/jis", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
                     "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ018210.png"
-                  }
-                }
-              ], 
-              "sources": [
-                "zhengzitong", 
-                "daikanwa"
-              ]
-            }, 
-            "<-same@p=yin2": {
-              "@id": "chise:ccs/ucs/0x4E51/abstract-glyph/unicode/from.same@p=yin2", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x4E51/abstract-glyph/unicode/from.same@p=yin2/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x343A/abstract-glyph/unicode", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://image.hng-data.org/glyphs/daijiten/00221.png"
                   }
                 }
               ], 
@@ -640,7 +640,10 @@
           "kangxi-radical-number": 9
         }
       }, 
-      "sound": {
+      "phonetic-value": {
+        "chise:domain/ja/on/go/p=yin2": [
+          "goN"
+        ], 
         "chise:domain/ja/on/kan/p=yin2": [
           "giN"
         ], 
@@ -650,9 +653,6 @@
         "chise:domain/ja/on/go/p=zhong4": [
           "syu", 
           "su"
-        ], 
-        "chise:domain/ja/on/go/p=yin2": [
-          "goN"
         ]
       }, 
       "unify": {
@@ -733,8 +733,8 @@
           "total-strokes": 6
         }
       }, 
-      "sound": {
-        "'chise:domain/ja/on": [
+      "phonetic-value": {
+        "chise:domain/ja/on": [
           {
             "ja-romaji": "kou", 
             "ja-kana": "\u3053\u3046", 

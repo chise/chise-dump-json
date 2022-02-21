@@ -20,7 +20,7 @@
       "total-strokes": 6
     }
   }, 
-  "sound": {
+  "phonetic-value": {
     "chise:domain/ja/on": [
       {
         "ja-kan-on": {
@@ -64,6 +64,19 @@
     }
   }, 
   "relations": {
+    "->formed@component": {
+      "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component/1", 
+          "target": {
+            "@id": "chise:ccs/big5-cdp-itaiji-001/0x86B0/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/cdp-86b0-itaiji-001.svg"
+          }
+        }
+      ]
+    }, 
     "->Small-Seal@shuowen": {
       "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.Small-Seal@shuowen", 
       "reldesc": [
@@ -86,19 +99,6 @@
             "@id": "chise:ccs/chise-hdic-syp/0x1AB2/glyph-image/common", 
             "granularity": "chise:glyph-granularity/glyph-image", 
             "image": "https://viewer.hdic.jp/img/syp/a089a091"
-          }
-        }
-      ]
-    }, 
-    "->formed@component": {
-      "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component/1", 
-          "target": {
-            "@id": "chise:ccs/big5-cdp-itaiji-001/0x86B0/abstract-glyph/common", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/cdp-86b0-itaiji-001.svg"
           }
         }
       ]
@@ -190,6 +190,52 @@
         ]
       }, 
       "relations": {
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same/1", 
+              "sources": [
+                "jiyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
+              }
+            }
+          ], 
+          "sources": [
+            "jiyun", 
+            "daikanwa"
+          ]
+        }, 
+        "<-formed": {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/2", 
+              "sources": [
+                "shinjigen"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
+                "title": "\u518a", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u518a.svg"
+              }
+            }
+          ]
+        }, 
         "->interchangeable": {
           "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/to.interchangeable", 
           "reldesc": [
@@ -244,52 +290,6 @@
           "reldesc": [
             {
               "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/to.same/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
-                "title": "\u518a", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u518a.svg"
-              }
-            }
-          ]
-        }, 
-        "<-same": {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same/1", 
-              "sources": [
-                "jiyun", 
-                "daikanwa"
-              ], 
-              "target": {
-                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
-              }
-            }
-          ], 
-          "sources": [
-            "jiyun", 
-            "daikanwa"
-          ]
-        }, 
-        "<-formed": {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
-              }
-            }, 
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/2", 
-              "sources": [
-                "shinjigen"
-              ], 
               "target": {
                 "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
                 "title": "\u518a", 
@@ -648,7 +648,7 @@
       "total-strokes": 6
     }
   }, 
-  "sound": {
+  "phonetic-value": {
     "chise:domain/ja/on": [
       {
         "ja-kan-on": {
@@ -692,6 +692,19 @@
     }
   }, 
   "relations": {
+    "->formed@component": {
+      "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component/1", 
+          "target": {
+            "@id": "chise:ccs/big5-cdp-itaiji-001/0x86B0/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/cdp-86b0-itaiji-001.svg"
+          }
+        }
+      ]
+    }, 
     "->Small-Seal@shuowen": {
       "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.Small-Seal@shuowen", 
       "reldesc": [
@@ -714,19 +727,6 @@
             "@id": "chise:ccs/chise-hdic-syp/0x1AB2/glyph-image/common", 
             "granularity": "chise:glyph-granularity/glyph-image", 
             "image": "https://viewer.hdic.jp/img/syp/a089a091"
-          }
-        }
-      ]
-    }, 
-    "->formed@component": {
-      "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-character/common/to.formed@component/1", 
-          "target": {
-            "@id": "chise:ccs/big5-cdp-itaiji-001/0x86B0/abstract-glyph/common", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/cdp-86b0-itaiji-001.svg"
           }
         }
       ]
@@ -818,6 +818,52 @@
         ]
       }, 
       "relations": {
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same/1", 
+              "sources": [
+                "jiyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
+              }
+            }
+          ], 
+          "sources": [
+            "jiyun", 
+            "daikanwa"
+          ]
+        }, 
+        "<-formed": {
+          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/2", 
+              "sources": [
+                "shinjigen"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
+                "title": "\u518a", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u518a.svg"
+              }
+            }
+          ]
+        }, 
         "->interchangeable": {
           "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/to.interchangeable", 
           "reldesc": [
@@ -872,52 +918,6 @@
           "reldesc": [
             {
               "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/to.same/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
-                "title": "\u518a", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u518a.svg"
-              }
-            }
-          ]
-        }, 
-        "<-same": {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.same/1", 
-              "sources": [
-                "jiyun", 
-                "daikanwa"
-              ], 
-              "target": {
-                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
-              }
-            }
-          ], 
-          "sources": [
-            "jiyun", 
-            "daikanwa"
-          ]
-        }, 
-        "<-formed": {
-          "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x67F5/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-18589"
-              }
-            }, 
-            {
-              "@id": "chise:ccs/ucs/0x2054B/abstract-glyph/cns/from.formed/2", 
-              "sources": [
-                "shinjigen"
-              ], 
               "target": {
                 "@id": "chise:ccs/ucs/0x518A/abstract-character/common", 
                 "title": "\u518a", 

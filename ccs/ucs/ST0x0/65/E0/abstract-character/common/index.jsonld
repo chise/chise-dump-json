@@ -4,13 +4,6 @@
   "title": "\u65e0", 
   "granularity": "chise:glyph-granularity/abstract-glyph", 
   "image": "https://glyphwiki.org/glyph/u65e0.svg", 
-  "connotation": [
-    {
-      "@id": "chise:ccs/ucs/0x65E0/abstract-character/component", 
-      "title": "\u3008?/\u65e0\u3009", 
-      "granularity": "chise:glyph-granularity/abstract-character"
-    }
-  ], 
   "component-category": [
     {
       "@id": "chise:ccs/ucs/0x65E0/abstract-character/iwds-1", 
@@ -30,6 +23,13 @@
       "image": "https://image.hng-data.org/glyphs/daijiten/06872.png"
     }
   ], 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x65E0/abstract-character/component", 
+      "title": "\u3008?/\u65e0\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character"
+    }
+  ], 
   "radical-and-strokes": {
     "chise:domain/common": {
       "kangxi-radical": "\u2f46", 
@@ -38,7 +38,7 @@
       "total-strokes": 4
     }
   }, 
-  "sound": {
+  "phonetic-value": {
     "chise:domain/ja/on": [
       {
         "ja-kan-on": {
@@ -193,6 +193,24 @@
     }
   ], 
   "relations": {
+    "<-same": {
+      "@id": "chise:ccs/ucs/0x65E0/abstract-character/common/from.same", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x65E0/abstract-character/common/from.same/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x7121/abstract-character/common", 
+            "title": "\u7121", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u7121.svg"
+          }
+        }
+      ], 
+      "sources": [
+        "shuowen", 
+        "daikanwa"
+      ]
+    }, 
     "->Small-Seal@shuowen": {
       "@id": "chise:ccs/ucs/0x65E0/abstract-character/common/to.Small-Seal@shuowen", 
       "reldesc": [
@@ -319,24 +337,6 @@
             "image": "https://glyphwiki.org/glyph/u2f46.svg"
           }
         }
-      ]
-    }, 
-    "<-same": {
-      "@id": "chise:ccs/ucs/0x65E0/abstract-character/common/from.same", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x65E0/abstract-character/common/from.same/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x7121/abstract-character/common", 
-            "title": "\u7121", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u7121.svg"
-          }
-        }
-      ], 
-      "sources": [
-        "shuowen", 
-        "daikanwa"
       ]
     }
   }, 
