@@ -24,6 +24,17 @@
         "ucs=0x5185"
       ]
     }, 
+    "chise:domain/daikanwa": {
+      "kangxi-radical": "\u2f0a", 
+      "kangxi-radical-number": 11, 
+      "kangxi-strokes": 2, 
+      "total-strokes": 4, 
+      "sources": [
+        "daikanwa=01418", 
+        "cns11643-1", 
+        "ucs=0x5167"
+      ]
+    }, 
     "chise:domain/cns-3": {
       "kangxi-radical": "\u2f08", 
       "kangxi-radical-number": 9, 
@@ -36,17 +47,6 @@
     }, 
     "chise:domain/common": {
       "total-strokes": 4
-    }, 
-    "chise:domain/daikanwa": {
-      "kangxi-radical": "\u2f0a", 
-      "kangxi-radical-number": 11, 
-      "kangxi-strokes": 2, 
-      "total-strokes": 4, 
-      "sources": [
-        "daikanwa=01418", 
-        "cns11643-1", 
-        "ucs=0x5167"
-      ]
     }
   }, 
   "unify": {
@@ -133,9 +133,6 @@
             "ucs"
           ]
         }, 
-        "chise:domain/common": {
-          "total-strokes": 4
-        }, 
         "chise:domain/cns": {
           "kangxi-radical": "\u2f08", 
           "kangxi-radical-number": 9, 
@@ -145,6 +142,9 @@
             "cns11643-3", 
             "daikanwa"
           ]
+        }, 
+        "chise:domain/common": {
+          "total-strokes": 4
         }
       }, 
       "phonetic-value": {
@@ -344,9 +344,6 @@
                 "ucs"
               ]
             }, 
-            "chise:domain/common": {
-              "total-strokes": 4
-            }, 
             "chise:domain/cns": {
               "kangxi-radical": "\u2f08", 
               "kangxi-radical-number": 9, 
@@ -356,7 +353,13 @@
                 "cns11643-3", 
                 "daikanwa=00366/+p"
               ]
+            }, 
+            "chise:domain/common": {
+              "total-strokes": 4
             }
+          }, 
+          "=>ucs*": {
+            "body": 20839
           }, 
           "unify": {
             "=ucs": {
@@ -401,9 +404,6 @@
               "domain": "chise:domain/common", 
               "code-point": 366
             }
-          }, 
-          "=>ucs*": {
-            "body": 20839
           }, 
           "subsume": [
             {
@@ -568,6 +568,27 @@
           "total-strokes": 4
         }
       }, 
+      "daijiten-pages": [
+        {
+          "daijiten-page": 173, 
+          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[109]}"
+        }, 
+        {
+          "daijiten-page": 174, 
+          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[110]}"
+        }, 
+        {
+          "daijiten-page": 175, 
+          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[110]}"
+        }
+      ], 
+      "hanyu-dazidian": {
+        "body": [
+          1, 
+          97, 
+          2
+        ]
+      }, 
       "unify": {
         "=ucs": {
           "@id": "chise:ccs/ucs/0x5167/abstract-character/common", 
@@ -626,27 +647,6 @@
           "code-point": 17374
         }
       }, 
-      "hanyu-dazidian": {
-        "body": [
-          1, 
-          97, 
-          2
-        ]
-      }, 
-      "daijiten-pages": [
-        {
-          "daijiten-page": 173, 
-          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[109]}"
-        }, 
-        {
-          "daijiten-page": 174, 
-          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[110]}"
-        }, 
-        {
-          "daijiten-page": 175, 
-          "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[110]}"
-        }
-      ], 
       "relations": {
         "->HDIC-KTB": {
           "@id": "chise:ccs/ucs/0x5167/abstract-character/common/to.HDIC-KTB", 
@@ -742,30 +742,6 @@
           ]
         }
       }, 
-      "denotation": [
-        {
-          "@id": "chise:ccs/ucs-var-001/0x5167/abstract-glyph/common", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "image": "https://glyphwiki.org/glyph/u5167-var-001.svg", 
-          "radical-and-strokes": {
-            "chise:domain/common": {
-              "kangxi-radical": "\u2f0a", 
-              "kangxi-radical-number": 11, 
-              "kangxi-strokes": 2, 
-              "total-strokes": 4
-            }
-          }, 
-          "unify": {
-            "=ucs-var-001": {
-              "@id": "chise:ccs/ucs-var-001/0x5167/abstract-glyph/common", 
-              "CCS": "ccs:ucs-var-001", 
-              "granularity": "chise:glyph-granularity/abstract-glyph", 
-              "domain": "chise:domain/common", 
-              "code-point": 20839
-            }
-          }
-        }
-      ], 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x5167/abstract-glyph-form/JP", 
@@ -907,6 +883,30 @@
               }
             }
           ]
+        }
+      ], 
+      "denotation": [
+        {
+          "@id": "chise:ccs/ucs-var-001/0x5167/abstract-glyph/common", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "image": "https://glyphwiki.org/glyph/u5167-var-001.svg", 
+          "radical-and-strokes": {
+            "chise:domain/common": {
+              "kangxi-radical": "\u2f0a", 
+              "kangxi-radical-number": 11, 
+              "kangxi-strokes": 2, 
+              "total-strokes": 4
+            }
+          }, 
+          "unify": {
+            "=ucs-var-001": {
+              "@id": "chise:ccs/ucs-var-001/0x5167/abstract-glyph/common", 
+              "CCS": "ccs:ucs-var-001", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "domain": "chise:domain/common", 
+              "code-point": 20839
+            }
+          }
         }
       ]
     }

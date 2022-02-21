@@ -1,6 +1,7 @@
 {
   "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
   "@id": "chise:ccs/ucs/0x2EBF/abstract-character/common", 
+  "name": "CJK RADICAL GRASS TWO", 
   "title": "\u2ebf", 
   "granularity": "chise:glyph-granularity/abstract-glyph", 
   "image": "https://glyphwiki.org/glyph/u2ebf.svg", 
@@ -18,6 +19,22 @@
       "kangxi-strokes": 0, 
       "total-strokes": 4
     }
+  }, 
+  "bidi-category": {
+    "body": "ON"
+  }, 
+  "general-category": {
+    "body": [
+      {
+        "body": "symbol"
+      }, 
+      {
+        "body": "other"
+      }
+    ]
+  }, 
+  "mirrored": {
+    "body": null
   }, 
   "unify": {
     "=ucs": {
@@ -98,25 +115,6 @@
       "code-point": 30639
     }
   }, 
-  "name": {
-    "body": "CJK RADICAL GRASS TWO"
-  }, 
-  "mirrored": {
-    "body": null
-  }, 
-  "bidi-category": {
-    "body": "ON"
-  }, 
-  "general-category": {
-    "body": [
-      {
-        "body": "symbol"
-      }, 
-      {
-        "body": "other"
-      }
-    ]
-  }, 
   "relations": {
     "->Zhouwen": {
       "@id": "chise:ccs/ucs/0x2EBF/abstract-character/common/to.Zhouwen", 
@@ -158,9 +156,13 @@
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0xFA5E/abstract-character/common", 
+      "name": "CJK COMPATIBILITY IDEOGRAPH-FA5E", 
       "title": "\ufa5e", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
       "image": "https://glyphwiki.org/glyph/ufa5e.svg", 
+      "=>ucs*": {
+        "body": 33401
+      }, 
       "unify": {
         "=ucs": {
           "@id": "chise:ccs/ucs/0xFA5E/abstract-character/common", 
@@ -225,12 +227,6 @@
           "domain": "chise:domain/common", 
           "code-point": 30639
         }
-      }, 
-      "=>ucs*": {
-        "body": 33401
-      }, 
-      "name": {
-        "body": "CJK COMPATIBILITY IDEOGRAPH-FA5E"
       }, 
       "subsume": [
         {

@@ -11,9 +11,6 @@
       "kangxi-strokes": 0, 
       "total-strokes": 6
     }, 
-    "chise:domain/common": {
-      "total-strokes": 6
-    }, 
     "chise:domain/daikanwa": {
       "kangxi-radical": "\u2f42", 
       "kangxi-radical-number": 67, 
@@ -23,6 +20,9 @@
         "daikanwa", 
         "cns11643"
       ]
+    }, 
+    "chise:domain/common": {
+      "total-strokes": 6
     }
   }, 
   "unify": {
@@ -70,6 +70,7 @@
           "@id": "chise:ccs/ucs/0x9F50/abstract-character/common/to.identical@component/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common", 
+            "name": "CJK RADICAL C-SIMPLIFIED EVEN", 
             "title": "\u3008\u2eec\u3009", 
             "granularity": "chise:glyph-granularity/abstract-character", 
             "image": "https://glyphwiki.org/glyph/u2eec.svg"
@@ -108,71 +109,6 @@
       ]
     }
   }, 
-  "denotation": [
-    {
-      "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common", 
-      "title": "\u3008\u2eec\u3009", 
-      "granularity": "chise:glyph-granularity/abstract-character", 
-      "image": "https://glyphwiki.org/glyph/u2eec.svg", 
-      "unify": {
-        "=ucs": {
-          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common", 
-          "CCS": "ccs:ucs", 
-          "granularity": "chise:glyph-granularity/abstract-character", 
-          "domain": "chise:domain/common", 
-          "code-point": 12012
-        }
-      }, 
-      "name": {
-        "body": "CJK RADICAL C-SIMPLIFIED EVEN"
-      }, 
-      "mirrored": {
-        "body": null
-      }, 
-      "bidi-category": {
-        "body": "ON"
-      }, 
-      "general-category": {
-        "body": [
-          {
-            "body": "symbol"
-          }, 
-          {
-            "body": "other"
-          }
-        ]
-      }, 
-      "relations": {
-        "<-identical@component": {
-          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.identical@component", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.identical@component/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x9F50/abstract-character/common", 
-                "title": "\u9f50", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u9f50.svg"
-              }
-            }
-          ]
-        }, 
-        "<-simplified@CN/component": {
-          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.simplified@CN...component", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.simplified@CN...component/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x9F4A/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-66354"
-              }
-            }
-          ]
-        }
-      }
-    }
-  ], 
   "subsume": [
     {
       "@id": "chise:ccs/big5-cdp/0x8A54/abstract-glyph-form/common", 
@@ -289,6 +225,69 @@
           }
         }
       ]
+    }
+  ], 
+  "denotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common", 
+      "name": "CJK RADICAL C-SIMPLIFIED EVEN", 
+      "title": "\u3008\u2eec\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2eec.svg", 
+      "bidi-category": {
+        "body": "ON"
+      }, 
+      "general-category": {
+        "body": [
+          {
+            "body": "symbol"
+          }, 
+          {
+            "body": "other"
+          }
+        ]
+      }, 
+      "mirrored": {
+        "body": null
+      }, 
+      "unify": {
+        "=ucs": {
+          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "domain": "chise:domain/common", 
+          "code-point": 12012
+        }
+      }, 
+      "relations": {
+        "<-identical@component": {
+          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.identical@component", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.identical@component/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x9F50/abstract-character/common", 
+                "title": "\u9f50", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u9f50.svg"
+              }
+            }
+          ]
+        }, 
+        "<-simplified@CN/component": {
+          "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.simplified@CN...component", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2EEC/abstract-character/common/from.simplified@CN...component/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x9F4A/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-66354"
+              }
+            }
+          ]
+        }
+      }
     }
   ]
 }

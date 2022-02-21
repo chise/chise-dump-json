@@ -1,6 +1,7 @@
 {
   "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
   "@id": "chise:ccs/ucs/0x2ECC/abstract-character/common", 
+  "name": "CJK RADICAL SIMPLIFIED WALK", 
   "title": "\u2ecc", 
   "granularity": "chise:glyph-granularity/abstract-glyph", 
   "image": "https://glyphwiki.org/glyph/u2ecc.svg", 
@@ -19,6 +20,22 @@
       "kangxi-strokes": 0, 
       "total-strokes": 3
     }
+  }, 
+  "bidi-category": {
+    "body": "ON"
+  }, 
+  "general-category": {
+    "body": [
+      {
+        "body": "symbol"
+      }, 
+      {
+        "body": "other"
+      }
+    ]
+  }, 
+  "mirrored": {
+    "body": null
   }, 
   "unify": {
     "=ucs": {
@@ -78,25 +95,6 @@
       "code-point": 26531
     }
   }, 
-  "name": {
-    "body": "CJK RADICAL SIMPLIFIED WALK"
-  }, 
-  "mirrored": {
-    "body": null
-  }, 
-  "bidi-category": {
-    "body": "ON"
-  }, 
-  "general-category": {
-    "body": [
-      {
-        "body": "symbol"
-      }, 
-      {
-        "body": "other"
-      }
-    ]
-  }, 
   "relations": {
     "<-simplified@component": {
       "@id": "chise:ccs/ucs/0x2ECC/abstract-character/common/from.simplified@component", 
@@ -105,6 +103,7 @@
           "@id": "chise:ccs/ucs/0x2ECC/abstract-character/common/from.simplified@component/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x2ECD/abstract-character/common", 
+            "name": "CJK RADICAL WALK ONE", 
             "title": "\u2ecd", 
             "granularity": "chise:glyph-granularity/abstract-glyph", 
             "image": "https://glyphwiki.org/glyph/u2ecd.svg"
@@ -119,6 +118,9 @@
       "title": "\ufa66", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
       "image": "https://glyphwiki.org/glyph/ufa66.svg", 
+      "=>ucs*": {
+        "body": 36790
+      }, 
       "unify": {
         "=ucs": {
           "@id": "chise:ccs/ucs/0xFA66/abstract-character/common", 
@@ -176,9 +178,6 @@
           "domain": "chise:domain/common", 
           "code-point": 26531
         }
-      }, 
-      "=>ucs*": {
-        "body": 36790
       }, 
       "subsume": [
         {
