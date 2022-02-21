@@ -56,19 +56,6 @@
         }
       }, 
       "relations": {
-        "->Small-Seal@shuowen": {
-          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen/1", 
-              "target": {
-                "@id": "chise:ccs/shuowen-jiguge/09917/abstract-glyph/common", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/09917.png"
-              }
-            }
-          ]
-        }, 
         "->HDIC-KTB": {
           "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-KTB", 
           "reldesc": [
@@ -78,6 +65,19 @@
                 "@id": "chise:ccs/chise-hdic-ktb/0x2D84/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://hdic.chise.org/img/ktb/5_065_A32.jpg"
+              }
+            }
+          ]
+        }, 
+        "->HDIC-SYP": {
+          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP/1", 
+              "target": {
+                "@id": "chise:ccs/chise-hdic-syp/0x3589/glyph-image/common", 
+                "granularity": "chise:glyph-granularity/glyph-image", 
+                "image": "https://viewer.hdic.jp/img/syp/b065b081"
               }
             }
           ]
@@ -95,15 +95,15 @@
             }
           ]
         }, 
-        "->HDIC-SYP": {
-          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP", 
+        "->Small-Seal@shuowen": {
+          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
             {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP/1", 
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen/1", 
               "target": {
-                "@id": "chise:ccs/chise-hdic-syp/0x3589/glyph-image/common", 
-                "granularity": "chise:glyph-granularity/glyph-image", 
-                "image": "https://viewer.hdic.jp/img/syp/b065b081"
+                "@id": "chise:ccs/shuowen-jiguge/09917/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/09917.png"
               }
             }
           ]
@@ -173,6 +173,22 @@
             }
           ], 
           "relations": {
+            "<-formed": {
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x4E7F/abstract-glyph/jis", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00276"
+                  }
+                }
+              ], 
+              "sources": [
+                "jiyun"
+              ]
+            }, 
             "<-same": {
               "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.same", 
               "reldesc": [
@@ -188,22 +204,6 @@
               "sources": [
                 "jiyun", 
                 "daikanwa"
-              ]
-            }, 
-            "<-formed": {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x4E7F/abstract-glyph/jis", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00276"
-                  }
-                }
-              ], 
-              "sources": [
-                "jiyun"
               ]
             }
           }, 
@@ -447,19 +447,6 @@
         }
       }, 
       "relations": {
-        "->Small-Seal@shuowen": {
-          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen/1", 
-              "target": {
-                "@id": "chise:ccs/shuowen-jiguge/09917/abstract-glyph/common", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/09917.png"
-              }
-            }
-          ]
-        }, 
         "->HDIC-KTB": {
           "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-KTB", 
           "reldesc": [
@@ -469,6 +456,19 @@
                 "@id": "chise:ccs/chise-hdic-ktb/0x2D84/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://hdic.chise.org/img/ktb/5_065_A32.jpg"
+              }
+            }
+          ]
+        }, 
+        "->HDIC-SYP": {
+          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP/1", 
+              "target": {
+                "@id": "chise:ccs/chise-hdic-syp/0x3589/glyph-image/common", 
+                "granularity": "chise:glyph-granularity/glyph-image", 
+                "image": "https://viewer.hdic.jp/img/syp/b065b081"
               }
             }
           ]
@@ -486,15 +486,15 @@
             }
           ]
         }, 
-        "->HDIC-SYP": {
-          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP", 
+        "->Small-Seal@shuowen": {
+          "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
             {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.HDIC-SYP/1", 
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-character/common/to.Small-Seal@shuowen/1", 
               "target": {
-                "@id": "chise:ccs/chise-hdic-syp/0x3589/glyph-image/common", 
-                "granularity": "chise:glyph-granularity/glyph-image", 
-                "image": "https://viewer.hdic.jp/img/syp/b065b081"
+                "@id": "chise:ccs/shuowen-jiguge/09917/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/09917.png"
               }
             }
           ]
@@ -564,6 +564,22 @@
             }
           ], 
           "relations": {
+            "<-formed": {
+              "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x4E7F/abstract-glyph/jis", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00276"
+                  }
+                }
+              ], 
+              "sources": [
+                "jiyun"
+              ]
+            }, 
             "<-same": {
               "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.same", 
               "reldesc": [
@@ -579,22 +595,6 @@
               "sources": [
                 "jiyun", 
                 "daikanwa"
-              ]
-            }, 
-            "<-formed": {
-              "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x20A7A/abstract-glyph/iso/from.formed/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x4E7F/abstract-glyph/jis", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00276"
-                  }
-                }
-              ], 
-              "sources": [
-                "jiyun"
               ]
             }
           }, 

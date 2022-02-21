@@ -64,11 +64,11 @@
     }
   }, 
   "relations": {
-    "<-same": {
-      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/from.same", 
+    "->formed@shuowen/xiaoxuben": {
+      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.formed@shuowen...xiaoxuben", 
       "reldesc": [
         {
-          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/from.same/1", 
+          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.formed@shuowen...xiaoxuben/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x378B/abstract-character/common", 
             "title": "\u378b", 
@@ -78,8 +78,21 @@
         }
       ], 
       "sources": [
-        "shuowen-zhu", 
-        "daikanwa"
+        "shuowen-zhu"
+      ]
+    }, 
+    "->vulgar": {
+      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.vulgar", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.vulgar/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x21C26/abstract-character/common", 
+            "title": "\u21c26", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u21c26.svg"
+          }
+        }
       ]
     }, 
     "<-formed": {
@@ -99,37 +112,6 @@
         "koseki"
       ]
     }, 
-    "->vulgar": {
-      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.vulgar", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.vulgar/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x21C26/abstract-character/common", 
-            "title": "\u21c26", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u21c26.svg"
-          }
-        }
-      ]
-    }, 
-    "->formed@shuowen/xiaoxuben": {
-      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.formed@shuowen...xiaoxuben", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/to.formed@shuowen...xiaoxuben/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x378B/abstract-character/common", 
-            "title": "\u378b", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u378b.svg"
-          }
-        }
-      ], 
-      "sources": [
-        "shuowen-zhu"
-      ]
-    }, 
     "<-formed@shuowen/daxuben": {
       "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/from.formed@shuowen...daxuben", 
       "reldesc": [
@@ -145,6 +127,24 @@
       ], 
       "sources": [
         "shuowen-zhu"
+      ]
+    }, 
+    "<-same": {
+      "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/from.same", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x21C2B/abstract-glyph/iso/from.same/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x378B/abstract-character/common", 
+            "title": "\u378b", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u378b.svg"
+          }
+        }
+      ], 
+      "sources": [
+        "shuowen-zhu", 
+        "daikanwa"
       ]
     }
   }, 

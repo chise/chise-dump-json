@@ -13,6 +13,12 @@
     }
   }, 
   "phonetic-value": {
+    "chise:domain/guangyun": [
+      {
+        "title": "Web-yunzi: Guangyun-\u5e07", 
+        "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u5e07"
+      }
+    ], 
     "chise:domain/ja/on": [
       {
         "ja-kan-on": {
@@ -25,12 +31,6 @@
           "ja-kana": "\u306b\u3087\u3046", 
           "ja-kana-zion": "\u306d\u3075"
         }
-      }
-    ], 
-    "chise:domain/guangyun": [
-      {
-        "title": "Web-yunzi: Guangyun-\u5e07", 
-        "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u5e07"
       }
     ]
   }, 
@@ -86,23 +86,6 @@
     ]
   }, 
   "relations": {
-    "<-same": {
-      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.same", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.same/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x758C/abstract-glyph/unicode", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://image.hng-data.org/glyphs/daijiten/07555.png"
-          }
-        }
-      ], 
-      "sources": [
-        "liushu-zhenge", 
-        "daikanwa"
-      ]
-    }, 
     "->HDIC-KTB": {
       "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/to.HDIC-KTB", 
       "reldesc": [
@@ -116,16 +99,15 @@
         }
       ]
     }, 
-    "<-original": {
-      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.original", 
+    "->HDIC-SYP": {
+      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/to.HDIC-SYP", 
       "reldesc": [
         {
-          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.original/1", 
+          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/to.HDIC-SYP/1", 
           "target": {
-            "@id": "chise:ccs/ucs/0x26612/abstract-character/common", 
-            "title": "\u26612", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u26612.svg"
+            "@id": "chise:ccs/chise-hdic-syp/0x5694/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/syp/c068a071"
           }
         }
       ]
@@ -146,17 +128,35 @@
         "liushu-zhenge"
       ]
     }, 
-    "->HDIC-SYP": {
-      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/to.HDIC-SYP", 
+    "<-original": {
+      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.original", 
       "reldesc": [
         {
-          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/to.HDIC-SYP/1", 
+          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.original/1", 
           "target": {
-            "@id": "chise:ccs/chise-hdic-syp/0x5694/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/syp/c068a071"
+            "@id": "chise:ccs/ucs/0x26612/abstract-character/common", 
+            "title": "\u26612", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u26612.svg"
           }
         }
+      ]
+    }, 
+    "<-same": {
+      "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.same", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x5E07/abstract-character/common/from.same/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x758C/abstract-glyph/unicode", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://image.hng-data.org/glyphs/daijiten/07555.png"
+          }
+        }
+      ], 
+      "sources": [
+        "liushu-zhenge", 
+        "daikanwa"
       ]
     }
   }, 

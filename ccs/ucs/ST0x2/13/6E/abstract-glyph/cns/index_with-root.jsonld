@@ -51,19 +51,6 @@
         }
       ]
     }, 
-    "->HDIC-TSJ": {
-      "@id": "chise:ccs/ucs/0x2136E/abstract-character/common/to.HDIC-TSJ", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x2136E/abstract-character/common/to.HDIC-TSJ/1", 
-          "target": {
-            "@id": "chise:ccs/chise-hdic-tsj/0x208C/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/tsj/292-0701.jpg"
-          }
-        }
-      ]
-    }, 
     "->HDIC-SYP": {
       "@id": "chise:ccs/ucs/0x2136E/abstract-character/common/to.HDIC-SYP", 
       "reldesc": [
@@ -73,6 +60,19 @@
             "@id": "chise:ccs/chise-hdic-syp/0x02B1/glyph-image/common", 
             "granularity": "chise:glyph-granularity/glyph-image", 
             "image": "https://viewer.hdic.jp/img/syp/a015b081"
+          }
+        }
+      ]
+    }, 
+    "->HDIC-TSJ": {
+      "@id": "chise:ccs/ucs/0x2136E/abstract-character/common/to.HDIC-TSJ", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2136E/abstract-character/common/to.HDIC-TSJ/1", 
+          "target": {
+            "@id": "chise:ccs/chise-hdic-tsj/0x208C/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/tsj/292-0701.jpg"
           }
         }
       ]
@@ -130,6 +130,19 @@
         }
       ], 
       "relations": {
+        "->same": {
+          "@id": "chise:ccs/ucs/0x2136E/abstract-glyph/iso/to.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2136E/abstract-glyph/iso/to.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x5782/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-06266"
+              }
+            }
+          ]
+        }, 
         "<-formed": {
           "@id": "chise:ccs/ucs/0x2136E/abstract-glyph/iso/from.formed", 
           "reldesc": [
@@ -158,19 +171,6 @@
           "sources": [
             "zhengzitong", 
             "daikanwa"
-          ]
-        }, 
-        "->same": {
-          "@id": "chise:ccs/ucs/0x2136E/abstract-glyph/iso/to.same", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2136E/abstract-glyph/iso/to.same/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x5782/abstract-glyph/unicode", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-06266"
-              }
-            }
           ]
         }
       }, 

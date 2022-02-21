@@ -45,6 +45,9 @@
         "jis-x0213@2000/b"
       ]
     }, 
+    "chise:domain/common": {
+      "total-strokes": 4
+    }, 
     "chise:domain/cns": {
       "kangxi-radical": "\u2f32", 
       "kangxi-radical-number": 51, 
@@ -53,9 +56,6 @@
       "sources": [
         "cns11643"
       ]
-    }, 
-    "chise:domain/common": {
-      "total-strokes": 4
     }
   }, 
   "phonetic-value": {
@@ -125,6 +125,19 @@
     }
   ], 
   "relations": {
+    "->HDIC-TSJ": {
+      "@id": "chise:ccs/ucs/0x5F00/abstract-character/common/to.HDIC-TSJ", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x5F00/abstract-character/common/to.HDIC-TSJ/1", 
+          "target": {
+            "@id": "chise:ccs/chise-hdic-tsj/0x54BA/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/tsj/736-0707.jpg"
+          }
+        }
+      ]
+    }, 
     "<-same": {
       "@id": "chise:ccs/ucs/0x5F00/abstract-character/common/from.same", 
       "reldesc": [
@@ -142,19 +155,6 @@
       ], 
       "sources": [
         "daijiten"
-      ]
-    }, 
-    "->HDIC-TSJ": {
-      "@id": "chise:ccs/ucs/0x5F00/abstract-character/common/to.HDIC-TSJ", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x5F00/abstract-character/common/to.HDIC-TSJ/1", 
-          "target": {
-            "@id": "chise:ccs/chise-hdic-tsj/0x54BA/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/tsj/736-0707.jpg"
-          }
-        }
       ]
     }, 
     "<-simplified@CN": {

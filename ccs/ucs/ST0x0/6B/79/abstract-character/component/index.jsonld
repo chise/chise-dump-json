@@ -62,19 +62,6 @@
         }
       }, 
       "relations": {
-        "->Small-Seal@shuowen": {
-          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen/1", 
-              "target": {
-                "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
-              }
-            }
-          ]
-        }, 
         "->HDIC-KTB": {
           "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-KTB", 
           "reldesc": [
@@ -84,6 +71,19 @@
                 "@id": "chise:ccs/chise-hdic-ktb/0x1C3A/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://hdic.chise.org/img/ktb/3_081_B61.jpg"
+              }
+            }
+          ]
+        }, 
+        "->HDIC-SYP": {
+          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP/1", 
+              "target": {
+                "@id": "chise:ccs/chise-hdic-syp/0x21AA/glyph-image/common", 
+                "granularity": "chise:glyph-granularity/glyph-image", 
+                "image": "https://viewer.hdic.jp/img/syp/b010b081"
               }
             }
           ]
@@ -101,15 +101,15 @@
             }
           ]
         }, 
-        "->HDIC-SYP": {
-          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP", 
+        "->Small-Seal@shuowen": {
+          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
             {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP/1", 
+              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen/1", 
               "target": {
-                "@id": "chise:ccs/chise-hdic-syp/0x21AA/glyph-image/common", 
-                "granularity": "chise:glyph-granularity/glyph-image", 
-                "image": "https://viewer.hdic.jp/img/syp/b010b081"
+                "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
               }
             }
           ]
@@ -249,6 +249,20 @@
             }
           ], 
           "relations": {
+            "->Liwen": {
+              "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common", 
+                    "title": "\u6b7a", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://glyphwiki.org/glyph/u6b7a.svg"
+                  }
+                }
+              ]
+            }, 
             "->ancient": {
               "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.ancient", 
               "reldesc": [
@@ -267,20 +281,6 @@
                     "@id": "chise:ccs/ucs/0x21C2E/abstract-glyph/iso", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
                     "image": "https://www.chise.org/glyphs/CNS6/2451.gif"
-                  }
-                }
-              ]
-            }, 
-            "->Liwen": {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common", 
-                    "title": "\u6b7a", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/u6b7a.svg"
                   }
                 }
               ]
@@ -555,32 +555,41 @@
             }
           ], 
           "relations": {
-            "<-same": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same", 
+            "->HDIC-SYP": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP/1", 
                   "target": {
-                    "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21005"
+                    "@id": "chise:ccs/chise-hdic-syp/0x21AB/glyph-image/common", 
+                    "granularity": "chise:glyph-granularity/glyph-image", 
+                    "image": "https://viewer.hdic.jp/img/syp/b010b082"
                   }
                 }
-              ], 
-              "sources": [
-                "zhengzitong", 
-                "daikanwa"
               ]
             }, 
-            "->ancient@shuowen": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen", 
+            "->Oracle-Bones": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones/1", 
                   "target": {
-                    "@id": "chise:ccs/shuowen-jiguge/13201/abstract-glyph/common", 
+                    "@id": "chise:ccs/zinbun-oracle/01337/abstract-glyph/common", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13201.png"
+                    "image": "https://www.chise.org/glyphs/ZOB-1968/1337.png"
+                  }
+                }
+              ]
+            }, 
+            "->Small-Seal@shuowen": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen/1", 
+                  "target": {
+                    "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
                   }
                 }
               ]
@@ -616,6 +625,19 @@
                 }
               ]
             }, 
+            "->ancient@shuowen": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen/1", 
+                  "target": {
+                    "@id": "chise:ccs/shuowen-jiguge/13201/abstract-glyph/common", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13201.png"
+                  }
+                }
+              ]
+            }, 
             "->formed@component": {
               "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.formed@component", 
               "reldesc": [
@@ -629,15 +651,16 @@
                 }
               ]
             }, 
-            "->Small-Seal@shuowen": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen", 
+            "->identical@component": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component/1", 
                   "target": {
-                    "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
+                    "@id": "chise:ccs/ucs/0x2E9E/abstract-character/common", 
+                    "title": "\u3008\u2e9e\u3009", 
+                    "granularity": "chise:glyph-granularity/abstract-character", 
+                    "image": "https://glyphwiki.org/glyph/u2e9e.svg"
                   }
                 }
               ]
@@ -658,44 +681,21 @@
                 "zhengzitong"
               ]
             }, 
-            "->identical@component": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component", 
+            "<-same": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same/1", 
                   "target": {
-                    "@id": "chise:ccs/ucs/0x2E9E/abstract-character/common", 
-                    "title": "\u3008\u2e9e\u3009", 
-                    "granularity": "chise:glyph-granularity/abstract-character", 
-                    "image": "https://glyphwiki.org/glyph/u2e9e.svg"
-                  }
-                }
-              ]
-            }, 
-            "->HDIC-SYP": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP/1", 
-                  "target": {
-                    "@id": "chise:ccs/chise-hdic-syp/0x21AB/glyph-image/common", 
-                    "granularity": "chise:glyph-granularity/glyph-image", 
-                    "image": "https://viewer.hdic.jp/img/syp/b010b082"
-                  }
-                }
-              ]
-            }, 
-            "->Oracle-Bones": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones/1", 
-                  "target": {
-                    "@id": "chise:ccs/zinbun-oracle/01337/abstract-glyph/common", 
+                    "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ZOB-1968/1337.png"
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21005"
                   }
                 }
+              ], 
+              "sources": [
+                "zhengzitong", 
+                "daikanwa"
               ]
             }
           }, 
@@ -954,19 +954,6 @@
         }
       }, 
       "relations": {
-        "->Small-Seal@shuowen": {
-          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen/1", 
-              "target": {
-                "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
-              }
-            }
-          ]
-        }, 
         "->HDIC-KTB": {
           "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-KTB", 
           "reldesc": [
@@ -976,6 +963,19 @@
                 "@id": "chise:ccs/chise-hdic-ktb/0x1C3A/glyph-image/common", 
                 "granularity": "chise:glyph-granularity/glyph-image", 
                 "image": "https://hdic.chise.org/img/ktb/3_081_B61.jpg"
+              }
+            }
+          ]
+        }, 
+        "->HDIC-SYP": {
+          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP/1", 
+              "target": {
+                "@id": "chise:ccs/chise-hdic-syp/0x21AA/glyph-image/common", 
+                "granularity": "chise:glyph-granularity/glyph-image", 
+                "image": "https://viewer.hdic.jp/img/syp/b010b081"
               }
             }
           ]
@@ -993,15 +993,15 @@
             }
           ]
         }, 
-        "->HDIC-SYP": {
-          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP", 
+        "->Small-Seal@shuowen": {
+          "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen", 
           "reldesc": [
             {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.HDIC-SYP/1", 
+              "@id": "chise:ccs/ucs/0x6B79/abstract-character/common/to.Small-Seal@shuowen/1", 
               "target": {
-                "@id": "chise:ccs/chise-hdic-syp/0x21AA/glyph-image/common", 
-                "granularity": "chise:glyph-granularity/glyph-image", 
-                "image": "https://viewer.hdic.jp/img/syp/b010b081"
+                "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
               }
             }
           ]
@@ -1141,6 +1141,20 @@
             }
           ], 
           "relations": {
+            "->Liwen": {
+              "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common", 
+                    "title": "\u6b7a", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://glyphwiki.org/glyph/u6b7a.svg"
+                  }
+                }
+              ]
+            }, 
             "->ancient": {
               "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.ancient", 
               "reldesc": [
@@ -1159,20 +1173,6 @@
                     "@id": "chise:ccs/ucs/0x21C2E/abstract-glyph/iso", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
                     "image": "https://www.chise.org/glyphs/CNS6/2451.gif"
-                  }
-                }
-              ]
-            }, 
-            "->Liwen": {
-              "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode/to.Liwen/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common", 
-                    "title": "\u6b7a", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/u6b7a.svg"
                   }
                 }
               ]
@@ -1447,32 +1447,41 @@
             }
           ], 
           "relations": {
-            "<-same": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same", 
+            "->HDIC-SYP": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP/1", 
                   "target": {
-                    "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21005"
+                    "@id": "chise:ccs/chise-hdic-syp/0x21AB/glyph-image/common", 
+                    "granularity": "chise:glyph-granularity/glyph-image", 
+                    "image": "https://viewer.hdic.jp/img/syp/b010b082"
                   }
                 }
-              ], 
-              "sources": [
-                "zhengzitong", 
-                "daikanwa"
               ]
             }, 
-            "->ancient@shuowen": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen", 
+            "->Oracle-Bones": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones/1", 
                   "target": {
-                    "@id": "chise:ccs/shuowen-jiguge/13201/abstract-glyph/common", 
+                    "@id": "chise:ccs/zinbun-oracle/01337/abstract-glyph/common", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13201.png"
+                    "image": "https://www.chise.org/glyphs/ZOB-1968/1337.png"
+                  }
+                }
+              ]
+            }, 
+            "->Small-Seal@shuowen": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen/1", 
+                  "target": {
+                    "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
                   }
                 }
               ]
@@ -1508,6 +1517,19 @@
                 }
               ]
             }, 
+            "->ancient@shuowen": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.ancient@shuowen/1", 
+                  "target": {
+                    "@id": "chise:ccs/shuowen-jiguge/13201/abstract-glyph/common", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13201.png"
+                  }
+                }
+              ]
+            }, 
             "->formed@component": {
               "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.formed@component", 
               "reldesc": [
@@ -1521,15 +1543,16 @@
                 }
               ]
             }, 
-            "->Small-Seal@shuowen": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen", 
+            "->identical@component": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Small-Seal@shuowen/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component/1", 
                   "target": {
-                    "@id": "chise:ccs/shuowen-jiguge/13200/abstract-glyph/common", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ShuoWen/Jiguge5/13200.png"
+                    "@id": "chise:ccs/ucs/0x2E9E/abstract-character/common", 
+                    "title": "\u3008\u2e9e\u3009", 
+                    "granularity": "chise:glyph-granularity/abstract-character", 
+                    "image": "https://glyphwiki.org/glyph/u2e9e.svg"
                   }
                 }
               ]
@@ -1550,44 +1573,21 @@
                 "zhengzitong"
               ]
             }, 
-            "->identical@component": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component", 
+            "<-same": {
+              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same", 
               "reldesc": [
                 {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.identical@component/1", 
+                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/from.same/1", 
                   "target": {
-                    "@id": "chise:ccs/ucs/0x2E9E/abstract-character/common", 
-                    "title": "\u3008\u2e9e\u3009", 
-                    "granularity": "chise:glyph-granularity/abstract-character", 
-                    "image": "https://glyphwiki.org/glyph/u2e9e.svg"
-                  }
-                }
-              ]
-            }, 
-            "->HDIC-SYP": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.HDIC-SYP/1", 
-                  "target": {
-                    "@id": "chise:ccs/chise-hdic-syp/0x21AB/glyph-image/common", 
-                    "granularity": "chise:glyph-granularity/glyph-image", 
-                    "image": "https://viewer.hdic.jp/img/syp/b010b082"
-                  }
-                }
-              ]
-            }, 
-            "->Oracle-Bones": {
-              "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x6B7A/abstract-character/common/to.Oracle-Bones/1", 
-                  "target": {
-                    "@id": "chise:ccs/zinbun-oracle/01337/abstract-glyph/common", 
+                    "@id": "chise:ccs/ucs/0x6B79/abstract-glyph/unicode", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://www.chise.org/glyphs/ZOB-1968/1337.png"
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21005"
                   }
                 }
+              ], 
+              "sources": [
+                "zhengzitong", 
+                "daikanwa"
               ]
             }
           }, 

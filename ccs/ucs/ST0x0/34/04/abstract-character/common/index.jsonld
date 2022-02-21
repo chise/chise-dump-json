@@ -91,21 +91,17 @@
     }
   ], 
   "relations": {
-    "<-wrong": {
-      "@id": "chise:ccs/ucs/0x3404/abstract-character/common/from.wrong", 
+    "->HDIC-SYP": {
+      "@id": "chise:ccs/ucs/0x3404/abstract-character/common/to.HDIC-SYP", 
       "reldesc": [
         {
-          "@id": "chise:ccs/ucs/0x3404/abstract-character/common/from.wrong/1", 
+          "@id": "chise:ccs/ucs/0x3404/abstract-character/common/to.HDIC-SYP/1", 
           "target": {
-            "@id": "chise:ccs/mj/033317/abstract-glyph/common", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ033317.png"
+            "@id": "chise:ccs/chise-hdic-syp/0x1CF0/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/syp/a095b031"
           }
         }
-      ], 
-      "sources": [
-        "zhengzitong", 
-        "daikanwa"
       ]
     }, 
     "->HDIC-TSJ": {
@@ -121,19 +117,6 @@
         }
       ]
     }, 
-    "->HDIC-SYP": {
-      "@id": "chise:ccs/ucs/0x3404/abstract-character/common/to.HDIC-SYP", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x3404/abstract-character/common/to.HDIC-SYP/1", 
-          "target": {
-            "@id": "chise:ccs/chise-hdic-syp/0x1CF0/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/syp/a095b031"
-          }
-        }
-      ]
-    }, 
     "->formed@flipped-horizontally": {
       "@id": "chise:ccs/ucs/0x3404/abstract-character/common/to.formed@flipped-horizontally", 
       "reldesc": [
@@ -145,6 +128,23 @@
             "image": "https://glyphwiki.org/glyph/u2b740-itaiji-001.svg"
           }
         }
+      ]
+    }, 
+    "<-wrong": {
+      "@id": "chise:ccs/ucs/0x3404/abstract-character/common/from.wrong", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x3404/abstract-character/common/from.wrong/1", 
+          "target": {
+            "@id": "chise:ccs/mj/033317/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ033317.png"
+          }
+        }
+      ], 
+      "sources": [
+        "zhengzitong", 
+        "daikanwa"
       ]
     }
   }, 

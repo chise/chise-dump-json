@@ -91,37 +91,6 @@
     }
   }, 
   "relations": {
-    "<-same": {
-      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.same", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.same/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x870E/abstract-glyph/unicode", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://image.hng-data.org/glyphs/daijiten/10401.png"
-          }
-        }
-      ], 
-      "sources": [
-        "pianhai", 
-        "daikanwa"
-      ]
-    }, 
-    "<-formed": {
-      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.formed", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.formed/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x8099/abstract-character/common", 
-            "title": "\u8099", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u8099.svg"
-          }
-        }
-      ]
-    }, 
     "->HDIC-KTB": {
       "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/to.HDIC-KTB", 
       "reldesc": [
@@ -131,6 +100,19 @@
             "@id": "chise:ccs/chise-hdic-ktb/0x1149/glyph-image/common", 
             "granularity": "chise:glyph-granularity/glyph-image", 
             "image": "https://hdic.chise.org/img/ktb/2_070_B12.jpg"
+          }
+        }
+      ]
+    }, 
+    "->HDIC-SYP": {
+      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/to.HDIC-SYP", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/to.HDIC-SYP/1", 
+          "target": {
+            "@id": "chise:ccs/chise-hdic-syp/0x147A/glyph-image/common", 
+            "granularity": "chise:glyph-granularity/glyph-image", 
+            "image": "https://viewer.hdic.jp/img/syp/a071b061"
           }
         }
       ]
@@ -171,17 +153,35 @@
         "jiyun"
       ]
     }, 
-    "->HDIC-SYP": {
-      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/to.HDIC-SYP", 
+    "<-formed": {
+      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.formed", 
       "reldesc": [
         {
-          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/to.HDIC-SYP/1", 
+          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.formed/1", 
           "target": {
-            "@id": "chise:ccs/chise-hdic-syp/0x147A/glyph-image/common", 
-            "granularity": "chise:glyph-granularity/glyph-image", 
-            "image": "https://viewer.hdic.jp/img/syp/a071b061"
+            "@id": "chise:ccs/ucs/0x8099/abstract-character/common", 
+            "title": "\u8099", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/u8099.svg"
           }
         }
+      ]
+    }, 
+    "<-same": {
+      "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.same", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x43CD/abstract-character/common/from.same/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x870E/abstract-glyph/unicode", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://image.hng-data.org/glyphs/daijiten/10401.png"
+          }
+        }
+      ], 
+      "sources": [
+        "pianhai", 
+        "daikanwa"
       ]
     }
   }, 
