@@ -12,6 +12,16 @@
       "total-strokes": 4
     }
   }, 
+  "structure-descriptions": {
+    "chise:domain/structure/functional": {
+      "ids": "\u2ff5\u2e87\u3405", 
+      "ideographic-structure": [
+        "\u2ff5", 
+        "\u2e87", 
+        "\u3405"
+      ]
+    }
+  }, 
   "unify": {
     "=ucs": {
       "@id": "chise:ccs/ucs/0x98CE/abstract-character/common", 
@@ -66,6 +76,46 @@
       ]
     }
   }, 
+  "denotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common", 
+      "name": "CJK RADICAL C-SIMPLIFIED WIND", 
+      "title": "\u3008\u2edb\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2edb.svg", 
+      "general-category": [
+        "symbol", 
+        "other"
+      ], 
+      "bidi-category": "ON", 
+      "mirrored": false, 
+      "unify": {
+        "=ucs": {
+          "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "domain": "chise:domain/common", 
+          "code-point": 11995
+        }
+      }, 
+      "relations": {
+        "<-identical@component": {
+          "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common/from.identical@component", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common/from.identical@component/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x98CE/abstract-character/common", 
+                "title": "\u98ce", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u98ce.svg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ], 
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0x98CE/abstract-glyph-form/unicode", 
@@ -124,46 +174,6 @@
           }
         }
       ]
-    }
-  ], 
-  "denotation": [
-    {
-      "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common", 
-      "name": "CJK RADICAL C-SIMPLIFIED WIND", 
-      "title": "\u3008\u2edb\u3009", 
-      "granularity": "chise:glyph-granularity/abstract-character", 
-      "image": "https://glyphwiki.org/glyph/u2edb.svg", 
-      "general-category": [
-        "symbol", 
-        "other"
-      ], 
-      "bidi-category": "ON", 
-      "mirrored": false, 
-      "unify": {
-        "=ucs": {
-          "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common", 
-          "CCS": "ccs:ucs", 
-          "granularity": "chise:glyph-granularity/abstract-character", 
-          "domain": "chise:domain/common", 
-          "code-point": 11995
-        }
-      }, 
-      "relations": {
-        "<-identical@component": {
-          "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common/from.identical@component", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x2EDB/abstract-character/common/from.identical@component/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x98CE/abstract-character/common", 
-                "title": "\u98ce", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://glyphwiki.org/glyph/u98ce.svg"
-              }
-            }
-          ]
-        }
-      }
     }
   ]
 }

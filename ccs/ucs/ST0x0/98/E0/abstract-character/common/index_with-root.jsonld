@@ -10,6 +10,26 @@
       "kangxi-radical-number": 184
     }
   }, 
+  "structure-descriptions": {
+    "chise:domain/structure/functional": {
+      "ids": "\u2ff1&IWDS1-064;&A-IWDSU+826E;", 
+      "ideographic-structure": [
+        "\u2ff1", 
+        {
+          "@type": "concord:genre/character", 
+          "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-character/common", 
+          "title": "\u3008\u4ebd/\u4ebc\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character"
+        }, 
+        {
+          "@type": "concord:genre/character", 
+          "@id": "chise:ccs/ucs/0x826E/abstract-character/iwds-1", 
+          "title": "\u3008?/\u826e\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character"
+        }
+      ]
+    }
+  }, 
   "unify": {
     "=>ucs@iwds-1": {
       "@id": "chise:ccs/ucs/0x98DF/abstract-character/iwds-1", 
@@ -73,6 +93,21 @@
           "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[1257]}"
         }
       ], 
+      "structure-descriptions": {
+        "chise:domain/structure/functional": {
+          "ids": "\u2ff1&IWDS1-064;\u826e", 
+          "ideographic-structure": [
+            "\u2ff1", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-character/common", 
+              "title": "\u3008\u4ebd/\u4ebc\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character"
+            }, 
+            "\u826e"
+          ]
+        }
+      }, 
       "unify": {
         "=ucs": {
           "@id": "chise:ccs/ucs/0x98DF/abstract-character/common", 
@@ -344,6 +379,46 @@
           ]
         }
       }, 
+      "denotation": [
+        {
+          "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common", 
+          "name": "CJK RADICAL EAT ONE", 
+          "title": "\u3008\u2edd\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "image": "https://glyphwiki.org/glyph/u2edd.svg", 
+          "general-category": [
+            "symbol", 
+            "other"
+          ], 
+          "bidi-category": "ON", 
+          "mirrored": false, 
+          "unify": {
+            "=ucs": {
+              "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/abstract-character", 
+              "domain": "chise:domain/common", 
+              "code-point": 11997
+            }
+          }, 
+          "relations": {
+            "<-identical@component": {
+              "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common/from.identical@component", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common/from.identical@component/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x98DF/abstract-character/common", 
+                    "title": "\u98df", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://glyphwiki.org/glyph/u98df.svg"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ], 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x98DF/detailed-glyph/ks", 
@@ -565,46 +640,6 @@
           "granularity": "chise:glyph-granularity/glyph-image", 
           "image": "https://image.hng-data.org/glyphs/HNG/047/0608.png"
         }
-      ], 
-      "denotation": [
-        {
-          "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common", 
-          "name": "CJK RADICAL EAT ONE", 
-          "title": "\u3008\u2edd\u3009", 
-          "granularity": "chise:glyph-granularity/abstract-character", 
-          "image": "https://glyphwiki.org/glyph/u2edd.svg", 
-          "general-category": [
-            "symbol", 
-            "other"
-          ], 
-          "bidi-category": "ON", 
-          "mirrored": false, 
-          "unify": {
-            "=ucs": {
-              "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common", 
-              "CCS": "ccs:ucs", 
-              "granularity": "chise:glyph-granularity/abstract-character", 
-              "domain": "chise:domain/common", 
-              "code-point": 11997
-            }
-          }, 
-          "relations": {
-            "<-identical@component": {
-              "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common/from.identical@component", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x2EDD/abstract-character/common/from.identical@component/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x98DF/abstract-character/common", 
-                    "title": "\u98df", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/u98df.svg"
-                  }
-                }
-              ]
-            }
-          }
-        }
       ]
     }, 
     {
@@ -618,6 +653,26 @@
           "kangxi-radical-number": 184, 
           "kangxi-strokes": 0, 
           "total-strokes": 8
+        }
+      }, 
+      "structure-descriptions": {
+        "chise:domain/structure/functional": {
+          "ids": "\u2ff1&IWDS1-064;&CDP-8B7C;", 
+          "ideographic-structure": [
+            "\u2ff1", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-character/common", 
+              "title": "\u3008\u4ebd/\u4ebc\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character"
+            }, 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/big5-cdp/0x8B7C/abstract-glyph/common", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B7C"
+            }
+          ]
         }
       }, 
       "unify": {
@@ -710,11 +765,80 @@
           ]
         }
       }, 
+      "denotation": [
+        {
+          "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common", 
+          "name": "CJK RADICAL EAT THREE", 
+          "title": "\u2edf", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "image": "https://glyphwiki.org/glyph/u2edf.svg", 
+          "general-category": [
+            "symbol", 
+            "other"
+          ], 
+          "bidi-category": "ON", 
+          "mirrored": false, 
+          "unify": {
+            "=ucs": {
+              "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/abstract-character", 
+              "domain": "chise:domain/common", 
+              "code-point": 11999
+            }, 
+            "=gt-k": {
+              "@id": "chise:ccs/gt-k/04996/abstract-glyph/common", 
+              "CCS": "ccs:gt-k", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "domain": "chise:domain/common", 
+              "code-point": 4996
+            }, 
+            "=gt-pj-k1": {
+              "@id": "chise:ccs/gt-pj-k1/0x3471/abstract-glyph/common", 
+              "CCS": "ccs:gt-pj-k1", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "domain": "chise:domain/common", 
+              "code-point": 13425
+            }
+          }, 
+          "relations": {
+            "<-identical@component": {
+              "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common/from.identical@component", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common/from.identical@component/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x98E0/abstract-character/common", 
+                    "title": "\u98e0", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://glyphwiki.org/glyph/u98e0.svg"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ], 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x98E0/detailed-glyph/unicode", 
           "granularity": "chise:glyph-granularity/detailed-glyph", 
           "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-59024", 
+          "structure-descriptions": {
+            "chise:domain/structure/functional": {
+              "ids": "\u2ff1\u4ebd&CDP-8B7C;", 
+              "ideographic-structure": [
+                "\u2ff1", 
+                "\u4ebd", 
+                {
+                  "@type": "concord:genre/character", 
+                  "@id": "chise:ccs/big5-cdp/0x8B7C/abstract-glyph/common", 
+                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B7C"
+                }
+              ]
+            }
+          }, 
           "unify": {
             "=>>ucs@unicode": {
               "@id": "chise:ccs/ucs/0x98E0/detailed-glyph/unicode", 
@@ -800,6 +924,26 @@
           "@id": "chise:ccs/big5-cdp/0x8BB9/detailed-glyph/common", 
           "granularity": "chise:glyph-granularity/detailed-glyph", 
           "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8BB9", 
+          "structure-descriptions": {
+            "chise:domain/structure/functional": {
+              "ids": "\u2ff1&CDP-8AFC;&CDP-8B7C;", 
+              "ideographic-structure": [
+                "\u2ff1", 
+                {
+                  "@type": "concord:genre/character", 
+                  "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-glyph/common", 
+                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8AFC"
+                }, 
+                {
+                  "@type": "concord:genre/character", 
+                  "@id": "chise:ccs/big5-cdp/0x8B7C/abstract-glyph/common", 
+                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8B7C"
+                }
+              ]
+            }
+          }, 
           "unify": {
             "=>>big5-cdp": {
               "@id": "chise:ccs/big5-cdp/0x8BB9/detailed-glyph/common", 
@@ -826,60 +970,6 @@
             }
           ]
         }
-      ], 
-      "denotation": [
-        {
-          "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common", 
-          "name": "CJK RADICAL EAT THREE", 
-          "title": "\u2edf", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "image": "https://glyphwiki.org/glyph/u2edf.svg", 
-          "general-category": [
-            "symbol", 
-            "other"
-          ], 
-          "bidi-category": "ON", 
-          "mirrored": false, 
-          "unify": {
-            "=ucs": {
-              "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common", 
-              "CCS": "ccs:ucs", 
-              "granularity": "chise:glyph-granularity/abstract-character", 
-              "domain": "chise:domain/common", 
-              "code-point": 11999
-            }, 
-            "=gt-k": {
-              "@id": "chise:ccs/gt-k/04996/abstract-glyph/common", 
-              "CCS": "ccs:gt-k", 
-              "granularity": "chise:glyph-granularity/abstract-glyph", 
-              "domain": "chise:domain/common", 
-              "code-point": 4996
-            }, 
-            "=gt-pj-k1": {
-              "@id": "chise:ccs/gt-pj-k1/0x3471/abstract-glyph/common", 
-              "CCS": "ccs:gt-pj-k1", 
-              "granularity": "chise:glyph-granularity/abstract-glyph", 
-              "domain": "chise:domain/common", 
-              "code-point": 13425
-            }
-          }, 
-          "relations": {
-            "<-identical@component": {
-              "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common/from.identical@component", 
-              "reldesc": [
-                {
-                  "@id": "chise:ccs/ucs/0x2EDF/abstract-character/common/from.identical@component/1", 
-                  "target": {
-                    "@id": "chise:ccs/ucs/0x98E0/abstract-character/common", 
-                    "title": "\u98e0", 
-                    "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/u98e0.svg"
-                  }
-                }
-              ]
-            }
-          }
-        }
       ]
     }, 
     {
@@ -893,6 +983,26 @@
           "kangxi-radical-number": 184, 
           "kangxi-strokes": 0, 
           "total-strokes": 9
+        }
+      }, 
+      "structure-descriptions": {
+        "chise:domain/structure/functional": {
+          "ids": "\u2ff1&IWDS1-064;&CDP-v001-8B7C;", 
+          "ideographic-structure": [
+            "\u2ff1", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-character/common", 
+              "title": "\u3008\u4ebd/\u4ebc\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character"
+            }, 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/gt-k/02400/abstract-glyph/common", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://glyphwiki.org/glyph/cdp-8b7c-var-001.svg"
+            }
+          ]
         }
       }, 
       "unify": {
@@ -942,6 +1052,26 @@
           ], 
           "bidi-category": "ON", 
           "mirrored": false, 
+          "structure-descriptions": {
+            "chise:domain/structure/functional": {
+              "ids": "\u2ff1&CDP-8AFC;&CDP-v001-8B7C;", 
+              "ideographic-structure": [
+                "\u2ff1", 
+                {
+                  "@type": "concord:genre/character", 
+                  "@id": "chise:ccs/big5-cdp/0x8AFC/abstract-glyph/common", 
+                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "image": "https://www.chise.org/chisewiki/glyph.cgi?char=CDP-8AFC"
+                }, 
+                {
+                  "@type": "concord:genre/character", 
+                  "@id": "chise:ccs/gt-k/02400/abstract-glyph/common", 
+                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "image": "https://glyphwiki.org/glyph/cdp-8b7c-var-001.svg"
+                }
+              ]
+            }
+          }, 
           "unify": {
             "=ucs": {
               "@id": "chise:ccs/ucs/0x2EDE/abstract-character/common", 
