@@ -1,0 +1,112 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common", 
+  "name": "FULLWIDTH LATIN CAPITAL LETTER M", 
+  "title": "\uff2d", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/uff2d.svg", 
+  "general-category": [
+    "letter", 
+    "uppercase"
+  ], 
+  "bidi-category": "L", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 65325
+    }, 
+    "=jis-x0208": {
+      "@id": "chise:ccs/jis-x0208/0x234D/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9037
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x234D/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9037
+    }, 
+    "=ks-x1001": {
+      "@id": "chise:ccs/ks-x1001/0x234D/abstract-glyph/common", 
+      "CCS": "ccs:ks-x1001", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9037
+    }, 
+    "=cns11643-1": {
+      "@id": "chise:ccs/cns11643-1/0x244D/abstract-glyph/common", 
+      "CCS": "ccs:cns11643-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9293
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x234D/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9037
+    }, 
+    "=big5": {
+      "@id": "chise:ccs/big5/0xA2DB/abstract-character/common", 
+      "CCS": "ccs:big5", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 41691
+    }
+  }, 
+  "relations": {
+    "->lowercase": {
+      "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/to.lowercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/to.lowercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF4D/abstract-character/common", 
+            "name": "FULLWIDTH LATIN SMALL LETTER M", 
+            "title": "\uff4d", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff4d.svg"
+          }
+        }
+      ]
+    }, 
+    "<-fullwidth": {
+      "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/from.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/from.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x004D/abstract-character/common", 
+            "name": "LATIN CAPITAL LETTER M", 
+            "title": "\u3008M\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u004d.svg"
+          }
+        }
+      ]
+    }, 
+    "<-uppercase": {
+      "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/from.uppercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF2D/abstract-character/common/from.uppercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF4D/abstract-character/common", 
+            "name": "FULLWIDTH LATIN SMALL LETTER M", 
+            "title": "\uff4d", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff4d.svg"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "$target": "chise:ccs/ucs/0x2010/abstract-glyph/jis", 
+  "@id": "chise:ccs/ucs/0x2010/abstract-character/common", 
+  "name": "HYPHEN", 
+  "title": "\u3008\u2010\u3009", 
+  "granularity": "chise:glyph-granularity/abstract-character", 
+  "image": "https://glyphwiki.org/glyph/u2010.svg", 
+  "general-category": [
+    "punctuation", 
+    "dash"
+  ], 
+  "bidi-category": "ON", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0x2010/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 8208
+    }
+  }, 
+  "relations": {
+    "->fullwidth": {
+      "@id": "chise:ccs/ucs/0x2010/abstract-character/common/to.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2010/abstract-character/common/to.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x2010/abstract-glyph/jis", 
+            "granularity": "chise:glyph-granularity/nil"
+          }
+        }
+      ]
+    }, 
+    "->noBreak": {
+      "@id": "chise:ccs/ucs/0x2010/abstract-character/common/to.noBreak", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2010/abstract-character/common/to.noBreak/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x2011/abstract-character/common", 
+            "name": "NON-BREAKING HYPHEN", 
+            "title": "\u3008\u2011\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u2011.svg"
+          }
+        }
+      ]
+    }
+  }, 
+  "denotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2010/abstract-glyph/jis", 
+      "granularity": "chise:glyph-granularity/nil", 
+      "unify": {
+        "=ucs@jis": {
+          "@id": "chise:ccs/ucs/0x2010/abstract-glyph/jis", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/jis", 
+          "code-point": 8208
+        }, 
+        "=jis-x0208": {
+          "@id": "chise:ccs/jis-x0208/0x213E/abstract-glyph/common", 
+          "CCS": "ccs:jis-x0208", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 8510
+        }, 
+        "=jis-x0213-1": {
+          "@id": "chise:ccs/jis-x0213-1/0x213E/abstract-glyph/common", 
+          "CCS": "ccs:jis-x0213-1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 8510
+        }
+      }, 
+      "relations": {
+        "<-fullwidth": {
+          "@id": "chise:ccs/ucs/0x2010/abstract-glyph/jis/from.fullwidth", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x2010/abstract-glyph/jis/from.fullwidth/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x2010/abstract-character/common", 
+                "name": "HYPHEN", 
+                "title": "\u3008\u2010\u3009", 
+                "granularity": "chise:glyph-granularity/abstract-character", 
+                "image": "https://glyphwiki.org/glyph/u2010.svg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x30FB/abstract-character/common", 
+  "name": "KATAKANA MIDDLE DOT", 
+  "title": "\u30fb", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/u30fb.svg", 
+  "general-category": [
+    "punctuation", 
+    "connector"
+  ], 
+  "bidi-category": "ON", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0x30FB/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 12539
+    }, 
+    "=jis-x0208": {
+      "@id": "chise:ccs/jis-x0208/0x2126/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 8486
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x2124/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 8484
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x2126/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 8486
+    }
+  }, 
+  "relations": {
+    "->halfwidth": {
+      "@id": "chise:ccs/ucs/0x30FB/abstract-character/common/to.halfwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x30FB/abstract-character/common/to.halfwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF65/abstract-character/common", 
+            "name": "HALFWIDTH KATAKANA MIDDLE DOT", 
+            "title": "\u3008\uff65\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/uff65.svg"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0xFF25/abstract-character/common", 
+  "name": "FULLWIDTH LATIN CAPITAL LETTER E", 
+  "title": "\uff25", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/uff25.svg", 
+  "general-category": [
+    "letter", 
+    "uppercase"
+  ], 
+  "bidi-category": "L", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0xFF25/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 65317
+    }, 
+    "=jis-x0208": {
+      "@id": "chise:ccs/jis-x0208/0x2345/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9029
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x2345/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9029
+    }, 
+    "=ks-x1001": {
+      "@id": "chise:ccs/ks-x1001/0x2345/abstract-glyph/common", 
+      "CCS": "ccs:ks-x1001", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9029
+    }, 
+    "=cns11643-1": {
+      "@id": "chise:ccs/cns11643-1/0x2445/abstract-glyph/common", 
+      "CCS": "ccs:cns11643-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9285
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x2345/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9029
+    }, 
+    "=big5": {
+      "@id": "chise:ccs/big5/0xA2D3/abstract-character/common", 
+      "CCS": "ccs:big5", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 41683
+    }
+  }, 
+  "relations": {
+    "->lowercase": {
+      "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/to.lowercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/to.lowercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF45/abstract-character/common", 
+            "name": "FULLWIDTH LATIN SMALL LETTER E", 
+            "title": "\uff45", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff45.svg"
+          }
+        }
+      ]
+    }, 
+    "<-fullwidth": {
+      "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/from.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/from.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x0045/abstract-character/common", 
+            "name": "LATIN CAPITAL LETTER E", 
+            "title": "\u3008E\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u0045.svg"
+          }
+        }
+      ]
+    }, 
+    "<-uppercase": {
+      "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/from.uppercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF25/abstract-character/common/from.uppercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF45/abstract-character/common", 
+            "name": "FULLWIDTH LATIN SMALL LETTER E", 
+            "title": "\uff45", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff45.svg"
+          }
+        }
+      ]
+    }
+  }
+}

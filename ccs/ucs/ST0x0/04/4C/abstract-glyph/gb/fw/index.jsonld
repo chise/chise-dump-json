@@ -1,0 +1,109 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/glyphs/GB0/07-78.gif", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x044C/abstract-character/common", 
+      "name": "CYRILLIC SMALL LETTER SOFT SIGN", 
+      "title": "\u3008\u044c\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u044c.svg"
+    }
+  ], 
+  "unify": {
+    "=ucs@gb/fw": {
+      "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/gb/fw", 
+      "code-point": 1100
+    }, 
+    "=ucs@jis/fw": {
+      "@id": "chise:ccs/ucs/0x044C/abstract-glyph/jis/fw", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/jis/fw", 
+      "code-point": 1100
+    }, 
+    "=jis-x0208": {
+      "@id": "chise:ccs/jis-x0208/0x276E/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 10094
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x276E/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 10094
+    }, 
+    "=ks-x1001": {
+      "@id": "chise:ccs/ks-x1001/0x2C6E/abstract-glyph/common", 
+      "CCS": "ccs:ks-x1001", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 11374
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x276E/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 10094
+    }, 
+    "=big5-eten": {
+      "@id": "chise:ccs/big5-eten/0xC872/abstract-glyph/common", 
+      "CCS": "ccs:big5-eten", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 51314
+    }
+  }, 
+  "relations": {
+    "->uppercase": {
+      "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/to.uppercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/to.uppercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x042C/abstract-glyph/gb/fw", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/glyphs/GB0/07-30.gif"
+          }
+        }
+      ]
+    }, 
+    "<-fullwidth": {
+      "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/from.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/from.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x044C/abstract-character/common", 
+            "name": "CYRILLIC SMALL LETTER SOFT SIGN", 
+            "title": "\u3008\u044c\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u044c.svg"
+          }
+        }
+      ]
+    }, 
+    "<-lowercase": {
+      "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/from.lowercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x044C/abstract-glyph/gb/fw/from.lowercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x042C/abstract-glyph/gb/fw", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/glyphs/GB0/07-30.gif"
+          }
+        }
+      ]
+    }
+  }
+}

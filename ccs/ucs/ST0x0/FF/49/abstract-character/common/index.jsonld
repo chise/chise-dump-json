@@ -1,0 +1,127 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0xFF49/abstract-character/common", 
+  "name": "FULLWIDTH LATIN SMALL LETTER I", 
+  "title": "\uff49", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://glyphwiki.org/glyph/uff49.svg", 
+  "general-category": [
+    "letter", 
+    "lowercase"
+  ], 
+  "bidi-category": "L", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0xFF49/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 65353
+    }, 
+    "=jis-x0208": {
+      "@id": "chise:ccs/jis-x0208/0x2369/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9065
+    }, 
+    "=gb2312": {
+      "@id": "chise:ccs/gb2312/0x2369/abstract-glyph/common", 
+      "CCS": "ccs:gb2312", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9065
+    }, 
+    "=ks-x1001": {
+      "@id": "chise:ccs/ks-x1001/0x2369/abstract-glyph/common", 
+      "CCS": "ccs:ks-x1001", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9065
+    }, 
+    "=cns11643-1": {
+      "@id": "chise:ccs/cns11643-1/0x2463/abstract-glyph/common", 
+      "CCS": "ccs:cns11643-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9315
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x2369/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 9065
+    }, 
+    "=big5": {
+      "@id": "chise:ccs/big5/0xA2F1/abstract-character/common", 
+      "CCS": "ccs:big5", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 41713
+    }, 
+    "=jef-china3": {
+      "@id": "chise:ccs/jef-china3/0x83E7/abstract-glyph/common", 
+      "CCS": "ccs:jef-china3", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 33767
+    }
+  }, 
+  "relations": {
+    "->uppercase": {
+      "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/to.uppercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/to.uppercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF29/abstract-character/common", 
+            "name": "FULLWIDTH LATIN CAPITAL LETTER I", 
+            "title": "\uff29", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff29.svg"
+          }
+        }
+      ]
+    }, 
+    "<-fullwidth": {
+      "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/from.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/from.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x0069/abstract-character/common", 
+            "name": "LATIN SMALL LETTER I", 
+            "title": "\u3008i\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u0069.svg"
+          }
+        }
+      ]
+    }, 
+    "<-lowercase": {
+      "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/from.lowercase", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/from.lowercase/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x0130/abstract-glyph/jis/fw", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/glyphs/JSP/10-36.gif"
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0xFF49/abstract-character/common/from.lowercase/2", 
+          "target": {
+            "@id": "chise:ccs/ucs/0xFF29/abstract-character/common", 
+            "name": "FULLWIDTH LATIN CAPITAL LETTER I", 
+            "title": "\uff29", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://glyphwiki.org/glyph/uff29.svg"
+          }
+        }
+      ]
+    }
+  }
+}
