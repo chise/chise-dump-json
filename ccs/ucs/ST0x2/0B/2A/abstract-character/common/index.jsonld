@@ -18,6 +18,13 @@
         "title": "Web-yunzi: Guangyun-\u20b2a", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u20b2a"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-romaji": "hEu", 
+        "ja-kana": "\u3072\u3087\u3046", 
+        "ja-kana-zion": "\u3078\u3046"
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -56,9 +63,9 @@
   }, 
   "denotation": [
     {
-      "@id": "chise:ccs/daikanwa/03141/abstract-glyph/common", 
+      "@id": "chise:ccs/mj/032021/abstract-glyph/common", 
       "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "image": "https://glyphwiki.org/glyph/dkw-03141.svg", 
+      "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ032021.png", 
       "radical-and-strokes": {
         "chise:domain/common": {
           "kangxi-radical": "\u2f1c", 
@@ -83,6 +90,20 @@
         }
       }, 
       "unify": {
+        "=mj": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common", 
+          "CCS": "ccs:mj", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 32021
+        }, 
+        "=koseki": {
+          "@id": "chise:ccs/koseki/036400/abstract-glyph/common", 
+          "CCS": "ccs:koseki", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 36400
+        }, 
         "=daikanwa": {
           "@id": "chise:ccs/daikanwa/03141/abstract-glyph/common", 
           "CCS": "ccs:daikanwa", 
@@ -92,11 +113,56 @@
         }
       }, 
       "relations": {
-        "->interchangeable": {
-          "@id": "chise:ccs/daikanwa/03141/abstract-glyph/common/to.interchangeable", 
+        "->formed": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.formed", 
           "reldesc": [
             {
-              "@id": "chise:ccs/daikanwa/03141/abstract-glyph/common/to.interchangeable/1", 
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.formed/1", 
+              "sources": [
+                "jiyun", 
+                "shuowen-tongxun-dingsheng", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/daikanwa/30936/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/09842.png"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.formed/2", 
+              "sources": [
+                "jiyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/daikanwa/31076/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/09885.png"
+              }
+            }, 
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.formed/3", 
+              "sources": [
+                "shuowen-tongxun-dingsheng", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x6B8D/abstract-glyph/jis", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21131"
+              }
+            }
+          ], 
+          "sources": [
+            "daikanwa"
+          ]
+        }, 
+        "->interchangeable": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.interchangeable/1", 
               "target": {
                 "@id": "chise:ccs/ucs/0x647D/abstract-glyph/unicode", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
@@ -104,20 +170,139 @@
               }
             }
           ]
+        }, 
+        "->vulgar": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.vulgar", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.vulgar/1", 
+              "sources": [
+                "shuowen-tongxun-dingsheng"
+              ], 
+              "target": {
+                "@id": "chise:ccs/daikanwa/31076/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/09885.png"
+              }
+            }
+          ], 
+          "sources": [
+            "shuowen-tongxun-dingsheng"
+          ]
+        }, 
+        "->wrong": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.wrong", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/to.wrong/1", 
+              "sources": [
+                "shuowen-tongxun-dingsheng"
+              ], 
+              "target": {
+                "@id": "chise:ccs/daikanwa/31076/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/09885.png"
+              }
+            }
+          ], 
+          "sources": [
+            "shuowen-tongxun-dingsheng"
+          ]
+        }, 
+        "<-formed": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.formed/1", 
+              "sources": [
+                "jiyun"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x8508/abstract-glyph/cns", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/10066.png"
+              }
+            }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.interchangeable/1", 
+              "sources": [
+                "shuowen", 
+                "zengyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x647D/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/04029.png"
+              }
+            }
+          ], 
+          "sources": [
+            "shuowen", 
+            "zengyun", 
+            "daikanwa"
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/mj/032021/abstract-glyph/common/from.same/1", 
+              "sources": [
+                "jiyun", 
+                "daikanwa"
+              ], 
+              "target": {
+                "@id": "chise:ccs/ucs/0x8508/abstract-glyph/cns", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/10066.png"
+              }
+            }
+          ], 
+          "sources": [
+            "jiyun", 
+            "daikanwa"
+          ]
         }
       }, 
       "subsume": [
         {
-          "@id": "chise:ccs/daikanwa/03141/abstract-glyph-form/common", 
+          "@id": "chise:ccs/koseki/036400/abstract-glyph-form/common", 
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
           "image": "https://glyphwiki.org/glyph/dkw-03141.svg", 
           "unify": {
+            "==koseki": {
+              "@id": "chise:ccs/koseki/036400/abstract-glyph-form/common", 
+              "CCS": "ccs:koseki", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 36400
+            }, 
             "==daikanwa": {
               "@id": "chise:ccs/daikanwa/03141/abstract-glyph-form/common", 
               "CCS": "ccs:daikanwa", 
               "granularity": "chise:glyph-granularity/abstract-glyph-form", 
               "domain": "chise:domain/common", 
               "code-point": 3141
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/mj/032021/abstract-glyph-form/common", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ032021.png", 
+          "unify": {
+            "==mj": {
+              "@id": "chise:ccs/mj/032021/abstract-glyph-form/common", 
+              "CCS": "ccs:mj", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 32021
             }
           }
         }
