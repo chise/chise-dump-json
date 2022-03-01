@@ -352,9 +352,10 @@ ideographic-structure を持つオブジェクトである。
 |@id		|IRI	|粒度情報付き符号化文字の ID			|
 |CCS		|IRI	|CCS の ID					|
 |granularity	|IRI	|粒度情報付き符号化文字の包摂粒度		|
-|domain		|IRI	|粒度情報付き符号化文字のドメイン（ドメインがな	|
-|		|	|い場合は chise:domain/common を用いる）	|
+|domain		|IRI	|粒度情報付き符号化文字のドメイン		|
 |code-point	|自然数	|粒度情報付き符号化文字の CCS における符号位置	|
+
+なお、domain が指定されていない場合、属性 domain の値として chise:domain/common を用いる。
 
 例：
 
