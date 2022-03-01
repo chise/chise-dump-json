@@ -34,13 +34,13 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 
 
 ### @id
-型：IRI
+・型：IRI
 
 文字オブジェクトの ID. 
 
 
 ### title
-型：文字列
++ 型：文字列
 
 包摂粒度を示す括弧付きの文字列。
 
@@ -48,43 +48,43 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 
 
 ### granularity
-型：IRI
++ 型：IRI
 
 オブジェクトの包摂粒度。
 
 
 ### image
-型：IRI
++ 型：IRI
 
 字形画像の URL.
 
 
 ### connotation
-型：文字参照の配列
-S 式表現：<-denotational
++ 型：文字参照の配列
++ S 式表現：<-denotational
 URL 表現：from.denotational
 
 このオブジェクトを包摂するオブジェクト（親）を示す。
 
 
 ### jishu
-型：文字参照の配列
-S 式表現：<-denotational@usage
++ 型：文字参照の配列
++ S 式表現：<-denotational@usage
 URL 表現：from.denotational@usage
 
 字種。
 
 
 ### component-category
-型：文字参照の配列
-S 式表現：<-denotational@component
++ 型：文字参照の配列
++ S 式表現：<-denotational@component
 URL 表現：from.denotational@component
 
 このオブジェクトを部品として包摂する抽象部品オブジェクトを示す。
 
 
 ### radical-and-strokes
-型：キーをドメインとするコンテナー
++ 型：キーをドメインとするコンテナー
 
 部首・画数の情報。
 
@@ -146,7 +146,7 @@ URL 表現：from.denotational@component
 
 
 ### phonetic-value
-型：キーをドメインとするコンテナー
++ 型：キーをドメインとするコンテナー
 
 値はオブジェクトで、各キーは情報のドメインを示し、値部に文字の音価に関
 る情報を示す。文字の音価に関する情報は次の述語で表現される：
@@ -237,7 +237,7 @@ URL 表現：from.denotational@component
 ```
 
 ### general-category
-型：シンボルのリスト。
++ 型：シンボルのリスト。
 
 Unicode データベースの general-category.
 
@@ -245,7 +245,7 @@ Unicode データベースの general-category.
 
 
 ### bidi-category
-型：シンボルのリスト。
++ 型：シンボルのリスト。
 
 Unicode データベースの bidi-category.
 
@@ -253,7 +253,7 @@ Unicode データベースの bidi-category.
 
 
 ### mirrored
-型：真理値
++ 型：真理値
 
 Unicode データベースの mirrored（鏡像反転可能かどうか）
 
@@ -261,7 +261,7 @@ Unicode データベースの mirrored（鏡像反転可能かどうか）
 
 
 ### hanyu-dazidian
-型：整数のリスト
++ 型：整数のリスト
 
 漢語大字典の巻、頁、文字番号?
 
@@ -275,7 +275,7 @@ Unicode データベースの mirrored（鏡像反転可能かどうか）
 
 
 ### daijiten-pages
-型：大字典頁オブジェクトの配列
++ 型：大字典頁オブジェクトの配列
 
 大字典の頁情報。
 
@@ -303,8 +303,8 @@ Unicode データベースの mirrored（鏡像反転可能かどうか）
 
 
 ### citation
-型：参照オブジェクトの配列
-S 式表現：*references
++ 型：参照オブジェクトの配列
++ S 式表現：*references
 
 参考文献。
 
@@ -317,7 +317,7 @@ S 式表現：*references
 
 
 ### structure-descriptions
-型：キーをドメインとするコンテナー
++ 型：キーをドメインとするコンテナー
 
 値はオブジェクトで、各キーは情報のドメインを示し、値部に漢字構造情報を
 示す。漢字構造情報は次の述語で表現される：
@@ -338,7 +338,7 @@ ideographic-structure を持つオブジェクトである。
 
 
 ### unify
-型：インデックス付きコンテナ
++ 型：インデックス付きコンテナ
 
 この文字オブジェクトに統合 (unify) される各 CCS の情報を示す。
 
@@ -457,7 +457,7 @@ ideographic-structure を持つオブジェクトである。
 
 
 ### relations
-型：インデックス付きコンテナ
++ 型：インデックス付きコンテナ
 
 文字間の関係を示す。
 
@@ -526,8 +526,8 @@ ideographic-structure を持つオブジェクトである。
 
 
 ### denotation
-型：char-info の配列
-S 式表現：->denotational
++ 型：char-info の配列
++ S 式表現：->denotational
 
 字体粒度以上のオブジェクトとの包摂関係。
 
@@ -592,21 +592,21 @@ S 式表現：->denotational
 
 
 ### subsume
-型：char-info の配列
-S 式表現：->subsumptive
++ 型：char-info の配列
++ S 式表現：->subsumptive
 
 字体粒度未満のオブジェクトとの包摂関係。
 
 
 ### unified-in-usage
-型：char-ref-info の配列
-S 式表現：->denotational@usage
++ 型：char-ref-info の配列
++ S 式表現：->denotational@usage
 
 この属性の主語がこの値の字種であることを示す。
 
 
 ### unified-as-component
-型：char-ref-info の配列
-S 式表現：->denotational@component
++ 型：char-ref-info の配列
++ S 式表現：->denotational@component
 
 部品としての包摂関係。
