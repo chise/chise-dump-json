@@ -34,13 +34,13 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 
 
 ### @id
-**型**	IRI
+	**型**	IRI
 
 文字オブジェクトの ID. 
 
 
 ### title
-**型**	文字列
+	**型**	文字列
 
 包摂粒度を示す括弧付きの文字列。
 
@@ -48,7 +48,7 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 
 
 ### granularity
-**型**	IRI
+	**型**	IRI
 
 オブジェクトの包摂粒度。
 
@@ -60,17 +60,17 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 
 
 ### connotation
-**型**		文字参照の配列  
-**S 式表現**	<-denotational  
-**URL 表現**	from.denotational
+	**型**		文字参照の配列  
+	**S 式表現**	<-denotational  
+	**URL 表現**	from.denotational
 
 このオブジェクトを包摂するオブジェクト（親）を示す。
 
 
 ### jishu
-+ 型：文字参照の配列
-+ S 式表現：<-denotational@usage
-URL 表現：from.denotational@usage
+	**型**		文字参照の配列
+	**S 式表現**	<-denotational@usage
+	**URL 表現**	from.denotational@usage
 
 字種。
 
