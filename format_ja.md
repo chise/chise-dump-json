@@ -1,8 +1,8 @@
 # CHISE/JSON-LD のデータ形式
 
-* オブジェクト表現
+## オブジェクト表現
 
-** 文字参照 (char-ref-info)
+### 文字参照 (char-ref-info)
 
 文字参照には少なくとも
 
@@ -19,27 +19,27 @@
 のいずれかを含む。
 
 
-** 文字情報 (char-info)
+### 文字情報 (char-info)
 
 文字参照が持つ情報に加え、対象文字の持つ交換可能な全ての情報を含む。
 
 
 
-* 文字情報の構成
+## 文字情報の構成
 
-** @context
+### @context
 
 JSON-LD のコンテキスト情報。root となる文字オブジェクト以外では省略さ
 れる。
 
 
-** @id
+### @id
 型：IRI
 
 文字オブジェクトの ID. 
 
 
-** title
+### title
 型：文字列
 
 包摂粒度を示す括弧付きの文字列。
@@ -47,19 +47,19 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 [Note] 字体粒度の場合、括弧は省略される。
 
 
-** granularity
+### granularity
 型：IRI
 
 オブジェクトの包摂粒度。
 
 
-** image
+### image
 型：IRI
 
 字形画像の URL.
 
 
-** connotation
+### connotation
 型：文字参照の配列
 S 式表現：<-denotational
 URL 表現：from.denotational
@@ -67,7 +67,7 @@ URL 表現：from.denotational
 このオブジェクトを包摂するオブジェクト（親）を示す。
 
 
-** jishu
+### jishu
 型：文字参照の配列
 S 式表現：<-denotational@usage
 URL 表現：from.denotational@usage
@@ -75,7 +75,7 @@ URL 表現：from.denotational@usage
 字種。
 
 
-** component-category
+### component-category
 型：文字参照の配列
 S 式表現：<-denotational@component
 URL 表現：from.denotational@component
@@ -83,7 +83,7 @@ URL 表現：from.denotational@component
 このオブジェクトを部品として包摂する抽象部品オブジェクトを示す。
 
 
-** radical-and-strokes
+### radical-and-strokes
 型：キーをドメインとするコンテナー
 
 部首・画数の情報。
@@ -142,7 +142,7 @@ total-strokes-source	IRI の配列	総画数の典拠情報
 
 
 
-** phonetic-value
+### phonetic-value
 型：キーをドメインとするコンテナー
 
 値はオブジェクトで、各キーは情報のドメインを示し、値部に文字の音価に関
@@ -179,7 +179,7 @@ ja-kana-zion		文字列		日本語音（字音仮名づかい）
 キー chise:domain/ja/on は値として属性 ja-kan-on か ja-go-on の少なく
 ともどちらかを持つオブジェクトの配列を取る。
 
-その他の キー chise:domain/ja/* は値として「日本語音表現」型のオブジェ
+その他の キー chise:domain/ja/## は値として「日本語音表現」型のオブジェ
 クトの配列を取る。
 
 例：
@@ -232,7 +232,7 @@ ja-kana-zion		文字列		日本語音（字音仮名づかい）
   }
 
 
-** general-category
+### general-category
 型：シンボルのリスト。
 
 Unicode データベースの general-category.
@@ -240,7 +240,7 @@ Unicode データベースの general-category.
 漢字の場合は省略可。
 
 
-** bidi-category
+### bidi-category
 型：シンボルのリスト。
 
 Unicode データベースの bidi-category.
@@ -248,7 +248,7 @@ Unicode データベースの bidi-category.
 漢字の場合は省略可。
 
 
-** mirrored
+### mirrored
 型：真理値
 
 Unicode データベースの mirrored（鏡像反転可能かどうか）
@@ -256,7 +256,7 @@ Unicode データベースの mirrored（鏡像反転可能かどうか）
 漢字の場合は省略可。
 
 
-** hanyu-dazidian
+### hanyu-dazidian
 型：整数のリスト
 
 漢語大字典の巻、頁、文字番号?
@@ -270,7 +270,7 @@ Unicode データベースの mirrored（鏡像反転可能かどうか）
   ]
 
 
-** daijiten-pages
+### daijiten-pages
 型：大字典頁オブジェクトの配列
 
 大字典の頁情報。
@@ -296,7 +296,7 @@ url		IRI	頁画像の URL
   ]
 
 
-** citation
+### citation
 型：参照オブジェクトの配列
 S 式表現：*references
 
@@ -310,7 +310,7 @@ description	文字列	説明文
 url		IRI	参考文献の URL
 
 
-** structure-descriptions
+### structure-descriptions
 型：キーをドメインとするコンテナー
 
 値はオブジェクトで、各キーは情報のドメインを示し、値部に漢字構造情報を
@@ -328,7 +328,7 @@ ideographic-structure	文字表現の配列	漢字構造記述の解析木。
 					ideographic-structure を持つオブジェクト。
 
 
-** unify
+### unify
 型：インデックス付きコンテナ
 
 この文字オブジェクトに統合 (unify) される各 CCS の情報を示す。
@@ -444,7 +444,7 @@ code-point	自然数	粒度情報付き符号化文字の CCS における符号
   }
 
 
-** relations
+### relations
 型：インデックス付きコンテナ
 
 文字間の関係を示す。
@@ -512,7 +512,7 @@ sources	IRI の配列	文字間の関係の典拠情報
 
 
 
-** denotation
+### denotation
 型：char-info の配列
 S 式表現：->denotational
 
@@ -576,21 +576,21 @@ S 式表現：->denotational
     }
 
 
-** subsume
+### subsume
 型：char-info の配列
 S 式表現：->subsumptive
 
 字体粒度未満のオブジェクトとの包摂関係。
 
 
-** unified-in-usage
+### unified-in-usage
 型：char-ref-info の配列
 S 式表現：->denotational@usage
 
 この属性の主語がこの値の字種であることを示す。
 
 
-** unified-as-component
+### unified-as-component
 型：char-ref-info の配列
 S 式表現：->denotational@component
 
