@@ -6,15 +6,15 @@
 
 文字参照には少なくとも
 
-・@id		オブジェクトの ID (IRI)
-・granularity	オブジェクトの包摂粒度 (IRI)
+* @id		オブジェクトの ID (IRI)
+* granularity	オブジェクトの包摂粒度 (IRI)
 
 が含まれ、
 
-・title		包摂粒度を示す括弧付きの文字列。UCS 抽象文字か UCS で
+* title		包摂粒度を示す括弧付きの文字列。UCS 抽象文字か UCS で
 		表現可能なグリフ、もしくは、複数の UCS 抽象文字を包摂
 		する抽象文字・部品の場合に付ける。
-・image		字形画像の URL
+* image		字形画像の URL
 
 のいずれかを含む。
 
@@ -164,12 +164,12 @@ ja-kana-zion		文字列		日本語音（字音仮名づかい）
 
 ドメインには現在の所
 
-・chise:domain/guangyun
-・chise:domain/ja/on
-・chise:domain/ja/on/conventional
-・chise:domain/ja/on/tou
-・chise:domain/ja/kun
-・chise:domain/ja/kun/name
+* chise:domain/guangyun
+* chise:domain/ja/on
+* chise:domain/ja/on/conventional
+* chise:domain/ja/on/tou
+* chise:domain/ja/kun
+* chise:domain/ja/kun/name
 
 が存在する。
 
