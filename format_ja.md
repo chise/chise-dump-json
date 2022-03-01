@@ -104,8 +104,9 @@ total-strokes-source	IRI の配列	総画数の典拠情報
 ドメインを示す URL は chise:domain/<ドメイン名> とする。なお、ドメイン
 名が存在しない場合（これは共通部分を示す）、chise:domain/common とする。
 
-例1：単一の部首画数の記述例
+例１：単一の部首画数の記述例
 
+```
   "radical-and-strokes": {
     "chise:domain/common": {
       "kangxi-radical": "\u2f08", 
@@ -114,9 +115,11 @@ total-strokes-source	IRI の配列	総画数の典拠情報
       "total-strokes": 10
     }
   }
+```
 
-例1：複数の部首画数を列挙した例
+例２：複数の部首画数を列挙した例
 
+```
   "radical-and-strokes": {
     "chise:domain/cns": {
       "kangxi-radical": "\u2f17", 
@@ -139,7 +142,7 @@ total-strokes-source	IRI の配列	総画数の典拠情報
       "total-strokes": 5
     }
   }
-
+```
 
 
 ### phonetic-value
@@ -184,6 +187,7 @@ ja-kana-zion		文字列		日本語音（字音仮名づかい）
 
 例：
 
+```
   "phonetic-value": {
     "chise:domain/guangyun": [
       {
@@ -230,7 +234,7 @@ ja-kana-zion		文字列		日本語音（字音仮名づかい）
       }
     ]
   }
-
+```
 
 ### general-category
 型：シンボルのリスト。
@@ -284,6 +288,7 @@ url		IRI	頁画像の URL
 
 例：
 
+```
   "daijiten-pages": [
     {
       "daijiten-page": 121, 
@@ -294,6 +299,7 @@ url		IRI	頁画像の URL
       "url": "http://image.chise.org/tify/?manifest=https://www.dl.ndl.go.jp/api/iiif/950498/manifest.json&tify={%22pages%22:[84]}"
     }
   ]
+```
 
 
 ### citation
@@ -349,6 +355,7 @@ code-point	自然数	粒度情報付き符号化文字の CCS における符号
 
 例：
 
+```
   "unify": {
     "=ucs": {
       "@id": "chise:ccs/ucs/0x4FDD/abstract-character/common", 
@@ -442,6 +449,7 @@ code-point	自然数	粒度情報付き符号化文字の CCS における符号
       "code-point": 273
     }
   }
+```
 
 
 ### relations
@@ -470,6 +478,7 @@ sources	IRI の配列	文字間の関係の典拠情報
 
 例：
 
+```
       "relations": {
         "<-vulgar": {
           "@id": "chise:ccs/ucs/0x815F/abstract-glyph/unicode/from.vulgar", 
@@ -509,7 +518,7 @@ sources	IRI の配列	文字間の関係の典拠情報
           ]
         }
       }
-
+```
 
 
 ### denotation
@@ -520,6 +529,7 @@ S 式表現：->denotational
 
 例：
 
+```
   "denotation": [
     {
       "@id": "chise:ccs/ucs/0x4F01/abstract-glyph/unicode", 
@@ -574,6 +584,7 @@ S 式表現：->denotational
         }
       ]
     }
+```
 
 
 ### subsume
