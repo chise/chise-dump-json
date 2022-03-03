@@ -37,6 +37,18 @@
     "chise:domain/ja/on": [
       {
         "ja-kan-on": {
+          "ja-romaji": "ki", 
+          "ja-kana": "\u304d", 
+          "ja-kana-zion": "\u304d"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "ke", 
+          "ja-kana": "\u3051", 
+          "ja-kana-zion": "\u3051"
+        }
+      }, 
+      {
+        "ja-kan-on": {
           "ja-romaji": "kitu", 
           "ja-kana": "\u304d\u3064", 
           "ja-kana-zion": "\u304d\u3064"
@@ -278,8 +290,18 @@
                 "@id": "chise:ccs/ucs/0x6C14/abstract-glyph/unicode", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
                 "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21827"
-              }
+              }, 
+              "sources": [
+                "bib:tongkao", 
+                "bib:jiyun", 
+                "bib:shuowen-zhu"
+              ]
             }
+          ], 
+          "sources": [
+            "bib:tongkao", 
+            "bib:jiyun", 
+            "bib:shuowen-zhu"
           ]
         }, 
         "->same": {
@@ -293,6 +315,45 @@
                 "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21827"
               }
             }
+          ]
+        }, 
+        "<-formed": {
+          "@id": "chise:ccs/ucs/0x4E5E/abstract-glyph/unicode/from.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x4E5E/abstract-glyph/unicode/from.formed/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x6C14/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21827"
+              }, 
+              "sources": [
+                "bib:jiyun"
+              ]
+            }
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x4E5E/abstract-glyph/unicode/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x4E5E/abstract-glyph/unicode/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x6C14/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-21827"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:tongkao", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:jiyun", 
+            "bib:tongkao", 
+            "bib:daikanwa"
           ]
         }
       }, 
