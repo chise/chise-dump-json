@@ -156,52 +156,368 @@
     {
       "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/unicode", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
-      "image": "https://www.chise.org/glyphs/IVD/AdobeJapan1/CID+5212.png"
+      "image": "https://www.chise.org/glyphs/IVD/AdobeJapan1/CID+5212.png", 
+      "unify": {
+        "==ucs@unicode": {
+          "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/unicode", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/unicode", 
+          "code-point": 26840
+        }, 
+        "==adobe-japan1-0": {
+          "@id": "chise:ccs/adobe-japan1-0/05212/abstract-glyph-form/common", 
+          "CCS": "ccs:adobe-japan1-0", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 5212
+        }, 
+        "==gb2312": {
+          "@id": "chise:ccs/gb2312/0x3C2C/abstract-glyph-form/common", 
+          "CCS": "ccs:gb2312", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 15404
+        }, 
+        "==jis-x0208": {
+          "@id": "chise:ccs/jis-x0208/0x5B79/abstract-glyph-form/common", 
+          "CCS": "ccs:jis-x0208", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 23417
+        }, 
+        "==jis-x0213-1@2000": {
+          "@id": "chise:ccs/jis-x0213-1/0x5B79/abstract-glyph-form/2000", 
+          "CCS": "ccs:jis-x0213-1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/2000", 
+          "code-point": 23417
+        }, 
+        "==daikanwa": {
+          "@id": "chise:ccs/daikanwa/14938/abstract-glyph-form/common", 
+          "CCS": "ccs:daikanwa", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 14938
+        }, 
+        "==shinjigen": {
+          "@id": "chise:ccs/shinjigen/3668/abstract-glyph-form/common", 
+          "CCS": "ccs:shinjigen", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 3668
+        }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/daikanwa/14938/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://glyphwiki.org/glyph/dkw-14938.svg", 
+          "unify": {
+            "===daikanwa": {
+              "@id": "chise:ccs/daikanwa/14938/glyph-image/common", 
+              "CCS": "ccs:daikanwa", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 14938
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/jis-x0208/0x5B79/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/nil", 
+          "unify": {
+            "===jis-x0208": {
+              "@id": "chise:ccs/jis-x0208/0x5B79/glyph-image/common", 
+              "CCS": "ccs:jis-x0208", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 23417
+            }, 
+            "===jis-x0213-1@2000": {
+              "@id": "chise:ccs/jis-x0213-1/0x5B79/glyph-image/2000", 
+              "CCS": "ccs:jis-x0213-1", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/2000", 
+              "code-point": 23417
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/adobe-japan1-0/05212/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/glyphs/IVD/AdobeJapan1/CID+5212.png", 
+          "unify": {
+            "===adobe-japan1-0": {
+              "@id": "chise:ccs/adobe-japan1-0/05212/glyph-image/common", 
+              "CCS": "ccs:adobe-japan1-0", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 5212
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x68D8/glyph-image/unicode", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.unicode.org/cgi-bin/refglyph?24-68D8", 
+          "unify": {
+            "===ucs@unicode": {
+              "@id": "chise:ccs/ucs/0x68D8/glyph-image/unicode", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/unicode", 
+              "code-point": 26840
+            }
+          }
+        }
+      ]
     }, 
     {
       "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/cns", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
-      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-19033"
+      "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-19033", 
+      "unify": {
+        "==ucs@cns": {
+          "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/cns", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/cns", 
+          "code-point": 26840
+        }, 
+        "==ucs@jis/2004": {
+          "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/jis/2004", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/jis/2004", 
+          "code-point": 26840
+        }, 
+        "==ucs@ks": {
+          "@id": "chise:ccs/ucs/0x68D8/abstract-glyph-form/ks", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/ks", 
+          "code-point": 26840
+        }, 
+        "==ks-x1001": {
+          "@id": "chise:ccs/ks-x1001/0x503E/abstract-glyph-form/common", 
+          "CCS": "ccs:ks-x1001", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 20542
+        }, 
+        "==cns11643-1": {
+          "@id": "chise:ccs/cns11643-1/0x5F6B/abstract-glyph-form/common", 
+          "CCS": "ccs:cns11643-1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 24427
+        }, 
+        "==jis-x0213-1@2004": {
+          "@id": "chise:ccs/jis-x0213-1/0x5B79/abstract-glyph-form/2004", 
+          "CCS": "ccs:jis-x0213-1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/2004", 
+          "code-point": 23417
+        }, 
+        "==gt": {
+          "@id": "chise:ccs/gt/19033/abstract-glyph-form/common", 
+          "CCS": "ccs:gt", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 19033
+        }, 
+        "==gt-k": {
+          "@id": "chise:ccs/gt-k/09198/abstract-glyph-form/common", 
+          "CCS": "ccs:gt-k", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 9198
+        }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/jis-x0213-1/0x5B79/glyph-image/2004", 
+          "granularity": "chise:glyph-granularity/nil", 
+          "unify": {
+            "===jis-x0213-1@2004": {
+              "@id": "chise:ccs/jis-x0213-1/0x5B79/glyph-image/2004", 
+              "CCS": "ccs:jis-x0213-1", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/2004", 
+              "code-point": 23417
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/cns11643-1/0x5F6B/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/glyphs/CNS1/5F6B.gif", 
+          "unify": {
+            "===cns11643-1": {
+              "@id": "chise:ccs/cns11643-1/0x5F6B/glyph-image/common", 
+              "CCS": "ccs:cns11643-1", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 24427
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/gt/19033/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-19033", 
+          "unify": {
+            "===gt": {
+              "@id": "chise:ccs/gt/19033/glyph-image/common", 
+              "CCS": "ccs:gt", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 19033
+            }, 
+            "===gt-k": {
+              "@id": "chise:ccs/gt-k/09198/glyph-image/common", 
+              "CCS": "ccs:gt-k", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 9198
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x68D8/glyph-image/ks", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://glyphwiki.org/glyph/u68d8-k.svg", 
+          "unify": {
+            "===ucs@ks": {
+              "@id": "chise:ccs/ucs/0x68D8/glyph-image/ks", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/ks", 
+              "code-point": 26840
+            }, 
+            "===ks-x1001": {
+              "@id": "chise:ccs/ks-x1001/0x503E/glyph-image/common", 
+              "CCS": "ccs:ks-x1001", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 20542
+            }
+          }
+        }
+      ]
     }, 
     {
       "@id": "chise:ccs/hng-kyd/11240/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/014/1124.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/014/1124.png", 
+      "unify": {
+        "===hng-kyd": {
+          "@id": "chise:ccs/hng-kyd/11240/glyph-image/common", 
+          "CCS": "ccs:hng-kyd", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 11240
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-sts/02970/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/078/0297.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/078/0297.png", 
+      "unify": {
+        "===hng-sts": {
+          "@id": "chise:ccs/hng-sts/02970/glyph-image/common", 
+          "CCS": "ccs:hng-sts", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 2970
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-kae/01530/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/019/0153.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/019/0153.png", 
+      "unify": {
+        "===hng-kae": {
+          "@id": "chise:ccs/hng-kae/01530/glyph-image/common", 
+          "CCS": "ccs:hng-kae", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 1530
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-jhk/00990/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/029/0099.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/029/0099.png", 
+      "unify": {
+        "===hng-jhk": {
+          "@id": "chise:ccs/hng-jhk/00990/glyph-image/common", 
+          "CCS": "ccs:hng-jhk", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 990
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-tsu/01780/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/024/0178.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/024/0178.png", 
+      "unify": {
+        "===hng-tsu": {
+          "@id": "chise:ccs/hng-tsu/01780/glyph-image/common", 
+          "CCS": "ccs:hng-tsu", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 1780
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-gok/08220/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/031/0822.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/031/0822.png", 
+      "unify": {
+        "===hng-gok": {
+          "@id": "chise:ccs/hng-gok/08220/glyph-image/common", 
+          "CCS": "ccs:hng-gok", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 8220
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-sgs/04991/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/077/0499a.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/077/0499a.png", 
+      "unify": {
+        "===hng-sgs": {
+          "@id": "chise:ccs/hng-sgs/04991/glyph-image/common", 
+          "CCS": "ccs:hng-sgs", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 4991
+        }
+      }
     }, 
     {
       "@id": "chise:ccs/hng-sgs/04992/glyph-image/common", 
       "granularity": "chise:glyph-granularity/glyph-image", 
-      "image": "https://image.hng-data.org/glyphs/HNG/077/0499b.png"
+      "image": "https://image.hng-data.org/glyphs/HNG/077/0499b.png", 
+      "unify": {
+        "===hng-sgs": {
+          "@id": "chise:ccs/hng-sgs/04992/glyph-image/common", 
+          "CCS": "ccs:hng-sgs", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "domain": "chise:domain/common", 
+          "code-point": 4992
+        }
+      }
     }
   ]
 }
