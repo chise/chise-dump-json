@@ -11,15 +11,26 @@
   ], 
   "bidi-category": "ON", 
   "mirrored": true, 
-  "=decomposition": {
-    "body": [
-      {
-        "body": "="
-      }, 
-      {
-        "body": "\u0338"
-      }
-    ]
+  "decompositions": {
+    "chise:domain/common": {
+      "ivs": "=\u0338", 
+      "character-sequence": [
+        {
+          "@id": "chise:ccs/ucs/0x003D/abstract-character/common", 
+          "name": "EQUALS SIGN", 
+          "title": "\u3008=\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "image": "https://glyphwiki.org/glyph/u003d.svg"
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x0338/abstract-character/common", 
+          "name": "COMBINING LONG SOLIDUS OVERLAY", 
+          "title": "\u3008\u0338\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character", 
+          "image": "https://glyphwiki.org/glyph/u0338.svg"
+        }
+      ]
+    }
   }, 
   "unify": {
     "=ucs": {
@@ -50,15 +61,26 @@
       "@id": "chise:ccs/ucs/0x2260/abstract-glyph/gb", 
       "granularity": "chise:glyph-granularity/abstract-glyph", 
       "image": "https://www.chise.org/glyphs/CNS1/223B.gif", 
-      "=decomposition": {
-        "body": [
-          {
-            "body": "\uff1d"
-          }, 
-          {
-            "body": "\u0338"
-          }
-        ]
+      "decompositions": {
+        "chise:domain/common": {
+          "ivs": "\uff1d\u0338", 
+          "character-sequence": [
+            {
+              "@id": "chise:ccs/ucs/0xFF1D/abstract-character/common", 
+              "name": "FULLWIDTH EQUALS SIGN", 
+              "title": "\uff1d", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://glyphwiki.org/glyph/uff1d.svg"
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x0338/abstract-character/common", 
+              "name": "COMBINING LONG SOLIDUS OVERLAY", 
+              "title": "\u3008\u0338\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character", 
+              "image": "https://glyphwiki.org/glyph/u0338.svg"
+            }
+          ]
+        }
       }, 
       "unify": {
         "=ucs@gb": {
