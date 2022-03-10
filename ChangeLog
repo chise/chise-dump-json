@@ -1,3 +1,188 @@
+2022-03-10  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* New files.
+
+	A	ccs/big5-cdp/SB0x8D/AE/abstract-glyph/common/index_with-root.jsonld
+	A	ccs/mj/SB_040/932/abstract-glyph/common/index.jsonld
+	A	ccs/mj/SB_040/932/abstract-glyph/common/index_with-root.jsonld
+	A	ccs/ucs/ST0x0/3A/C3/abstract-character/cognate/index.jsonld
+	A	ccs/ucs/ST0x0/56/3C/abstract-character/cognate/index.jsonld
+	A	ccs/ucs/ST0x0/74/A2/abstract-glyph/unicode/index.jsonld
+	A	ccs/ucs/ST0x0/74/A2/abstract-glyph/unicode/index_with-root.jsonld
+
+2022-03-10  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* - Use "decomposed-string" instead of "decomposition".
+	- Sync with the current snapshot.
+
+	D	ccs/big5-cdp/SB0x87/57/abstract-glyph/common/index.jsonld
+	D	ccs/big5-cdp/SB0x87/57/abstract-glyph/common/index_with-root.jsonld
+	M	ccs/big5-cdp/SB0x8D/AE/abstract-glyph/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/01/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/01/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/04/19/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/39/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/39/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/04/51/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/51/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/22/60/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/22/60/abstract-glyph/gb/index.jsonld
+	M	ccs/ucs/ST0x0/30/4C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/4E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/50/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/52/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/54/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/56/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/58/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5A/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/60/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/62/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/65/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/67/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/69/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/70/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/71/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/73/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/74/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/76/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/77/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/79/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7A/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7D/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/9E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/AC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/AE/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B2/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B6/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B8/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BA/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BE/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C2/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C5/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C7/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C9/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D1/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D3/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D6/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D7/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D9/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DA/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DD/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/F4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/FE/abstract-character/common/index.jsonld
+	D	ccs/ucs/ST0x0/3A/C3/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/3A/C3/abstract-glyph/unicode/index_with-root.jsonld
+	M	ccs/ucs/ST0x0/3E/CE/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/3E/CE/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/50/1D/abstract-character/cognate/index.jsonld
+	M	ccs/ucs/ST0x0/55/AE/abstract-character/cognate/index.jsonld
+	D	ccs/ucs/ST0x0/56/3C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/56/3C/abstract-glyph/unicode/index_with-root.jsonld
+	M	ccs/ucs/ST0x0/5E/72/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/5E/79/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/5E/79/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/60/46/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/60/46/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/60/52/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/60/52/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/62/5E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/63/4D/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/63/4D/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/63/F4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/63/F4/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/67/46/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/6B/8D/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/6B/8D/abstract-glyph/jis/index.jsonld
+	M	ccs/ucs/ST0x0/73/63/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/73/63/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/73/89/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/74/09/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/74/5F/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/74/60/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/74/60/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x0/74/A2/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/95/93/abstract-character/jis/index.jsonld
+	M	ccs/ucs/ST0x0/99/FB/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/99/FB/abstract-glyph/unicode/index.jsonld
+	M	ccs/ucs/ST0x2/48/EA/abstract-character/common/index.jsonld
+
+2022-03-10  MORIOKA Tomohiko  <tomo.git@chise.org>
+
+	* Use "decomposition" for non-VS combining character sequence.
+
+	M	ccs/ucs/ST0x0/04/01/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/01/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/04/19/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/39/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/39/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/04/51/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/04/51/abstract-glyph/gb/fw/index.jsonld
+	M	ccs/ucs/ST0x0/22/60/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/22/60/abstract-glyph/gb/index.jsonld
+	M	ccs/ucs/ST0x0/30/4C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/4E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/50/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/52/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/54/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/56/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/58/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5A/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/5E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/60/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/62/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/65/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/67/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/69/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/70/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/71/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/73/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/74/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/76/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/77/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/79/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7A/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7C/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/7D/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/9E/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/AC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/AE/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B2/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B6/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/B8/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BA/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/BE/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C2/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C5/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C7/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/C9/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D0/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D1/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D3/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D6/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D7/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/D9/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DA/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DC/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/DD/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/F4/abstract-character/common/index.jsonld
+	M	ccs/ucs/ST0x0/30/FE/abstract-character/common/index.jsonld
+
 2022-03-09  MORIOKA Tomohiko  <tomo.git@chise.org>
 
 	* New files.
