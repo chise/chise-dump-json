@@ -70,7 +70,7 @@
   }, 
   "denotation": [
     {
-      "@id": "chise:ccs/ks-x1001/0x6A35/abstract-glyph/common", 
+      "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks", 
       "granularity": "chise:glyph-granularity/abstract-glyph", 
       "image": "https://image.hng-data.org/glyphs/daijiten/03926.png", 
       "radical-and-strokes": {
@@ -97,6 +97,13 @@
         }
       }, 
       "unify": {
+        "=ucs@ks": {
+          "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/ks", 
+          "code-point": 25588
+        }, 
         "=ks-x1001": {
           "@id": "chise:ccs/ks-x1001/0x6A35/abstract-glyph/common", 
           "CCS": "ccs:ks-x1001", 
@@ -124,6 +131,22 @@
           "granularity": "chise:glyph-granularity/abstract-glyph", 
           "domain": "chise:domain/common", 
           "code-point": 20460
+        }
+      }, 
+      "relations": {
+        "->interchangeable": {
+          "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks/to.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks/to.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x625E/abstract-character/common", 
+                "title": "\u625e", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u625e.svg"
+              }
+            }
+          ]
         }
       }, 
       "subsume": [
@@ -305,9 +328,6 @@
           "@id": "chise:ccs/ucs/0x63F4/abstract-glyph-form/unicode", 
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
           "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-15555", 
-          "==gt-pj-1": {
-            "body": 12647
-          }, 
           "unify": {
             "==ucs@unicode": {
               "@id": "chise:ccs/ucs/0x63F4/abstract-glyph-form/unicode", 

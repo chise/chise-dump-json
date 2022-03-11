@@ -6,8 +6,8 @@
   "connotation": [
     {
       "@id": "chise:ccs/ucs/0x98EE/abstract-character/common", 
-      "title": "\u98ee", 
-      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "title": "\u3008\u98ee\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
       "image": "https://glyphwiki.org/glyph/u98ee.svg"
     }
   ], 
@@ -85,19 +85,46 @@
       "granularity": "chise:glyph-granularity/abstract-glyph", 
       "domain": "chise:domain/common", 
       "code-point": 44063
+    }, 
+    "=daijiten": {
+      "@id": "chise:ccs/daijiten/13526/abstract-glyph/common", 
+      "CCS": "ccs:daijiten", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 13526
     }
   }, 
   "relations": {
+    "->same": {
+      "@id": "chise:ccs/ucs/0x98EE/abstract-glyph/unicode/to.same", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x98EE/abstract-glyph/unicode/to.same/1", 
+          "target": {
+            "@id": "chise:ccs/gt/20791/abstract-glyph/common", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-20791"
+          }
+        }, 
+        {
+          "@id": "chise:ccs/ucs/0x98EE/abstract-glyph/unicode/to.same/2", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x98F2/abstract-glyph/unicode", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-59066"
+          }
+        }
+      ]
+    }, 
     "<-same": {
       "@id": "chise:ccs/ucs/0x98EE/abstract-glyph/unicode/from.same", 
       "reldesc": [
         {
           "@id": "chise:ccs/ucs/0x98EE/abstract-glyph/unicode/from.same/1", 
           "target": {
-            "@id": "chise:ccs/ucs/0x98F2/abstract-character/common", 
-            "title": "\u98f2", 
+            "@id": "chise:ccs/ucs/0x98F2/abstract-glyph/unicode", 
             "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u98f2.svg"
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-59066"
           }
         }
       ], 
