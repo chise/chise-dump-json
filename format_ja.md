@@ -154,7 +154,7 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 |`ja-go-on`|日本語音表現|漢音|
 |`ja-romaji`|文字列|日本語音（CHISE 字音仮名転写形式）|
 |`ja-kana`|文字列|日本語音（現代仮名づかい）|
-|`ja-kana-historical`|文字列|日本語音（字音仮名づかい）|
+|`ja-kana-historical`|文字列|日本語音（歴史的字音仮名づかい）|
 
 ここで、「日本語音表現」型は属性 `ja-romaji`, `ja-kana`, `ja-kana-historical` を持つオブジェクトである。属性 `ja-kana`, `ja-kana-historical` の値が等しい場合、属性 `ja-kana-historical` は省略可能である。
 
