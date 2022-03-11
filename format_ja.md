@@ -154,9 +154,9 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
 |`ja-go-on`|日本語音表現|漢音|
 |`ja-romaji`|文字列|日本語音（CHISE 字音仮名転写形式）|
 |`ja-kana`|文字列|日本語音（現代仮名づかい）|
-|`ja-kana-zion`|文字列|日本語音（字音仮名づかい）|
+|`ja-kana-historical`|文字列|日本語音（字音仮名づかい）|
 
-ここで、「日本語音表現」型は属性 `ja-romaji`, `ja-kana`, `ja-kana-zion` を持つオブジェクトである。属性 `ja-kana`, `ja-kana-zion` の値が等しい場合、属性 `ja-kana-zion` は省略可能である。
+ここで、「日本語音表現」型は属性 `ja-romaji`, `ja-kana`, `ja-kana-historical` を持つオブジェクトである。属性 `ja-kana`, `ja-kana-historical` の値が等しい場合、属性 `ja-kana-historical` は省略可能である。
 
 ドメインには現在の所
 
@@ -189,24 +189,24 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
     {
       "ja-romaji": "hito-tu", 
       "ja-kana": "\u3072\u3068\u2010\u3064", 
-      "ja-kana-zion": "\u3072\u3068\u2010\u3064"
+      "ja-kana-historical": "\u3072\u3068\u2010\u3064"
     }, 
     {
       "ja-romaji": "hito", 
       "ja-kana": "\u3072\u3068", 
-      "ja-kana-zion": "\u3072\u3068"
+      "ja-kana-historical": "\u3072\u3068"
     }
   ], 
   "chise:domain/ja/kun/name": [
     {
       "ja-romaji": "hazime", 
       "ja-kana": "\u306f\u3058\u3081", 
-      "ja-kana-zion": "\u306f\u3058\u3081"
+      "ja-kana-historical": "\u306f\u3058\u3081"
     }, 
     {
       "ja-romaji": "kazu", 
       "ja-kana": "\u304b\u305a", 
-      "ja-kana-zion": "\u304b\u305a"
+      "ja-kana-historical": "\u304b\u305a"
     }
   ], 
   "chise:domain/ja/on": [
@@ -214,12 +214,12 @@ JSON-LD のコンテキスト情報。root となる文字オブジェクト以�
       "ja-kan-on": {
         "ja-romaji": "itu", 
         "ja-kana": "\u3044\u3064", 
-        "ja-kana-zion": "\u3044\u3064"
+        "ja-kana-historical": "\u3044\u3064"
       }, 
       "ja-go-on": {
         "ja-romaji": "iti", 
         "ja-kana": "\u3044\u3061", 
-        "ja-kana-zion": "\u3044\u3061"
+        "ja-kana-historical": "\u3044\u3061"
       }
     }
   ]
