@@ -25,6 +25,32 @@
         "title": "Web-yunzi: Guangyun-\u63f4", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u63f4"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "kWaN", 
+          "ja-kana": "\u304b\u3093", 
+          "ja-kana-historical": "\u304f\u308f\u3093"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "gWaN", 
+          "ja-kana": "\u304c\u3093", 
+          "ja-kana-historical": "\u3050\u308f\u3093"
+        }
+      }, 
+      {
+        "ja-kan-on": {
+          "ja-romaji": "WeN", 
+          "ja-kana": "\u3048\u3093", 
+          "ja-kana-historical": "\u3091\u3093"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "WoN", 
+          "ja-kana": "\u304a\u3093", 
+          "ja-kana-historical": "\u3092\u3093"
+        }
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -72,7 +98,7 @@
     {
       "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks", 
       "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "image": "https://image.hng-data.org/glyphs/daijiten/03926.png", 
+      "image": "https://www.chise.org/glyphs/IVD/HanyoDenshi/JTB202.png", 
       "radical-and-strokes": {
         "chise:domain/common": {
           "kangxi-radical": "\u2f3f", 
@@ -111,6 +137,13 @@
           "domain": "chise:domain/common", 
           "code-point": 27189
         }, 
+        "=hanyo-denshi/jt": {
+          "@id": "chise:ccs/hanyo-denshi/jt/0xB202/abstract-glyph/common", 
+          "CCS": "ccs:hanyo-denshi/jt", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 45570
+        }, 
         "=daikanwa": {
           "@id": "chise:ccs/daikanwa/12407/abstract-glyph/common", 
           "CCS": "ccs:daikanwa", 
@@ -147,13 +180,36 @@
               }
             }
           ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x63F4/abstract-glyph/ks/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x610C/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/IVD/AdobeJapan1/CID+21572.png"
+              }, 
+              "sources": [
+                "bib:shuowen-tongxun-dingsheng", 
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:shuowen-tongxun-dingsheng", 
+            "bib:jiyun", 
+            "bib:daikanwa"
+          ]
         }
       }, 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x63F4/abstract-glyph-form/ks", 
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
-          "image": "https://glyphwiki.org/glyph/dkw-12407.svg", 
+          "image": "https://www.chise.org/glyphs/IVD/HanyoDenshi/JTB202.png", 
           "unify": {
             "==ucs@ks": {
               "@id": "chise:ccs/ucs/0x63F4/abstract-glyph-form/ks", 
@@ -168,6 +224,13 @@
               "granularity": "chise:glyph-granularity/abstract-glyph-form", 
               "domain": "chise:domain/common", 
               "code-point": 27189
+            }, 
+            "==hanyo-denshi/jt": {
+              "@id": "chise:ccs/hanyo-denshi/jt/0xB202/abstract-glyph-form/common", 
+              "CCS": "ccs:hanyo-denshi/jt", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 45570
             }, 
             "==daikanwa": {
               "@id": "chise:ccs/daikanwa/12407/abstract-glyph-form/common", 
@@ -231,6 +294,20 @@
                   "granularity": "chise:glyph-granularity/glyph-image", 
                   "domain": "chise:domain/common", 
                   "code-point": 27189
+                }
+              }
+            }, 
+            {
+              "@id": "chise:ccs/hanyo-denshi/jt/0xB202/glyph-image/common", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "image": "https://www.chise.org/glyphs/IVD/HanyoDenshi/JTB202.png", 
+              "unify": {
+                "===hanyo-denshi/jt": {
+                  "@id": "chise:ccs/hanyo-denshi/jt/0xB202/glyph-image/common", 
+                  "CCS": "ccs:hanyo-denshi/jt", 
+                  "granularity": "chise:glyph-granularity/glyph-image", 
+                  "domain": "chise:domain/common", 
+                  "code-point": 45570
                 }
               }
             }
