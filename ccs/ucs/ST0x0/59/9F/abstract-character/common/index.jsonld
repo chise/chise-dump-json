@@ -12,6 +12,28 @@
       "total-strokes": 7
     }
   }, 
+  "phonetic-value": {
+    "chise:domain/fanqie": [
+      {
+        "@type": "concord:genre/hanzi-syllable", 
+        "@id": "concord:hanzi-syllable/fanqie-u70CFu3D4E"
+      }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "aN", 
+          "ja-kana": "\u3042\u3093", 
+          "ja-kana-historical": "\u3042\u3093"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "eN", 
+          "ja-kana": "\u3048\u3093", 
+          "ja-kana-historical": "\u3048\u3093"
+        }
+      }
+    ]
+  }, 
   "structure-descriptions": {
     "chise:domain/structure/functional": {
       "ids": "\u2ff1&A-compU+65E5;\u5973", 
@@ -144,6 +166,58 @@
           "granularity": "chise:glyph-granularity/abstract-glyph", 
           "domain": "chise:domain/common", 
           "code-point": 18672
+        }
+      }, 
+      "relations": {
+        "->interchangeable": {
+          "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/to.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/to.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x5043/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-01063"
+              }
+            }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/from.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/13914/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-13914.svg"
+              }, 
+              "sources": [
+                "bib:zhengzitong", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:zhengzitong", 
+            "bib:daikanwa"
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x599F/abstract-glyph/unicode/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/13914/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-13914.svg"
+              }, 
+              "sources": [
+                "bib:zhengzitong"
+              ]
+            }
+          ]
         }
       }, 
       "subsume": [
