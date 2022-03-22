@@ -1,0 +1,114 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x212B/abstract-character/common", 
+  "name": "ANGSTROM SIGN", 
+  "title": "\u3008\u212b\u3009", 
+  "granularity": "chise:glyph-granularity/abstract-character", 
+  "image": "https://glyphwiki.org/glyph/u212b.svg", 
+  "general-category": [
+    "letter", 
+    "uppercase"
+  ], 
+  "bidi-category": "L", 
+  "mirrored": false, 
+  "unify": {
+    "=ucs": {
+      "@id": "chise:ccs/ucs/0x212B/abstract-character/common", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "domain": "chise:domain/common", 
+      "code-point": 8491
+    }
+  }, 
+  "relations": {
+    "->canonical": {
+      "@id": "chise:ccs/ucs/0x212B/abstract-character/common/to.canonical", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x212B/abstract-character/common/to.canonical/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x00C5/abstract-character/common", 
+            "name": "LATIN CAPITAL LETTER A WITH RING ABOVE", 
+            "title": "\u3008\u00c5\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u00c5.svg"
+          }
+        }
+      ]
+    }, 
+    "->fullwidth": {
+      "@id": "chise:ccs/ucs/0x212B/abstract-character/common/to.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x212B/abstract-character/common/to.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x212B/abstract-glyph/jis", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/glyphs/JIS-90/02-82.gif"
+          }
+        }
+      ]
+    }
+  }, 
+  "denotation": [
+    {
+      "@id": "chise:ccs/ucs/0x212B/abstract-glyph/jis", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "image": "https://www.chise.org/glyphs/JIS-90/02-82.gif", 
+      "unify": {
+        "=ucs@jis": {
+          "@id": "chise:ccs/ucs/0x212B/abstract-glyph/jis", 
+          "CCS": "ccs:ucs", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/jis", 
+          "code-point": 8491
+        }, 
+        "=jis-x0208@1983": {
+          "@id": "chise:ccs/jis-x0208/0x2272/abstract-glyph/1983", 
+          "CCS": "ccs:jis-x0208", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/1983", 
+          "code-point": 8818
+        }, 
+        "=ks-x1001": {
+          "@id": "chise:ccs/ks-x1001/0x214A/abstract-glyph/common", 
+          "CCS": "ccs:ks-x1001", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 8522
+        }, 
+        "=jis-x0208@1990": {
+          "@id": "chise:ccs/jis-x0208/0x2272/abstract-glyph/1990", 
+          "CCS": "ccs:jis-x0208", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/1990", 
+          "code-point": 8818
+        }, 
+        "=jis-x0213-1": {
+          "@id": "chise:ccs/jis-x0213-1/0x2272/abstract-glyph/common", 
+          "CCS": "ccs:jis-x0213-1", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 8818
+        }
+      }, 
+      "relations": {
+        "<-fullwidth": {
+          "@id": "chise:ccs/ucs/0x212B/abstract-glyph/jis/from.fullwidth", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x212B/abstract-glyph/jis/from.fullwidth/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x212B/abstract-character/common", 
+                "name": "ANGSTROM SIGN", 
+                "title": "\u3008\u212b\u3009", 
+                "granularity": "chise:glyph-granularity/abstract-character", 
+                "image": "https://glyphwiki.org/glyph/u212b.svg"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

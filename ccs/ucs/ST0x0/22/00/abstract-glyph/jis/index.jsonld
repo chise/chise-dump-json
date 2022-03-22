@@ -1,0 +1,83 @@
+{
+  "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
+  "@id": "chise:ccs/ucs/0x2200/abstract-glyph/jis", 
+  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "image": "https://www.chise.org/glyphs/JIS-90/02-47.gif", 
+  "connotation": [
+    {
+      "@id": "chise:ccs/ucs/0x2200/abstract-character/common", 
+      "name": "FOR ALL", 
+      "title": "\u3008\u2200\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
+      "image": "https://glyphwiki.org/glyph/u2200.svg"
+    }
+  ], 
+  "unify": {
+    "=ucs@jis": {
+      "@id": "chise:ccs/ucs/0x2200/abstract-glyph/jis", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/jis", 
+      "code-point": 8704
+    }, 
+    "=ucs@ks": {
+      "@id": "chise:ccs/ucs/0x2200/abstract-glyph/ks", 
+      "CCS": "ccs:ucs", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/ks", 
+      "code-point": 8704
+    }, 
+    "=jis-x0208@1983": {
+      "@id": "chise:ccs/jis-x0208/0x224F/abstract-glyph/1983", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/1983", 
+      "code-point": 8783
+    }, 
+    "=ks-x1001": {
+      "@id": "chise:ccs/ks-x1001/0x2223/abstract-glyph/common", 
+      "CCS": "ccs:ks-x1001", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 8739
+    }, 
+    "=jis-x0208@1990": {
+      "@id": "chise:ccs/jis-x0208/0x224F/abstract-glyph/1990", 
+      "CCS": "ccs:jis-x0208", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/1990", 
+      "code-point": 8783
+    }, 
+    "=jis-x0213-1": {
+      "@id": "chise:ccs/jis-x0213-1/0x224F/abstract-glyph/common", 
+      "CCS": "ccs:jis-x0213-1", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 8783
+    }, 
+    "=jef-china3": {
+      "@id": "chise:ccs/jef-china3/0x7FDC/abstract-glyph/common", 
+      "CCS": "ccs:jef-china3", 
+      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "domain": "chise:domain/common", 
+      "code-point": 32732
+    }
+  }, 
+  "relations": {
+    "<-fullwidth": {
+      "@id": "chise:ccs/ucs/0x2200/abstract-glyph/jis/from.fullwidth", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x2200/abstract-glyph/jis/from.fullwidth/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x2200/abstract-character/common", 
+            "name": "FOR ALL", 
+            "title": "\u3008\u2200\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
+            "image": "https://glyphwiki.org/glyph/u2200.svg"
+          }
+        }
+      ]
+    }
+  }
+}
