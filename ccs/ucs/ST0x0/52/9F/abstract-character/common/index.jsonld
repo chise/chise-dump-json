@@ -1,8 +1,8 @@
 {
   "@context": "http://api.chise.org/contexts/v1/chise.jsonld", 
   "@id": "chise:ccs/ucs/0x529F/abstract-character/common", 
-  "title": "\u529f", 
-  "granularity": "chise:glyph-granularity/abstract-glyph", 
+  "title": "\u3008\u529f\u3009", 
+  "granularity": "chise:glyph-granularity/abstract-character", 
   "image": "https://glyphwiki.org/glyph/u529f.svg", 
   "jishu": [
     {
@@ -50,13 +50,6 @@
       "granularity": "chise:glyph-granularity/abstract-character", 
       "domain": "chise:domain/common", 
       "code-point": 21151
-    }, 
-    "=daikanwa": {
-      "@id": "chise:ccs/daikanwa/02295/abstract-glyph/common", 
-      "CCS": "ccs:daikanwa", 
-      "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "domain": "chise:domain/common", 
-      "code-point": 2295
     }
   }, 
   "relations": {
@@ -78,20 +71,6 @@
       "reldesc": [
         {
           "@id": "chise:ccs/ucs/0x529F/abstract-character/common/to.formed/1", 
-          "target": {
-            "@id": "chise:ccs/ucs/0x34DB/abstract-character/common", 
-            "title": "\u34db", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
-            "image": "https://glyphwiki.org/glyph/u34db.svg"
-          }
-        }
-      ]
-    }, 
-    "->wrong": {
-      "@id": "chise:ccs/ucs/0x529F/abstract-character/common/to.wrong", 
-      "reldesc": [
-        {
-          "@id": "chise:ccs/ucs/0x529F/abstract-character/common/to.wrong/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x34DB/abstract-character/common", 
             "title": "\u34db", 
@@ -241,6 +220,22 @@
           "code-point": 704
         }
       }, 
+      "relations": {
+        "->wrong": {
+          "@id": "chise:ccs/ucs/0x529F/abstract-glyph/unicode/to.wrong", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x529F/abstract-glyph/unicode/to.wrong/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x34DB/abstract-character/common", 
+                "title": "\u34db", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u34db.svg"
+              }
+            }
+          ]
+        }
+      }, 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x529F/abstract-glyph-form/unicode", 
@@ -252,8 +247,8 @@
               "character-sequence": [
                 {
                   "@id": "chise:ccs/ucs/0x529F/abstract-character/common", 
-                  "title": "\u529f", 
-                  "granularity": "chise:glyph-granularity/abstract-glyph", 
+                  "title": "\u3008\u529f\u3009", 
+                  "granularity": "chise:glyph-granularity/abstract-character", 
                   "image": "https://glyphwiki.org/glyph/u529f.svg"
                 }, 
                 {
