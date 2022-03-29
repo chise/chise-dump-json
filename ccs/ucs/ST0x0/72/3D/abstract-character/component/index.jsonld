@@ -58,7 +58,7 @@
       }, 
       "structure-descriptions": {
         "chise:domain/structure/functional": {
-          "ids": "&U-i001+2FFB;\u5927\uD840\uDE0C", 
+          "ids": "&U-i001+2FFB;&A-compU+72AC;\uD840\uDE0C", 
           "ideographic-structure": [
             {
               "@type": "concord:genre/character", 
@@ -66,7 +66,12 @@
               "granularity": "chise:glyph-granularity/abstract-glyph", 
               "image": "https://glyphwiki.org/glyph/u2ffb-itaiji-001.svg"
             }, 
-            "\u5927", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x72AC/abstract-character/component", 
+              "title": "\u3008\u72ac/\u5927\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character"
+            }, 
             "\uD840\uDE0C"
           ]
         }
@@ -170,10 +175,9 @@
                 {
                   "@id": "chise:ccs/ucs/0x21641/abstract-glyph/iso/from.vulgar/1", 
                   "target": {
-                    "@id": "chise:ccs/ucs/0x723D/abstract-character/common", 
-                    "title": "\u723d", 
+                    "@id": "chise:ccs/ucs/0x723D/abstract-glyph/unicode", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
-                    "image": "https://glyphwiki.org/glyph/u723d.svg"
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-25362"
                   }
                 }
               ], 
@@ -351,8 +355,8 @@
     }, 
     {
       "@id": "chise:ccs/ucs/0x723D/abstract-character/common", 
-      "title": "\u723d", 
-      "granularity": "chise:glyph-granularity/abstract-glyph", 
+      "title": "\u3008\u723d\u3009", 
+      "granularity": "chise:glyph-granularity/abstract-character", 
       "image": "https://glyphwiki.org/glyph/u723d.svg", 
       "jishu": [
         {
@@ -410,13 +414,6 @@
           "granularity": "chise:glyph-granularity/abstract-character", 
           "domain": "chise:domain/common", 
           "code-point": 29245
-        }, 
-        "=daikanwa": {
-          "@id": "chise:ccs/daikanwa/19746/abstract-glyph/common", 
-          "CCS": "ccs:daikanwa", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "domain": "chise:domain/common", 
-          "code-point": 19746
         }
       }, 
       "relations": {
@@ -470,19 +467,6 @@
                 "title": "\u3008\u24564\u3009", 
                 "granularity": "chise:glyph-granularity/abstract-character", 
                 "image": "https://glyphwiki.org/glyph/u24564.svg"
-              }
-            }
-          ]
-        }, 
-        "->vulgar": {
-          "@id": "chise:ccs/ucs/0x723D/abstract-character/common/to.vulgar", 
-          "reldesc": [
-            {
-              "@id": "chise:ccs/ucs/0x723D/abstract-character/common/to.vulgar/1", 
-              "target": {
-                "@id": "chise:ccs/ucs/0x21641/abstract-glyph/iso", 
-                "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://www.chise.org/glyphs/IVD/HanyoDenshi/KS068330.png"
               }
             }
           ]
@@ -625,6 +609,21 @@
               "granularity": "chise:glyph-granularity/abstract-glyph", 
               "domain": "chise:domain/common", 
               "code-point": 1587
+            }
+          }, 
+          "relations": {
+            "->vulgar": {
+              "@id": "chise:ccs/ucs/0x723D/abstract-glyph/unicode/to.vulgar", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x723D/abstract-glyph/unicode/to.vulgar/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x21641/abstract-glyph/iso", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/glyphs/IVD/HanyoDenshi/KS068330.png"
+                  }
+                }
+              ]
             }
           }, 
           "subsume": [

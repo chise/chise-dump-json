@@ -60,7 +60,7 @@
   }, 
   "structure-descriptions": {
     "chise:domain/structure/functional": {
-      "ids": "\u2ff4&A-IWDSU+35CA;\u9801", 
+      "ids": "\u2ff4&A-IWDSU+35CA;&A-IWDSU+9801;", 
       "ideographic-structure": [
         "\u2ff4", 
         {
@@ -69,11 +69,16 @@
           "title": "\u3008\u35ca\u3009", 
           "granularity": "chise:glyph-granularity/abstract-character"
         }, 
-        "\u9801"
+        {
+          "@type": "concord:genre/character", 
+          "@id": "chise:ccs/ucs/0x9801/abstract-character/iwds-1", 
+          "title": "\u3008\u2944b/\u9801\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character"
+        }
       ]
     }, 
     "chise:domain/structure/apparent": {
-      "ids": "\u2ff1&A-compU+5405;\u2ff1\u9801&A-compU+5405;", 
+      "ids": "\u2ff1&A-compU+5405;\u2ff1&A-IWDSU+9801;&A-compU+5405;", 
       "ideographic-structure": [
         "\u2ff1", 
         {
@@ -85,7 +90,12 @@
         {
           "ideographic-structure": [
             "\u2ff1", 
-            "\u9801", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x9801/abstract-character/iwds-1", 
+              "title": "\u3008\u2944b/\u9801\u3009", 
+              "granularity": "chise:glyph-granularity/abstract-character"
+            }, 
             {
               "@type": "concord:genre/character", 
               "@id": "chise:ccs/ucs/0x5405/abstract-character/component", 
@@ -147,12 +157,25 @@
       ], 
       "structure-descriptions": {
         "chise:domain/structure/functional": {
-          "ids": "\u2ff3\u5405\u9801\u5405", 
+          "ids": "\u2ff4\u35ca\u9801", 
           "ideographic-structure": [
-            "\u2ff3", 
+            "\u2ff4", 
+            "\u35ca", 
+            "\u9801"
+          ]
+        }, 
+        "chise:domain/structure/apparent": {
+          "ids": "\u2ff1\u5405\u2ff1\u9801\u5405", 
+          "ideographic-structure": [
+            "\u2ff1", 
             "\u5405", 
-            "\u9801", 
-            "\u5405"
+            {
+              "ideographic-structure": [
+                "\u2ff1", 
+                "\u9801", 
+                "\u5405"
+              ]
+            }
           ]
         }
       }, 
