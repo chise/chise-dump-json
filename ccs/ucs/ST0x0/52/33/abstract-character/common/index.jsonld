@@ -31,6 +31,32 @@
         "title": "Web-yunzi: Guangyun-\u5233", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u5233"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "kou", 
+          "ja-kana": "\u3053\u3046", 
+          "ja-kana-historical": "\u3053\u3046"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "ku", 
+          "ja-kana": "\u304f", 
+          "ja-kana-historical": "\u304f"
+        }
+      }, 
+      {
+        "ja-kan-on": {
+          "ja-romaji": "ko", 
+          "ja-kana": "\u3053", 
+          "ja-kana-historical": "\u3053"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "ku", 
+          "ja-kana": "\u304f", 
+          "ja-kana-historical": "\u304f"
+        }
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -190,6 +216,77 @@
           "granularity": "chise:glyph-granularity/abstract-glyph", 
           "domain": "chise:domain/common", 
           "code-point": 625
+        }
+      }, 
+      "relations": {
+        "<-formed": {
+          "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.formed/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x527E/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=HZK01-EEBA"
+              }, 
+              "sources": [
+                "bib:jiyun"
+              ]
+            }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/14579/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-14579.svg"
+              }, 
+              "sources": [
+                "bib:guangya-shuzheng", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.interchangeable/2", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/05854/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-05854.svg"
+              }, 
+              "sources": [
+                "bib:shuowen-tongxun-dingsheng", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:daikanwa"
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x5233/abstract-glyph/unicode/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x527E/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=HZK01-EEBA"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:jiyun", 
+            "bib:daikanwa"
+          ]
         }
       }, 
       "subsume": [
