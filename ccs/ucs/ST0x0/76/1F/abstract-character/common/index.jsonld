@@ -12,11 +12,16 @@
   }, 
   "structure-descriptions": {
     "chise:domain/structure/functional": {
-      "ids": "\u2ff8\u7592\u6637", 
+      "ids": "\u2ff8\u7592&A-IWDSU+6637;", 
       "ideographic-structure": [
         "\u2ff8", 
         "\u7592", 
-        "\u6637"
+        {
+          "@type": "concord:genre/character", 
+          "@id": "chise:ccs/ucs/0x6637/abstract-character/iwds-1", 
+          "title": "\u3008\u25055/\u6637\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character"
+        }
       ]
     }
   }, 
@@ -69,7 +74,12 @@
           "ideographic-structure": [
             "\u2ff8", 
             "\u7592", 
-            "\uD854\uDC55"
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x25055/abstract-glyph/iso", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-29430"
+            }
           ]
         }
       }, 
@@ -382,7 +392,30 @@
           "domain": "chise:domain/common", 
           "code-point": 20033
         }
-      }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/ucs/0x761F/abstract-glyph-form/unicode", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "image": "https://www.chise.org/glyphs/GB0/46-33.gif", 
+          "unify": {
+            "==ucs@unicode": {
+              "@id": "chise:ccs/ucs/0x761F/abstract-glyph-form/unicode", 
+              "CCS": "ccs:ucs", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/unicode", 
+              "code-point": 30239
+            }, 
+            "==gb2312": {
+              "@id": "chise:ccs/gb2312/0x4E41/abstract-glyph-form/common", 
+              "CCS": "ccs:gb2312", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 20033
+            }
+          }
+        }
+      ]
     }
   ]
 }
