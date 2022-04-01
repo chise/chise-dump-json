@@ -31,6 +31,13 @@
         "title": "Web-yunzi: Guangyun-\u53d4", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u53d4"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-romaji": "syuku", 
+        "ja-kana": "syuku", 
+        "ja-kana-historical": "syuku"
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -248,25 +255,82 @@
         }
       }, 
       "relations": {
+        "->ancient": {
+          "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.ancient", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.ancient/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/07427/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-07427.svg"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.ancient/2", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x2006E/abstract-character/common", 
+                "title": "\u2006e", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/u2006e.svg"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.ancient/3", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/09178/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-09178.svg"
+              }, 
+              "sources": [
+                "bib:zihui-bu", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:daikanwa"
+          ]
+        }, 
         "->formed": {
           "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.formed", 
           "reldesc": [
             {
               "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.formed/1", 
               "target": {
-                "@id": "chise:ccs/ucs/0x20991/abstract-glyph/iso", 
+                "@id": "chise:ccs/daikanwa/07428/abstract-glyph/common", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://image.hng-data.org/glyphs/daijiten/01001.png"
-              }
+                "image": "https://glyphwiki.org/glyph/dkw-07428.svg"
+              }, 
+              "sources": [
+                "bib:shuowen", 
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
             }, 
             {
               "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/to.formed/2", 
               "target": {
-                "@id": "chise:ccs/mj/031741/abstract-glyph/common", 
+                "@id": "chise:ccs/daikanwa/12257/abstract-glyph/common", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
-                "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ031741.png"
-              }
+                "image": "https://glyphwiki.org/glyph/dkw-12257.svg"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
             }
+          ], 
+          "sources": [
+            "bib:daikanwa"
           ]
         }, 
         "->interchangeable": {
@@ -304,8 +368,16 @@
                 "@id": "chise:ccs/ucs/0x20991/abstract-glyph/iso", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
                 "image": "https://image.hng-data.org/glyphs/daijiten/01001.png"
-              }
+              }, 
+              "sources": [
+                "bib:yupian", 
+                "bib:daikanwa"
+              ]
             }
+          ], 
+          "sources": [
+            "bib:yupian", 
+            "bib:daikanwa"
           ]
         }, 
         "<-formed": {
@@ -317,8 +389,53 @@
                 "@id": "chise:ccs/ucs/0x4FF6/abstract-glyph/unicode", 
                 "granularity": "chise:glyph-granularity/abstract-glyph", 
                 "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00984"
-              }
+              }, 
+              "sources": [
+                "bib:jiyun"
+              ]
             }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/from.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/07483/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-07483.svg"
+              }, 
+              "sources": [
+                "bib:yupian", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:yupian", 
+            "bib:daikanwa"
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x53D4/abstract-glyph/unicode/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x4FF6/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-00984"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:jiyun", 
+            "bib:daikanwa"
           ]
         }
       }, 
