@@ -35,11 +35,16 @@
   }, 
   "structure-descriptions": {
     "chise:domain/structure/functional": {
-      "ids": "\u2ff0\u5fc4\u5c08", 
+      "ids": "\u2ff0\u5fc4&A-IWDSU+5C08;", 
       "ideographic-structure": [
         "\u2ff0", 
         "\u5fc4", 
-        "\u5c08"
+        {
+          "@type": "concord:genre/character", 
+          "@id": "chise:ccs/ucs/0x5C08/abstract-character/iwds-1", 
+          "title": "\u3008\u5c02/\u5c08\u3009", 
+          "granularity": "chise:glyph-granularity/abstract-character"
+        }
       ]
     }
   }, 
@@ -247,6 +252,13 @@
               "granularity": "chise:glyph-granularity/abstract-glyph-form", 
               "domain": "chise:domain/common", 
               "code-point": 11137
+            }, 
+            "==daijiten": {
+              "@id": "chise:ccs/daijiten/03470/abstract-glyph-form/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 3470
             }
           }, 
           "subsume": [
@@ -337,6 +349,20 @@
                   "granularity": "chise:glyph-granularity/glyph-image", 
                   "domain": "chise:domain/unicode", 
                   "code-point": 24945
+                }
+              }
+            }, 
+            {
+              "@id": "chise:ccs/daijiten/03470/glyph-image/common", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "image": "https://image.hng-data.org/glyphs/daijiten/03470.png", 
+              "unify": {
+                "===daijiten": {
+                  "@id": "chise:ccs/daijiten/03470/glyph-image/common", 
+                  "CCS": "ccs:daijiten", 
+                  "granularity": "chise:glyph-granularity/glyph-image", 
+                  "domain": "chise:domain/common", 
+                  "code-point": 3470
                 }
               }
             }
