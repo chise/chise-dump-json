@@ -133,6 +133,34 @@
       "code-point": 1767
     }
   }, 
+  "relations": {
+    "->formed": {
+      "@id": "chise:ccs/ucs/0x5805/abstract-glyph/unicode/to.formed", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x5805/abstract-glyph/unicode/to.formed/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x21262/abstract-glyph/iso", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ008955.png"
+          }
+        }
+      ]
+    }, 
+    "->vulgar": {
+      "@id": "chise:ccs/ucs/0x5805/abstract-glyph/unicode/to.vulgar", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x5805/abstract-glyph/unicode/to.vulgar/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x21262/abstract-glyph/iso", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://moji.or.jp/mojikibansearch/img/MJ/MJ008955.png"
+          }
+        }
+      ]
+    }
+  }, 
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0x5805/abstract-glyph-form/unicode", 
@@ -227,6 +255,13 @@
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
           "domain": "chise:domain/common", 
           "code-point": 5210
+        }, 
+        "==daijiten": {
+          "@id": "chise:ccs/daijiten/01767/abstract-glyph-form/common", 
+          "CCS": "ccs:daijiten", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 1767
         }
       }, 
       "subsume": [
@@ -345,6 +380,20 @@
               "granularity": "chise:glyph-granularity/glyph-image", 
               "domain": "chise:domain/unicode", 
               "code-point": 22533
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/daijiten/01767/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://image.hng-data.org/glyphs/daijiten/01767.png", 
+          "unify": {
+            "===daijiten": {
+              "@id": "chise:ccs/daijiten/01767/glyph-image/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 1767
             }
           }
         }

@@ -29,6 +29,20 @@
         "title": "Web-yunzi: Guangyun-\u66c9", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u66c9"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-romaji": "kEu", 
+        "ja-kana": "\u304d\u3087\u3046", 
+        "ja-kana-historical": "\u3051\u3046"
+      }
+    ], 
+    "chise:domain/ja/on/conventional": [
+      {
+        "ja-romaji": "gEu", 
+        "ja-kana": "\u304e\u3087\u3046", 
+        "ja-kana-historical": "\u3052\u3046"
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -199,6 +213,23 @@
         }
       }, 
       "relations": {
+        "->mistakable": {
+          "@id": "chise:ccs/ucs/0x66C9/abstract-glyph/unicode/to.mistakable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x66C9/abstract-glyph/unicode/to.mistakable/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/23696/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-23696.svg"
+              }
+            }
+          ], 
+          "sources": [
+            "bib:zihui-biansi-2char", 
+            "bib:daikanwa"
+          ]
+        }, 
         "->simplified@CN": {
           "@id": "chise:ccs/ucs/0x66C9/abstract-glyph/unicode/to.simplified@CN", 
           "reldesc": [
@@ -224,6 +255,27 @@
                 "image": "https://glyphwiki.org/glyph/u6681.svg"
               }
             }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/ucs/0x66C9/abstract-glyph/unicode/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x66C9/abstract-glyph/unicode/from.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/44400/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-44400.svg"
+              }, 
+              "sources": [
+                "bib:shuowen-tongxun-dingsheng", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:shuowen-tongxun-dingsheng", 
+            "bib:daikanwa"
           ]
         }
       }, 
