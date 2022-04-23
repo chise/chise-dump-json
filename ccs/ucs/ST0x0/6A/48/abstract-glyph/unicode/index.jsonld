@@ -112,13 +112,6 @@
       "domain": "chise:domain/common", 
       "code-point": 15521
     }, 
-    "=daijiten": {
-      "@id": "chise:ccs/daijiten/05343/abstract-glyph/common", 
-      "CCS": "ccs:daijiten", 
-      "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "domain": "chise:domain/common", 
-      "code-point": 5343
-    }, 
     "=shinjigen": {
       "@id": "chise:ccs/shinjigen/3836/abstract-glyph/common", 
       "CCS": "ccs:shinjigen", 
@@ -127,17 +120,26 @@
       "code-point": 3836
     }
   }, 
+  "relations": {
+    "->interchangeable": {
+      "@id": "chise:ccs/ucs/0x6A48/abstract-glyph/unicode/to.interchangeable", 
+      "reldesc": [
+        {
+          "@id": "chise:ccs/ucs/0x6A48/abstract-glyph/unicode/to.interchangeable/1", 
+          "target": {
+            "@id": "chise:ccs/ucs/0x6493/abstract-glyph/unicode", 
+            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-16120"
+          }
+        }
+      ]
+    }
+  }, 
   "subsume": [
     {
       "@id": "chise:ccs/ucs/0x6A48/abstract-glyph-form/unicode", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
       "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-19992", 
-      "==big5": {
-        "body": 48888
-      }, 
-      "==gt-pj-1": {
-        "body": 23670
-      }, 
       "unify": {
         "==ucs@unicode": {
           "@id": "chise:ccs/ucs/0x6A48/abstract-glyph-form/unicode", 
