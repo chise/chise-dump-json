@@ -24,6 +24,13 @@
       "title": "\u3008\u565b\u3009", 
       "granularity": "chise:glyph-granularity/abstract-character", 
       "image": "https://glyphwiki.org/glyph/u565b.svg", 
+      "jishu": [
+        {
+          "@id": "chise:ccs/ucs/0x5699/super-abstract-character/bucs", 
+          "granularity": "chise:glyph-granularity/super-abstract-character", 
+          "image": "https://image.hng-data.org/glyphs/daijiten/01560.png"
+        }
+      ], 
       "radical-and-strokes": {
         "chise:domain/common": {
           "kangxi-radical": "\u2f1d", 
@@ -31,6 +38,15 @@
           "kangxi-strokes": 12, 
           "total-strokes": 15
         }
+      }, 
+      "phonetic-value": {
+        "chise:domain/ja/on": [
+          {
+            "ja-romaji": "gAu", 
+            "ja-kana": "\u3054\u3046", 
+            "ja-kana-historical": "\u304c\u3046"
+          }
+        ]
       }, 
       "structure-descriptions": {
         "chise:domain/structure/functional": {
@@ -142,6 +158,25 @@
               "granularity": "chise:glyph-granularity/abstract-glyph", 
               "domain": "chise:domain/common", 
               "code-point": 18364
+            }
+          }, 
+          "relations": {
+            "<-vulgar": {
+              "@id": "chise:ccs/ucs/0x565B/abstract-glyph/unicode/from.vulgar", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x565B/abstract-glyph/unicode/from.vulgar/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x5699/abstract-glyph/unicode", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://image.hng-data.org/glyphs/daijiten/01560.png"
+                  }
+                }
+              ], 
+              "sources": [
+                "bib:songyuan-yilai-suzipu", 
+                "bib:daikanwa"
+              ]
             }
           }, 
           "subsume": [
@@ -344,7 +379,7 @@
       "image": "https://glyphwiki.org/glyph/u5699.svg", 
       "jishu": [
         {
-          "@id": "chise:ccs/daijiten/01560/super-abstract-character/common", 
+          "@id": "chise:ccs/ucs/0x5699/super-abstract-character/bucs", 
           "granularity": "chise:glyph-granularity/super-abstract-character", 
           "image": "https://image.hng-data.org/glyphs/daijiten/01560.png"
         }
@@ -538,6 +573,19 @@
                     "@id": "chise:ccs/ucs/0x556E/abstract-glyph/unicode", 
                     "granularity": "chise:glyph-granularity/abstract-glyph", 
                     "image": "https://www.chise.org/glyphs/GB0/36-86.gif"
+                  }
+                }
+              ]
+            }, 
+            "->vulgar": {
+              "@id": "chise:ccs/ucs/0x5699/abstract-glyph/unicode/to.vulgar", 
+              "reldesc": [
+                {
+                  "@id": "chise:ccs/ucs/0x5699/abstract-glyph/unicode/to.vulgar/1", 
+                  "target": {
+                    "@id": "chise:ccs/ucs/0x565B/abstract-glyph/unicode", 
+                    "granularity": "chise:glyph-granularity/abstract-glyph", 
+                    "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-05383"
                   }
                 }
               ]
