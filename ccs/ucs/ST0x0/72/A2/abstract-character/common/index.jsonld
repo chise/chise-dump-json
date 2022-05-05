@@ -31,6 +31,20 @@
         "title": "Web-yunzi: Guangyun-\u72a2", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u72a2"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "toku", 
+          "ja-kana": "\u3068\u304f", 
+          "ja-kana-historical": "\u3068\u304f"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "doku", 
+          "ja-kana": "\u3069\u304f", 
+          "ja-kana-historical": "\u3069\u304f"
+        }
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -41,7 +55,7 @@
         {
           "@type": "concord:genre/character", 
           "@id": "chise:ccs/ucs/0x725B/abstract-character/component", 
-          "title": "\u3008\u725c/\u2ea7/\u725b/\u20092\u3009", 
+          "title": "\u3008\u725c/\u725b/\u2ea7/\u20092\u3009", 
           "granularity": "chise:glyph-granularity/abstract-character"
         }, 
         {
@@ -184,6 +198,25 @@
         }
       }, 
       "relations": {
+        "->formed": {
+          "@id": "chise:ccs/ucs/0x72A2/abstract-glyph/jis/to.formed", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x72A2/abstract-glyph/jis/to.formed/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x246EF/abstract-glyph/iso", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS7/3930.gif"
+              }, 
+              "sources": [
+                "bib:jiyun"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:jiyun"
+          ]
+        }, 
         "->vulgar": {
           "@id": "chise:ccs/ucs/0x72A2/abstract-glyph/jis/to.vulgar", 
           "reldesc": [
@@ -196,6 +229,27 @@
                 "image": "https://glyphwiki.org/glyph/u24678.svg"
               }
             }
+          ]
+        }, 
+        "<-same": {
+          "@id": "chise:ccs/ucs/0x72A2/abstract-glyph/jis/from.same", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x72A2/abstract-glyph/jis/from.same/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x246EF/abstract-glyph/iso", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS7/3930.gif"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:jiyun", 
+            "bib:daikanwa"
           ]
         }
       }, 
