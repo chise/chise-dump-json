@@ -6,7 +6,7 @@
   "image": "https://glyphwiki.org/glyph/u548c.svg", 
   "jishu": [
     {
-      "@id": "chise:ccs/daijiten/01263/super-abstract-character/common", 
+      "@id": "chise:ccs/ucs/0x548C/super-abstract-character/bucs", 
       "granularity": "chise:glyph-granularity/super-abstract-character", 
       "image": "https://image.hng-data.org/glyphs/daijiten/01263.png"
     }
@@ -78,8 +78,8 @@
           "@id": "chise:ccs/ucs/0x548C/abstract-character/common/to.ancient/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x548A/abstract-character/common", 
-            "title": "\u548a", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "title": "\u3008\u548a\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
             "image": "https://glyphwiki.org/glyph/u548a.svg"
           }
         }
@@ -92,8 +92,8 @@
           "@id": "chise:ccs/ucs/0x548C/abstract-character/common/from.Liwen/1", 
           "target": {
             "@id": "chise:ccs/ucs/0x9FA2/abstract-character/common", 
-            "title": "\u9fa2", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "title": "\u3008\u9fa2\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
             "image": "https://glyphwiki.org/glyph/u9fa2.svg"
           }
         }, 
@@ -101,8 +101,8 @@
           "@id": "chise:ccs/ucs/0x548C/abstract-character/common/from.Liwen/2", 
           "target": {
             "@id": "chise:ccs/ucs/0x76C9/abstract-character/common", 
-            "title": "\u76c9", 
-            "granularity": "chise:glyph-granularity/abstract-glyph", 
+            "title": "\u3008\u76c9\u3009", 
+            "granularity": "chise:glyph-granularity/abstract-character", 
             "image": "https://glyphwiki.org/glyph/u76c9.svg"
           }
         }
@@ -142,7 +142,12 @@
           "ids": "\u2ff0\u79be\u53e3", 
           "ideographic-structure": [
             "\u2ff0", 
-            "\u79be", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x79BE/abstract-glyph/unicode", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-32121"
+            }, 
             "\u53e3"
           ]
         }
@@ -357,6 +362,13 @@
               "domain": "chise:domain/common", 
               "code-point": 3490
             }, 
+            "==daijiten": {
+              "@id": "chise:ccs/daijiten/01263/abstract-glyph-form/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 1263
+            }, 
             "==shinjigen": {
               "@id": "chise:ccs/shinjigen/1048/abstract-glyph-form/common", 
               "CCS": "ccs:shinjigen", 
@@ -377,6 +389,20 @@
                   "granularity": "chise:glyph-granularity/glyph-image", 
                   "domain": "chise:domain/common", 
                   "code-point": 3490
+                }
+              }
+            }, 
+            {
+              "@id": "chise:ccs/daijiten/01263/glyph-image/common", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "image": "https://image.hng-data.org/glyphs/daijiten/01263.png", 
+              "unify": {
+                "===daijiten": {
+                  "@id": "chise:ccs/daijiten/01263/glyph-image/common", 
+                  "CCS": "ccs:daijiten", 
+                  "granularity": "chise:glyph-granularity/glyph-image", 
+                  "domain": "chise:domain/common", 
+                  "code-point": 1263
                 }
               }
             }, 
@@ -533,7 +559,12 @@
           "ids": "\u2ffa\u79be\u53e3", 
           "ideographic-structure": [
             "\u2ffa", 
-            "\u79be", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x79BE/abstract-glyph/unicode", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-32121"
+            }, 
             "\u53e3"
           ]
         }

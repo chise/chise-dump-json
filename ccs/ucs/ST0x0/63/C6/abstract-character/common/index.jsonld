@@ -6,7 +6,7 @@
   "image": "https://glyphwiki.org/glyph/u63c6.svg", 
   "jishu": [
     {
-      "@id": "chise:ccs/daijiten/03892/super-abstract-character/common", 
+      "@id": "chise:ccs/ucs/0x63C6/super-abstract-character/bucs", 
       "granularity": "chise:glyph-granularity/super-abstract-character", 
       "image": "https://image.hng-data.org/glyphs/daijiten/03892.png"
     }
@@ -30,6 +30,20 @@
       {
         "title": "Web-yunzi: Guangyun-\u63c6", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u63c6"
+      }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "ki", 
+          "ja-kana": "\u304d", 
+          "ja-kana-historical": "\u304d"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "gi", 
+          "ja-kana": "\u304e", 
+          "ja-kana-historical": "\u304e"
+        }
       }
     ]
   }, 
@@ -208,11 +222,34 @@
           "code-point": 3008
         }
       }, 
+      "relations": {
+        "->original": {
+          "@id": "chise:ccs/ucs/0x63C6/abstract-glyph/unicode/to.original", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x63C6/abstract-glyph/unicode/to.original/1", 
+              "target": {
+                "@id": "chise:ccs/daikanwa/49131/abstract-glyph/common", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://glyphwiki.org/glyph/dkw-49131.svg"
+              }, 
+              "sources": [
+                "bib:zhengzitong", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:zhengzitong", 
+            "bib:daikanwa"
+          ]
+        }
+      }, 
       "subsume": [
         {
           "@id": "chise:ccs/ucs/0x63C6/abstract-glyph-form/unicode", 
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
-          "image": "https://www.chise.org/glyphs/CNS1/5F44.gif", 
+          "image": "https://image.hng-data.org/glyphs/daijiten/03892.png", 
           "unify": {
             "==ucs@unicode": {
               "@id": "chise:ccs/ucs/0x63C6/abstract-glyph-form/unicode", 
@@ -269,6 +306,13 @@
               "granularity": "chise:glyph-granularity/abstract-glyph-form", 
               "domain": "chise:domain/common", 
               "code-point": 12326
+            }, 
+            "==daijiten": {
+              "@id": "chise:ccs/daijiten/03892/abstract-glyph-form/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 3892
             }, 
             "==shinjigen@1ed": {
               "@id": "chise:ccs/shinjigen/3006/abstract-glyph-form/1ed", 
@@ -380,6 +424,20 @@
                   "granularity": "chise:glyph-granularity/glyph-image", 
                   "domain": "chise:domain/common", 
                   "code-point": 24388
+                }
+              }
+            }, 
+            {
+              "@id": "chise:ccs/daijiten/03892/glyph-image/common", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "image": "https://image.hng-data.org/glyphs/daijiten/03892.png", 
+              "unify": {
+                "===daijiten": {
+                  "@id": "chise:ccs/daijiten/03892/glyph-image/common", 
+                  "CCS": "ccs:daijiten", 
+                  "granularity": "chise:glyph-granularity/glyph-image", 
+                  "domain": "chise:domain/common", 
+                  "code-point": 3892
                 }
               }
             }
