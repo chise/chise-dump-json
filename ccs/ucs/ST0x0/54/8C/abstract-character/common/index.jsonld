@@ -31,6 +31,20 @@
         "title": "Web-yunzi: Guangyun-\u548c", 
         "url": "http://suzukish.s252.xrea.com/search/inkyo/yunzi/\u548c"
       }
+    ], 
+    "chise:domain/ja/on": [
+      {
+        "ja-kan-on": {
+          "ja-romaji": "kWa", 
+          "ja-kana": "\u304b", 
+          "ja-kana-historical": "\u304f\u308f"
+        }, 
+        "ja-go-on": {
+          "ja-romaji": "wa", 
+          "ja-kana": "\u308f", 
+          "ja-kana-historical": "\u308f"
+        }
+      }
     ]
   }, 
   "structure-descriptions": {
@@ -253,6 +267,58 @@
         }
       }, 
       "relations": {
+        "->ancient": {
+          "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.ancient", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.ancient/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x548A/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS3/2779.gif"
+              }, 
+              "sources": [
+                "bib:jiyun", 
+                "bib:shuowen-zhu", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.ancient/2", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x249D7/abstract-glyph/iso", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS5/404F.gif"
+              }, 
+              "sources": [
+                "bib:wenxuan-lishan-zhu", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:daikanwa"
+          ]
+        }, 
+        "->original": {
+          "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.original", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.original/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x9FA2/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/14897.png"
+              }, 
+              "sources": [
+                "bib:zhengzitong"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:zhengzitong"
+          ]
+        }, 
         "->vulgar": {
           "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/to.vulgar", 
           "reldesc": [
@@ -264,6 +330,51 @@
                 "image": "https://www.chise.org/glyphs/CNS3/3B56.gif"
               }
             }
+          ]
+        }, 
+        "<-interchangeable": {
+          "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/from.interchangeable", 
+          "reldesc": [
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/from.interchangeable/1", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x245B1/abstract-glyph/iso", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS6/3256.gif"
+              }, 
+              "sources": [
+                "bib:zhengzitong", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/from.interchangeable/2", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x9FA2/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://image.hng-data.org/glyphs/daijiten/14897.png"
+              }, 
+              "sources": [
+                "bib:zhengzitong", 
+                "bib:wenxuan-lishan-zhu", 
+                "bib:daikanwa"
+              ]
+            }, 
+            {
+              "@id": "chise:ccs/ucs/0x548C/abstract-glyph/unicode/from.interchangeable/3", 
+              "target": {
+                "@id": "chise:ccs/ucs/0x76C9/abstract-glyph/unicode", 
+                "granularity": "chise:glyph-granularity/abstract-glyph", 
+                "image": "https://www.chise.org/glyphs/CNS2/312F.gif"
+              }, 
+              "sources": [
+                "bib:shuowen-tongxun-dingsheng", 
+                "bib:daikanwa"
+              ]
+            }
+          ], 
+          "sources": [
+            "bib:daikanwa"
           ]
         }
       }, 

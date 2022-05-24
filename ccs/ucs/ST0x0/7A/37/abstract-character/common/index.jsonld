@@ -6,7 +6,7 @@
   "image": "https://glyphwiki.org/glyph/u7a37.svg", 
   "jishu": [
     {
-      "@id": "chise:ccs/daijiten/08252/super-abstract-character/common", 
+      "@id": "chise:ccs/ucs/0x7A37/super-abstract-character/bucs", 
       "granularity": "chise:glyph-granularity/super-abstract-character", 
       "image": "https://image.hng-data.org/glyphs/daijiten/08252.png"
     }
@@ -92,7 +92,7 @@
     {
       "@id": "chise:ccs/ucs/0x7A37/abstract-glyph/cns", 
       "granularity": "chise:glyph-granularity/abstract-glyph", 
-      "image": "https://image.hng-data.org/glyphs/daijiten/08252.png", 
+      "image": "https://www.chise.org/glyphs/CNS1/6E29.gif", 
       "radical-and-strokes": {
         "chise:domain/common": {
           "kangxi-radical": "\u2f72", 
@@ -106,7 +106,12 @@
           "ids": "\u2ff0\u79be\u755f", 
           "ideographic-structure": [
             "\u2ff0", 
-            "\u79be", 
+            {
+              "@type": "concord:genre/character", 
+              "@id": "chise:ccs/ucs/0x79BE/abstract-glyph/unicode", 
+              "granularity": "chise:glyph-granularity/abstract-glyph", 
+              "image": "https://www.chise.org/chisewiki/glyph.cgi?char=GT-32121"
+            }, 
             {
               "@type": "concord:genre/character", 
               "@id": "chise:ccs/ucs/0x755F/abstract-glyph/cns", 
@@ -137,13 +142,6 @@
           "granularity": "chise:glyph-granularity/abstract-glyph", 
           "domain": "chise:domain/common", 
           "code-point": 25207
-        }, 
-        "=daijiten": {
-          "@id": "chise:ccs/daijiten/08252/abstract-glyph/common", 
-          "CCS": "ccs:daijiten", 
-          "granularity": "chise:glyph-granularity/abstract-glyph", 
-          "domain": "chise:domain/common", 
-          "code-point": 8252
         }
       }, 
       "relations": {
@@ -283,6 +281,13 @@
           "domain": "chise:domain/common", 
           "code-point": 25421
         }, 
+        "=daijiten": {
+          "@id": "chise:ccs/daijiten/08252/abstract-glyph/common", 
+          "CCS": "ccs:daijiten", 
+          "granularity": "chise:glyph-granularity/abstract-glyph", 
+          "domain": "chise:domain/common", 
+          "code-point": 8252
+        }, 
         "=shinjigen": {
           "@id": "chise:ccs/shinjigen/5654/abstract-glyph/common", 
           "CCS": "ccs:shinjigen", 
@@ -345,6 +350,13 @@
               "granularity": "chise:glyph-granularity/abstract-glyph-form", 
               "domain": "chise:domain/common", 
               "code-point": 32523
+            }, 
+            "==daijiten": {
+              "@id": "chise:ccs/daijiten/08252/abstract-glyph-form/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+              "domain": "chise:domain/common", 
+              "code-point": 8252
             }, 
             "==shinjigen": {
               "@id": "chise:ccs/shinjigen/5654/abstract-glyph-form/common", 
@@ -421,6 +433,20 @@
                   "granularity": "chise:glyph-granularity/glyph-image", 
                   "domain": "chise:domain/common", 
                   "code-point": 29251
+                }
+              }
+            }, 
+            {
+              "@id": "chise:ccs/daijiten/08252/glyph-image/common", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "image": "https://image.hng-data.org/glyphs/daijiten/08252.png", 
+              "unify": {
+                "===daijiten": {
+                  "@id": "chise:ccs/daijiten/08252/glyph-image/common", 
+                  "CCS": "ccs:daijiten", 
+                  "granularity": "chise:glyph-granularity/glyph-image", 
+                  "domain": "chise:domain/common", 
+                  "code-point": 8252
                 }
               }
             }

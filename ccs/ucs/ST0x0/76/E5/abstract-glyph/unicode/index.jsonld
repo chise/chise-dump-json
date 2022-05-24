@@ -290,7 +290,7 @@
     {
       "@id": "chise:ccs/ucs/0x76E5/abstract-glyph-form/cns", 
       "granularity": "chise:glyph-granularity/abstract-glyph-form", 
-      "image": "https://www.chise.org/glyphs/CNS1/714E.gif", 
+      "image": "https://image.hng-data.org/glyphs/daijiten/07784.png", 
       "unify": {
         "==ucs@cns": {
           "@id": "chise:ccs/ucs/0x76E5/abstract-glyph-form/cns", 
@@ -305,8 +305,45 @@
           "granularity": "chise:glyph-granularity/abstract-glyph-form", 
           "domain": "chise:domain/common", 
           "code-point": 29006
+        }, 
+        "==daijiten": {
+          "@id": "chise:ccs/daijiten/07784/abstract-glyph-form/common", 
+          "CCS": "ccs:daijiten", 
+          "granularity": "chise:glyph-granularity/abstract-glyph-form", 
+          "domain": "chise:domain/common", 
+          "code-point": 7784
         }
-      }
+      }, 
+      "subsume": [
+        {
+          "@id": "chise:ccs/cns11643-1/0x714E/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://www.chise.org/glyphs/CNS1/714E.gif", 
+          "unify": {
+            "===cns11643-1": {
+              "@id": "chise:ccs/cns11643-1/0x714E/glyph-image/common", 
+              "CCS": "ccs:cns11643-1", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 29006
+            }
+          }
+        }, 
+        {
+          "@id": "chise:ccs/daijiten/07784/glyph-image/common", 
+          "granularity": "chise:glyph-granularity/glyph-image", 
+          "image": "https://image.hng-data.org/glyphs/daijiten/07784.png", 
+          "unify": {
+            "===daijiten": {
+              "@id": "chise:ccs/daijiten/07784/glyph-image/common", 
+              "CCS": "ccs:daijiten", 
+              "granularity": "chise:glyph-granularity/glyph-image", 
+              "domain": "chise:domain/common", 
+              "code-point": 7784
+            }
+          }
+        }
+      ]
     }, 
     {
       "@id": "chise:ccs/ucs/0x76E5/abstract-glyph-form/unicode", 
